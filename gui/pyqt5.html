@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Erics">
+        <link rel="canonical" href="https://docs.pythoneers.cn/gui/pyqt5.html">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>PyQt5 - PYTHONEERS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../css/nav.css" rel="stylesheet">
+        <link href="../css/public.css" rel="stylesheet">
+    
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    <script data-ad-client="ca-pub-6937898095875663" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">PYTHONEERS</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python/python3.html">基础到进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/module.html">内置模块与第三方模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/algorithm.html">数据结构与算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/design-pattern.html">设计模式</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode.html">Leetcode</a>
+</li>
+                                    
+<li >
+    <a href="../python/offer.html">剑指Offer</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Web <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python-web/django.html">Django</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/drf.html">Django Rest Framework</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/flask.html">Flask</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/mysql.html">MySQL</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/redis.html">Redis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python GUI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="pyqt5.html">PyQt5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">网络爬虫 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../web-crawler/scrapy.html">Scrapy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">数据分析 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../data-analysis/numpy.html">NumPy</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/pandas.html">Pandas</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/matplotlib.html">Matplotlib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">计算机视觉 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../computer-vision/opencv.html">OpenCV</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">机器学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../machine-learning/quantitative-trading.html">机器学习与量化交易</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../deep-learning/deep-learning.html">深度学习</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="../python-web/redis.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../web-crawler/scrapy.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pyqt5">PyQt5基础</a></li>
+            <li><a href="#1-gui">1. GUI编程学什么</a></li>
+            <li><a href="#2-pyqt5">2. PyQt5是什么</a></li>
+            <li><a href="#3-pyqt5">3. PyQt5的优势</a></li>
+            <li><a href="#4">4. 开发环境的安装</a></li>
+            <li><a href="#5-pyqt5">5. 第一个PyQt5桌面应用</a></li>
+        <li class="main "><a href="#qtdesigner">QtDesigner</a></li>
+            <li><a href="#1">1. 安装和配置</a></li>
+            <li><a href="#2">2. 快速入门</a></li>
+            <li><a href="#3-uipy">3. 将ui文件转换成py文件</a></li>
+            <li><a href="#4_1">4. 水平布局</a></li>
+            <li><a href="#5">5. 垂直布局</a></li>
+            <li><a href="#6">6. 同时使用水平布局和垂直布局</a></li>
+            <li><a href="#7">7. 栅格布局</a></li>
+            <li><a href="#8">8. 表单布局</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span id="busuanzi_container_page_pv">阅读量：<span id="busuanzi_value_page_pv"></span>次</span>
+<span class="github-btn github-stargazers pull-right">
+<a class="gh-btn" href="javascript:;" rel="noopener noreferrer" target="" aria-label="Star encode/django-rest-framework on GitHub">
+    <span class="gh-ico" aria-hidden="true"></span> 
+    <span class="gh-text">Star</span> 
+</a>
+<a class="gh-count" href="https://github.com/encode/django-rest-framework/stargazers" rel="noopener noreferrer" target="_blank" aria-hidden="true"></a>
+</span>
+<hr></p>
+<p><img alt="" src="../img/pyqt5.jpeg" /></p>
+<h4 id="pyqt5">PyQt5基础</h4>
+<hr>
+
+<h5 id="1-gui">1. GUI编程学什么</h5>
+<p>( 1 ) 大致了解你所选择的 GUI 库</p>
+<p>( 2 ) 基本的程序的结构：使用这个 GUI 库来运行你的 GUI 程序</p>
+<p>( 3 ) 各种控件的特性和如何使用</p>
+<p>( 4 ) 控件的样式</p>
+<p>( 5 ) 资源的加载</p>
+<p>( 6 ) 控件的布局</p>
+<p>( 7 ) 事件和信号</p>
+<p>( 8 ) 动画特效</p>
+<p>( 9 ) 界面跳转</p>
+<p>( 10 ) 设计工具的使用
+<hr></p>
+<h5 id="2-pyqt5">2. PyQt5是什么</h5>
+<p>QT 是跨平台 C++ 库的集合，它实现高级 API 来访问现代桌面和移动系统的许多方面。这些服务包括 <font>定位服务，多媒体，NFC和蓝牙连接，基于 Chromium 的 web 浏览器以及传统的UI开发等。</font>PyQt 就是对 QT 库 Python 的绑定。PyQt 可以嵌入在基于 C++ 的应用程序中，以允许这些应用程序的用户配置或增强这些应用程序的功能。
+<hr></p>
+<h5 id="3-pyqt5">3. PyQt5的优势</h5>
+<p>( 1 ) 简单好用</p>
+<p>( 2 ) 功能强大</p>
+<p>( 3 ) 跨平台支持</p>
+<p>( 4 ) 性能高</p>
+<p>( 5 ) 文档齐全：PyQt 本身就是对 QT 库 Python 的绑定，<font>绑定的时候保持了原有的QT库的API</font>。也就是说，PyQt 除了自己的文档外，也几乎可以通用 QT 文档。</p>
+<p>( 6 ) 稳定性高：<font>面向对象、信号与槽的机制、界面设计与业务代码完全隔离</font></p>
+<p>( 7 ) 生态支持：Qt Designer 进行图形界面设计、ui 转换成 py 文件、资源处理</p>
+<p>( 8 ) 开源免费：PyQt 是双重许可的，开发人员可以在 GPL 和商业许可之间进行选择。采用 GPL 协议，软件著作权属于开发者所有，受国际相关版权法保护，<font>允许其他用户对原作者软件进行复制和发行，可以更改后发行自己的软件</font>。
+<hr></p>
+<h5 id="4">4. 开发环境的安装</h5>
+<p>首先是 Python3 环境和 PyCharm 开发工具的安装，由于比较简单，这里不再赘述！然后就是 GUI 开发环境的安装，即安装我们的 PyQt5 库。下面是在 Python 的虚拟环境中安装 PyQt5，</p>
+<p>( 1 ) 在 Python 全局环境中安装 pipenv：</p>
+<pre><code class="python">$ pip3 install pipenv -i https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre>
+
+<p>( 2 ) 创建并进入项目目录</p>
+<pre><code class="python">$ mkdir pyqt5-pro &amp;&amp; cd pyqt5-pro
+</code></pre>
+
+<p>( 3 ) 创建虚拟环境：</p>
+<pre><code class="python">$ pipenv --three
+</code></pre>
+
+<p>( 4 ) 激活虚拟环境(激活环境后会自动创建Pipfile文件)：</p>
+<pre><code class="python">$ pipenv shell
+</code></pre>
+
+<p>( 5 ) 将源改为国内源加速下载，url 换成 “https://pypi.tuna.tsinghua.edu.cn/simple”：</p>
+<pre><code class="python">(pyqt5-pro) $ vim Pipfile
+</code></pre>
+
+<p>( 6 ) 安装 pyqt5 库</p>
+<pre><code class="python">(pyqt5-pro) $ pipenv install pyqt5
+</code></pre>
+
+<p>这个时候我们使用 Pycharm 打开这个项目文件夹：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200109234253112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+可以从设置中看到该项目依赖的Python环境：
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200109234314228.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h5 id="5-pyqt5">5. 第一个PyQt5桌面应用</h5>
+<p>创建一个窗口，在窗口中显示文本信息：</p>
+<pre><code class="python">from PyQt5.Qt import *
+import sys
+
+if __name__ == '__main__':
+    # 创建QApplication类的实例
+    app = QApplication(sys.argv)
+    # 创建一个窗口
+    window = QWidget()
+    # 设置窗口标题
+    window.setWindowTitle('Hello World!')
+    # 设置窗口尺寸
+    window.resize(400, 400)
+    # 移动窗口位置
+    window.move(1000, 300)
+    # 创建label控件
+    label = QLabel(window)
+    # 为控件设置文本
+    label.setText('Hello World!')
+    # 移动空间的位置
+    label.move(160, 160)
+    # 显示窗口
+    window.show()
+    # 进入程序的主循环，并通过exit函数确保主循环安全结束
+    sys.exit(app.exec_())
+</code></pre>
+
+<p>效果图：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200110090054186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h4 id="qtdesigner">QtDesigner</h4>
+<hr>
+
+<h5 id="1">1. 安装和配置</h5>
+<p>安装 Qt 的工具包：</p>
+<pre><code class="python">$ pip install PyQt5-tools -i https://pypi.douban.com/simple
+</code></pre>
+
+<p>安装完成后，QTdesigner 就在你的 python 环境下的扩展包里面了!</p>
+<p>将 QtDesigner 集成到 Pycharm：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200830144746568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+<hr></p>
+<h5 id="2">2. 快速入门</h5>
+<p>可以通过配置好的PyCharm扩展工具直接打开 QTDesigner：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020083021590726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+简单介绍 QTDesigner 几个主要部分：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200830215919492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+Ctrl+S 将其保存到项目根目录：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200830215855388.png#" />
+<hr></p>
+<h5 id="3-uipy">3. 将ui文件转换成py文件</h5>
+<p>( 1 ) 第一种方法：</p>
+<pre><code class="python">$ python -m PyQt5.uic.pyuic demo.ui -o demo.py
+</code></pre>
+
+<p>( 2 ) 第二种方法：</p>
+<pre><code class="shell">$ pyuic5 demo.ui -o demo.py
+</code></pre>
+
+<p>( 3 ) 第三种方法：</p>
+<p>使用 <strong><code>$ which python</code></strong> 命令查看当前的 Python 路径：</p>
+<pre><code class="python">/home/thanlon/.local/share/virtualenvs/pyqt5-pro-ihgfaRRJ/bin/python
+</code></pre>
+
+<p>把上面的路径加入到 Program 中，然后再把下面命令相关的参数加入到 Arguments 中：</p>
+<pre><code class="python">-m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py
+</code></pre>
+
+<p>最后把下面的内容加入到 Working directory 中：</p>
+<pre><code class="python">$FileDir$
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200830221427681.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+<hr></p>
+<h5 id="4_1">4. 水平布局</h5>
+<p>使用水平布局的方式在 QtDesigner 中做一些简单的操作，如下图所示：
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831005410111.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" /></p>
+<p>将 <kbd>.ui</kbd> 文件转换成 <kbd>.py</kbd> 文件后新建 RunMainWinHorizontalLayout.py 文件用来运行转换之后的文件：
+<br><br></p>
+<pre><code class="python">import sys
+import MainWinHorizontalLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+if __name__ == '__main__':
+    # 创建QApplication类的实例
+    app = QApplication(sys.argv)
+    # 创建一个主窗口
+    mainWindow = QMainWindow()
+    # 创建Ui_MainWindow的实例
+    ui = MainWinHorizontalLayout.Ui_MainWindow()
+    # 调用setupUi在指定窗口(主窗口)中添加控件
+    ui.setupUi(mainWindow)
+    # 显示窗口
+    mainWindow.show()
+    # 进入程序的主循环，并通过exit函数确保主循环安全结束
+    sys.exit(app.exec_())
+</code></pre>
+
+<p>最终的效果图：
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831010754336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+<hr></p>
+<h5 id="5">5. 垂直布局</h5>
+<p>使用垂直布局的方式在 QtDesigner 中了做一些简单的操作，如下图所示：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831011634495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" /></p>
+<p>将 <kbd>.ui</kbd> 文件转换成 <kbd>.py</kbd> 文件后新建 RunMainWinVerticalLayout.py 文件用来运行转换之后的文件：
+<br><br></p>
+<pre><code class="python">import sys
+import MainWinVerticalLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+if __name__ == '__main__':
+    # 创建QApplication类的实例
+    app = QApplication(sys.argv)
+    # 创建一个主窗口
+    mainWindow = QMainWindow()
+    # 创建Ui_MainWindow的实例
+    ui = MainWinVerticalLayout.Ui_MainWindow()
+    # 调用setupUi在指定窗口(主窗口)中添加控件
+    ui.setupUi(mainWindow)
+    # 显示窗口
+    mainWindow.show()
+    # 进入程序的主循环，并通过exit函数确保主循环安全结束
+    sys.exit(app.exec_())
+</code></pre>
+
+<p>最终的效果图：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831012547133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+<hr></p>
+<h5 id="6">6. 同时使用水平布局和垂直布局</h5>
+<p>“姓名” 和 “薪资” 两行都使用水平布局，“备注+文本框” 和它们一起使用垂直布局：
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831021549807.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" /></p>
+<p>将 <kbd>.ui</kbd> 文件转换成 <kbd>.py</kbd> 文件后新建 RunMainWinHVLayout.py 文件用来运行转换之后的文件：
+<br><br></p>
+<pre><code class="python">import sys
+import RunMainWinVHLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+if __name__ == '__main__':
+    # 创建QApplication类的实例
+    app = QApplication(sys.argv)
+    # 创建一个主窗口
+    mainWindow = QMainWindow()
+    # 创建Ui_MainWindow的实例
+    ui = RunMainWinVHLayout.Ui_MainWindow()
+    # 调用setupUi在指定窗口(主窗口)中添加控件
+    ui.setupUi(mainWindow)
+    # 显示窗口
+    mainWindow.show()
+    # 进入程序的主循环，并通过exit函数确保主循环安全结束
+    sys.exit(app.exec_())
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831022254214.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#pic_center" />
+<hr></p>
+<h5 id="7">7. 栅格布局</h5>
+<p>下面是使用栅格布局设计的：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831023151568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" /></p>
+<p>将 <kbd>.ui</kbd> 文件转换成 <kbd>.py</kbd> 文件后新建 RunMainWinGridLayout.py 文件用来运行转换之后的文件：
+<br><br></p>
+<pre><code class="python">import sys
+import MainWinGridLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+if __name__ == '__main__':
+    # 创建QApplication类的实例
+    app = QApplication(sys.argv)
+    # 创建一个主窗口
+    mainWindow = QMainWindow()
+    # 创建Ui_MainWindow的实例
+    ui = MainWinGridLayout.Ui_MainWindow()
+    # 调用setupUi在指定窗口(主窗口)中添加控件
+    ui.setupUi(mainWindow)
+    # 显示窗口
+    mainWindow.show()
+    # 进入程序的主循环，并通过exit函数确保主循环安全结束
+    sys.exit(app.exec_())
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200831023513476.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+<hr></p>
+<h5 id="8">8. 表单布局</h5>
+<p>下面是使用表单布局设计的：
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200902144428605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" /></p>
+<p>将 <kbd>.ui</kbd> 文件转换成 <kbd>.py</kbd> 文件后新建 RunMainWinFormLayout.py 文件用来运行转换之后的文件：
+<br><br></p>
+<pre><code class="python">import sys
+import MainWinFormLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+if __name__ == '__main__':
+    # 创建QApplication类的实例
+    app = QApplication(sys.argv)
+    # 创建一个主窗口
+    mainWindow = QMainWindow()
+    # 创建Ui_MainWindow的实例
+    ui = MainWinFormLayout.Ui_MainWindow()
+    # 调用setupUi在指定窗口(主窗口)中添加控件
+    ui.setupUi(mainWindow)
+    # 显示窗口
+    mainWindow.show()
+    # 进入程序的主循环，并通过exit函数确保主循环安全结束
+    sys.exit(app.exec_())
+</code></pre>
+
+<p>右键选择布局的时候选择 “在窗体布局中布局”。</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020090214474383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70#" />
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/csdn.jpeg" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div></p></div>
+        </div>
+
+        <footer class="col-md-12">
+<!--    <hr>-->
+    
+    <p>Copyright © 2020-2022 bysj39.com All Rights Reserved.</p>
+    <p><a href="https://beian.miit.gov.cn" target="_blank">豫ICP备19037971号-1</a><a target="_blank">
+                <img src="http://47.102.145.225:5000/static/home/images/beian.png" style="padding-bottom:6px">
+                <span style="color: black">豫公网安备 41152802000091号</span>
+            </a></p>
+    <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../js/main.js" defer></script>
+        <script src="../js/busuanzi.pure.mini.js" defer></script>
+        <script src="../js/gotop.js" defer></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
