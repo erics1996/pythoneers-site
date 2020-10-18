@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Erics">
-        <link rel="canonical" href="https://docs.pythoneers.cn/python-web/django.html">
+        <link rel="canonical" href="https://pythoneers.cn/python-web/django.html">
         <link rel="shortcut icon" href="../img/favicon.ico">
+<!--sougou-->
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+<!--!sougou-->
+
         <title>Django - PYTHONEERS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -15,15 +23,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../css/nav.css" rel="stylesheet">
         <link href="../css/public.css" rel="stylesheet">
-    
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-    <script data-ad-client="ca-pub-6937898095875663" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!--    <script async src="../js/somelib.js"></script>-->
- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell script.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -52,7 +61,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../python/python3.html">基础到进阶</a>
+    <a href="../python/python-basis.html">Python基础入门</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
 </li>
                                     
 <li >
@@ -68,11 +85,27 @@
 </li>
                                     
 <li >
-    <a href="../python/leetcode.html">Leetcode</a>
+    <a href="../python/interviews-python.html">Python面试题</a>
 </li>
                                     
 <li >
-    <a href="../python/offer.html">剑指Offer</a>
+    <a href="../python/interviews-network.html">网络相关面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer</a>
 </li>
                                 </ul>
                             </li>
@@ -93,11 +126,35 @@
 </li>
                                     
 <li >
+    <a href="celery.html">Celery</a>
+</li>
+                                    
+<li >
     <a href="mysql.html">MySQL</a>
 </li>
                                     
 <li >
-    <a href="redis.html">Redis</a>
+    <a href="interviews-flask.html">Flask面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-django.html">Django面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-mysql.html">MySQL面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-redis.html">Redis面试题</a>
+</li>
+                                    
+<li >
+    <a href="project-flask.html">Flask项目实战</a>
+</li>
+                                    
+<li >
+    <a href="project-django.html">Django项目实战</a>
 </li>
                                 </ul>
                             </li>
@@ -154,14 +211,20 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../deep-learning/deep-learning.html">深度学习</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                             <li >
-                                <a rel="next" href="../python/offer.html">
+                                <a rel="next" href="../python/nowcoder-sword-offer.html">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -183,7 +246,7 @@
             <li><a href="#2-socket">2. socket是什么</a></li>
             <li><a href="#3-socket">3. socket服务端</a></li>
             <li><a href="#4-web">4. web框架的分类</a></li>
-            <li><a href="#5-pythonweb">5. Python三大web框架的比较</a></li>
+            <li><a href="#5-web">5. 三大web框架的比较</a></li>
             <li><a href="#6-web">6. 静态web框架</a></li>
             <li><a href="#7-web">7. 动态web框架</a></li>
         <li class="main "><a href="#django">Django初识</a></li>
@@ -193,7 +256,7 @@
             <li><a href="#4-django">4. Django模板路径的配置</a></li>
             <li><a href="#5-django">5. Django静态文件路径的配置</a></li>
             <li><a href="#6-django">6. Django额外配置</a></li>
-            <li><a href="#7-httpresponserender">7.  HttpResponse函数与render函数</a></li>
+            <li><a href="#7-httpresponserender">7.  HttpResponse与render</a></li>
             <li><a href="#8-getpost">8. GET和POST请求</a></li>
         <li class="main "><a href="#_1">简单用户登录案例</a></li>
             <li><a href="#1">1. 登录模板</a></li>
@@ -209,104 +272,135 @@
             <li><a href="#7">7. 模板的内置函数</a></li>
             <li><a href="#8">8. 模板自定义函数</a></li>
             <li><a href="#9-simple_filtersimple_tag">9. simple_filter和simple_tag</a></li>
-        <li class="main "><a href="#cookie">操作cookie</a></li>
+        <li class="main "><a href="#_2">学生信息管理系统</a></li>
+            <li><a href="#1_2">1. 数据库表的结构设计</a></li>
+            <li><a href="#2_2">2. 后台引入母板</a></li>
+            <li><a href="#3_2">3. 查询班级信息</a></li>
+            <li><a href="#4_1">4. 添加班级信息</a></li>
+            <li><a href="#5_1">5. 编辑班级信息</a></li>
+            <li><a href="#7_1">7. 查询学生信息</a></li>
+            <li><a href="#8_1">8. 添加学生信息</a></li>
+            <li><a href="#9">9. 编辑学生信息</a></li>
+            <li><a href="#10">10. 删除学生信息</a></li>
+            <li><a href="#11-bootstrap">11. Bootstrap介绍</a></li>
+            <li><a href="#12-ajax">12.  AJAX添加班级信息</a></li>
+            <li><a href="#13-ajax">13. AJAX编辑班级信息</a></li>
+            <li><a href="#14-ajax">14. AJAX删除班级信息</a></li>
+            <li><a href="#15">15. 数据库操作代码复用</a></li>
+            <li><a href="#16-ajax">16. AJAX添加学生信息</a></li>
+            <li><a href="#17-ajax">17. AJAX编辑学生信息</a></li>
+            <li><a href="#19">19. 分页展示学生表</a></li>
+            <li><a href="#20">20. 数据库操作封装</a></li>
+            <li><a href="#21">21. 添加教师信息</a></li>
+            <li><a href="#22">22. 查询教师和任课班级信息</a></li>
+            <li><a href="#23">23. 编辑教师信息</a></li>
+            <li><a href="#24-ajax">24. AJAX删除教师信息</a></li>
+            <li><a href="#25-ajax">25. AJAX添加教师信息</a></li>
+        <li class="main "><a href="#djangocookie">Django操作cookie</a></li>
             <li><a href="#1-cookie">1. 初识cookie</a></li>
             <li><a href="#2-cookie">2. 操作cookie的方式</a></li>
             <li><a href="#3-cookie">3. 设置cookie的签名</a></li>
             <li><a href="#4-cookie">4. 基于cookie的登录验证</a></li>
             <li><a href="#5-django_1">5. Django主流操作</a></li>
-        <li class="main "><a href="#_2">项目的创建和目录文件的介绍</a></li>
-            <li><a href="#1-django_1">1. 创建一个完整的Django项目</a></li>
-            <li><a href="#2-django_1">2. Django主要相关目录文件介绍</a></li>
-        <li class="main "><a href="#_3">路由系统</a></li>
-            <li><a href="#1_2">1. 静态路由</a></li>
-            <li><a href="#2_2">2. 动态路由</a></li>
-            <li><a href="#3_2">3. 路由分发</a></li>
-            <li><a href="#4_1">4. 反向生成路由</a></li>
-        <li class="main "><a href="#orm">ORM操作</a></li>
+        <li class="main "><a href="#django_2">Django项目创建和目录文件介绍</a></li>
+            <li><a href="#1_3">1. 创建一个完整的项目</a></li>
+            <li><a href="#2-django_1">2. Django主要目录文件</a></li>
+        <li class="main "><a href="#django_3">Django路由系统</a></li>
+            <li><a href="#1_4">1. 静态路由</a></li>
+            <li><a href="#2_3">2. 动态路由</a></li>
+            <li><a href="#3_3">3. 路由分发</a></li>
+            <li><a href="#4_2">4. 反向生成路由</a></li>
+        <li class="main "><a href="#djangoorm">Django的ORM操作</a></li>
             <li><a href="#1-orm">1. ORM的功能</a></li>
-            <li><a href="#2_3">2. 数据库设置</a></li>
+            <li><a href="#2_4">2. 数据库设置</a></li>
             <li><a href="#3-makemigrationsmigrate">3. makemigrations和migrate</a></li>
             <li><a href="#4-orm">4. ORM创建数据表</a></li>
             <li><a href="#5-ormcurd">5. ORM单表CURD</a></li>
-            <li><a href="#6">6. 正向连表操作</a></li>
-            <li><a href="#7_1">7. 反向连表操作</a></li>
-            <li><a href="#8_1">8. 获取数据的三种方式</a></li>
-        <li class="main "><a href="#cbv">CBV的使用</a></li>
+            <li><a href="#6_1">6. 正向连表操作</a></li>
+            <li><a href="#7_2">7. 反向连表操作</a></li>
+            <li><a href="#8_2">8. 获取数据的三种方式</a></li>
+            <li><a href="#9_1">9. 查询相关的关键字</a></li>
+            <li><a href="#10-orm">10. ORM提高性能的操作</a></li>
+            <li><a href="#11">11. 查询过滤综合</a></li>
+            <li><a href="#12">12. 格式化参数</a></li>
+        <li class="main "><a href="#djangocbv">Django的CBV使用</a></li>
             <li><a href="#1-cbv">1. CBV的引入</a></li>
             <li><a href="#2-cbv">2. CBV的应用</a></li>
             <li><a href="#3-dispatch">3. dispatch方法</a></li>
             <li><a href="#4-cbv">4. CBV中添加装饰器</a></li>
-        <li class="main "><a href="#_4">内置分页</a></li>
-            <li><a href="#1_3">1. 后台分页逻辑</a></li>
-            <li><a href="#2_4">2. 前台分页展示</a></li>
-        <li class="main "><a href="#_5">自定义分页</a></li>
-            <li><a href="#1_4">1. 自定义分页效果</a></li>
-            <li><a href="#2_5">2. 自定义分页的实现</a></li>
-            <li><a href="#3_3">3. 分页插件</a></li>
-        <li class="main "><a href="#xss">跨站脚本攻击XSS</a></li>
+        <li class="main "><a href="#django_4">Django内置分页</a></li>
+            <li><a href="#1_5">1. 后台分页逻辑</a></li>
+            <li><a href="#2_5">2. 前台分页展示</a></li>
+        <li class="main "><a href="#django_5">Django自定义分页</a></li>
+            <li><a href="#1_6">1. 自定义分页效果</a></li>
+            <li><a href="#2_6">2. 自定义分页的实现</a></li>
+            <li><a href="#3_4">3. 分页插件</a></li>
+        <li class="main "><a href="#django_6">Django解决跨站脚本攻击</a></li>
             <li><a href="#1-djangoxss">1. Django处理XSS攻击</a></li>
-            <li><a href="#2_6">2. 前端标记字符串</a></li>
-            <li><a href="#3_4">3. 后端标记字符串</a></li>
-        <li class="main "><a href="#csrf">跨站请求伪造CSRF</a></li>
-            <li><a href="#1_5">1. 基本应用</a></li>
-            <li><a href="#2_7">2. 全站禁用</a></li>
-            <li><a href="#3_5">3. 局部禁用</a></li>
-            <li><a href="#4_2">4. 局部使用</a></li>
+            <li><a href="#2_7">2. 前端标记字符串</a></li>
+            <li><a href="#3_5">3. 后端标记字符串</a></li>
+        <li class="main "><a href="#django_7">Django处理跨站请求伪造</a></li>
+            <li><a href="#1_7">1. 基本应用</a></li>
+            <li><a href="#2_8">2. 全站禁用</a></li>
+            <li><a href="#3_6">3. 局部禁用</a></li>
+            <li><a href="#4_3">4. 局部使用</a></li>
             <li><a href="#5-ajaxcsrf">5. AJAX携带CSRF提交数据</a></li>
-        <li class="main "><a href="#session">Session基本使用</a></li>
+        <li class="main "><a href="#djangosession">Django中Session的使用</a></li>
             <li><a href="#1-session">1. Session简介</a></li>
             <li><a href="#2-session">2. 基于Session的用户登录</a></li>
             <li><a href="#3-session">3. Session的配置</a></li>
             <li><a href="#4-session">4. Session数据源配置</a></li>
-        <li class="main "><a href="#wsgi">WSGI</a></li>
+        <li class="main "><a href="#web">Web服务网关接口</a></li>
             <li><a href="#1-wsgi">1. WSGI</a></li>
             <li><a href="#2-django_2">2. Django请求的生命周期</a></li>
-        <li class="main "><a href="#_6">中间件</a></li>
-            <li><a href="#1_6">1. 中间件执行流程</a></li>
-            <li><a href="#2_8">2. 中间件原理浅析</a></li>
-            <li><a href="#3_6">3. 中间件的应用</a></li>
-            <li><a href="#4_3">4. 中间件解决跨域问题</a></li>
-        <li class="main "><a href="#form">Form组件</a></li>
+        <li class="main "><a href="#django_8">Django中间件</a></li>
+            <li><a href="#1_8">1. 中间件执行流程</a></li>
+            <li><a href="#2_9">2. 中间件原理浅析</a></li>
+            <li><a href="#3_7">3. 中间件的应用</a></li>
+            <li><a href="#4_4">4. 中间件解决跨域问题</a></li>
+        <li class="main "><a href="#djangoform">Django的Form组件</a></li>
             <li><a href="#1-form">1. Form组件的功能</a></li>
-            <li><a href="#2_9">2. 数据校验</a></li>
-            <li><a href="#3_7">3. 常用字段和参数</a></li>
-            <li><a href="#4_4">4. 保留上次输入内容</a></li>
-        <li class="main "><a href="#_7">信号</a></li>
-            <li><a href="#1-django_2">1. Django信号使用场景</a></li>
+            <li><a href="#2_10">2. 数据校验</a></li>
+            <li><a href="#3_8">3. 常用字段和参数</a></li>
+            <li><a href="#4_5">4. 保留上次输入内容</a></li>
+        <li class="main "><a href="#django_9">Django信号</a></li>
+            <li><a href="#1-django_1">1. Django信号使用场景</a></li>
             <li><a href="#2-django_3">2. Django内置信号</a></li>
             <li><a href="#3-django_1">3. Django信号简单示例</a></li>
+        <li class="main "><a href="#djangocontenttype">Django的contenttype组件</a></li>
+            <li><a href="#1-contenttype">1. contenttype组件作用</a></li>
+            <li><a href="#2-contenttype">2. contenttype组件示例</a></li>
+        <li class="main "><a href="#django_10">Django缓存</a></li>
+            <li><a href="#1-django_2">1. Django缓存</a></li>
         <li class="main "><a href="#api">API接口开发</a></li>
-            <li><a href="#1_7">1. 模型的创建</a></li>
-            <li><a href="#2_10">2. 路由系统的创建</a></li>
-            <li><a href="#3_8">3. 添加数据的接口</a></li>
-            <li><a href="#4_5">4. 获取所有数据的接口</a></li>
-            <li><a href="#5_1">5. 获取单条数据的接口</a></li>
-            <li><a href="#6_1">6. 更新数据的接口</a></li>
-            <li><a href="#7_2">7. 删除数据的接口</a></li>
+            <li><a href="#1_9">1. 模型的创建</a></li>
+            <li><a href="#2_11">2. 路由系统的创建</a></li>
+            <li><a href="#3_9">3. 添加数据的接口</a></li>
+            <li><a href="#4_6">4. 获取所有数据的接口</a></li>
+            <li><a href="#5_2">5. 获取单条数据的接口</a></li>
+            <li><a href="#6_2">6. 更新数据的接口</a></li>
+            <li><a href="#7_3">7. 删除数据的接口</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<p><span id="busuanzi_container_page_pv">阅读量：<span id="busuanzi_value_page_pv"></span>次</span>
-<hr></p>
-<p><img alt="" src="../img/django.jpeg" /></p>
+<p><img alt="" src="../img/python-web/django.jpeg" /></p>
 <h4 id="python-web">Python Web框架</h4>
 <hr>
 
 <h5 id="1-http">1. http协议</h5>
-<p>http协议是无状态，短连接的。客户端连接服务器，发送请求，服务器响应请求后断开连接。
+<p>http 协议是无状态，短连接的。客户端连接服务器，发送请求，服务器响应请求后断开连接。
 <hr></p>
 <h5 id="2-socket">2. socket是什么</h5>
-<p>所有的网络请求都是基于socket，浏览器是socket客户端，网站是socket服务端。
+<p>所有的网络请求都是基于 socket，浏览器是 socket 客户端，网站是 socket 服务端。
 <hr></p>
 <h5 id="3-socket">3. socket服务端</h5>
-<p>根据 url 的不同返回给用户不同的内容，使用路由系统，路由系统是url与函数的对应关系。返回给用户的内容本质是字符串，基本上返回的内容是动态的，所以需要使用到模板渲染。模板渲染实际上是把 html 充当模板，自己创造任意数据替换模板中的特殊字符，比如替换特殊字符为数据库中的数据。
+<p>根据 url 的不同返回给用户不同的内容，使用路由系统，路由系统是 url 与函数的对应关系。返回给用户的内容本质是字符串，基本上返回的内容是动态的，所以需要使用到模板渲染。模板渲染实际上是把 html 充当模板，自己创造任意数据替换模板中的特殊字符，比如替换特殊字符为数据库中的数据。
 <hr></p>
 <h5 id="4-web">4. web框架的分类</h5>
-<p>为了方便开发者开发 web 应用，web 框架应用而生。有的 web 框架帮助开发者构建好了 socket 服务端，有的web框架帮助开发者写好了模板渲染。总之，借助web框架可以减轻了开发者的工作量。<font>Flask 框架只有路由系统，没有 socket 服务端和模板引擎，socket 服务端使用是 Python 第三方模块 wsgiref，模板引擎使用的也是第三方模块 jinjia2 </font>。<font>Django 框架有路由系统、模板引擎，但是没有 socket 服务端，socket 服务端使用的是 Python 的第三方内置模块如 wsgiref，wsgiref 把请求交给 django 做处理</font>。另外，还有Tornado框架，<font>Tornado 框架包含socket服务端、路由系统、模板引擎</font>。可以将 web 框架这样分类，Django 框架和其它框架。因为 Django 框架提供了很多特殊的功能，如缓存、分布式。其它框架是轻量级的 web 框架。
+<p>为了方便开发者开发 web 应用，web 框架应用而生。有的 web 框架帮助开发者构建好了 socket 服务端，有的web框架帮助开发者写好了模板渲染。总之，借助web框架可以减轻了开发者的工作量。Flask 框架只有路由系统，没有 socket 服务端和模板引擎，socket 服务端使用是 Python 第三方模块 wsgiref，模板引擎使用的也是第三方模块 jinjia2。Django 框架有路由系统、模板引擎，但是没有 socket 服务端，socket 服务端使用的是 Python 的第三方内置模块如 wsgiref，wsgiref 把请求交给 django 做处理。另外，还有Tornado框架，Tornado 框架包含 socket 服务端、路由系统、模板引擎。可以将 web 框架这样分类，Django 框架和其它框架。因为 Django 框架提供了很多特殊的功能，如缓存、分布式。其它框架是轻量级的 web 框架。
 <hr></p>
-<h5 id="5-pythonweb">5. Python三大web框架的比较</h5>
+<h5 id="5-web">5. 三大web框架的比较</h5>
 <p>Django、Flask 和 Tornado 框架都有路由、视图和模板，但是 Tornado 的模板是自己写的，Flask 的模板不是自己写的，采用的是第三方组件 Jinjia2。Django 自带 ORM，其它两个框架中没有。<font>Django 中在写 SQL 的时候不应该再使用 pymysql，而应该使用 ORM</font>。其实 ORM 只是做了类和对象的映射，类对应表，对象对应数据行。Django 中把类和对象转换成SQL语句，但是 <font>本质上还是需要 pymysql 去连接数据库</font>。对于 Flask 框架，可以使用 pymysql，也可以使用 SqlAchemy，Tornado 也是一样的。对于 Django，一般使用的是 ORM，但也可以使用 pymysql，但是这不是主流。<font>对于非常复杂的 sql 语句，ORM 完成不了，只能写原生 SQL</font>。Django 中 ORM 也支持原生 sql，所以没必要使用 pymysql。
 <hr></p>
 <h5 id="6-web">6. 静态web框架</h5>
@@ -400,8 +494,10 @@ def run():
          conn.close()
 </code></pre>
 
+<hr>
+
 <h5 id="7-web">7. 动态web框架</h5>
-<p>使用 Python 可以写一个动态的web框架，可以处理用户访问动态资源的请求。使用 socket 接收用户的请求，将请求的内容做简单的处理然后返回给用户：</p>
+<p>使用 Python 可以写一个动态的 web 框架，可以处理用户访问动态资源的请求。使用 socket 接收用户的请求，将请求的内容做简单的处理然后返回给用户：</p>
 <pre><code class="python">def f1(request):
     '''
     处理用户请求：将动态的时间加入到返回的内容中
@@ -527,10 +623,10 @@ run函数主要是获取用户连接，接收用户发送的数据请求，把�
 <p>如果不指定地址和端口，默认使用本地地址和 8000 端口。
 <hr></p>
 <h5 id="3-django">3. Django程序的目录</h5>
-<p><kbd>manager.py</kbd>：对当前Django程序所有的操作可以基于 python manage.py runserver。</p>
-<p><kbd>settings.py</kbd>：Django 配置文件</p>
-<p><kbd>url.py</kbd>：路由系统</p>
-<p><kbd>wsgi.py</kbd>：用于定义 Django 使用什么 socket 服务端，如是 wsgiref，还是 uwsgi。<font>wsgiref的性能是比较低的！</font>
+<p><strong><code>manager.py</code></strong>：对当前Django程序所有的操作可以基于 python manage.py runserver。</p>
+<p><strong><code>settings.py</code></strong>：Django 配置文件</p>
+<p><strong><code>url.py</code></strong>：路由系统</p>
+<p><strong><code>wsgi.py</code></strong>：用于定义 Django 使用什么 socket 服务端，如是 wsgiref，还是 uwsgi。<font>wsgiref 的性能是比较低的！</font>
 <hr></p>
 <h5 id="4-django">4. Django模板路径的配置</h5>
 <p>Django 程序默认的模板名称是 <strong><code>templates</code></strong>，在项目名称目录下。模板名称需要与配置文件中TEMPLATES参数中配置的一样，
@@ -566,8 +662,8 @@ STATICFILES_DIRS = (
 
 <hr>
 
-<h5 id="7-httpresponserender">7.  HttpResponse函数与render函数</h5>
-<p>HttpResponse 函数是可以用来返回字符串，render 函数用来返回模板。返回字符串：</p>
+<h5 id="7-httpresponserender">7.  HttpResponse与render</h5>
+<p><kbd>HttpResponse()</kbd> 函数是可以用来返回字符串，<kbd>render()</kbd> 函数用来返回模板。返回字符串：</p>
 <pre><code class="python">return HttpResponse('login!')
 return HttpResponse('&lt; input type=&quot;text&quot;&gt;')
 </code></pre>
@@ -576,7 +672,7 @@ return HttpResponse('&lt; input type=&quot;text&quot;&gt;')
 <pre><code class="python">return render(request, 'xxx.html')
 </code></pre>
 
-<p>reder 函数本质上调用的就是 HttpResponse函数。
+<p>reder 函数本质上调用的就是 HttpResponse 函数。
 <hr></p>
 <h5 id="8-getpost">8. GET和POST请求</h5>
 <p>相同点：POST请求的时候，<kbd>request.GET.get( )</kbd> 和 <kbd>request.POST.get( )</kbd> 都可以从请求头的 url 中获取值；</p>
@@ -891,7 +987,1549 @@ def func(v):
 
 <hr>
 
-<h4 id="cookie">操作cookie</h4>
+<h4 id="_2">学生信息管理系统</h4>
+<hr>
+
+<h5 id="1_2">1. 数据库表的结构设计</h5>
+<pre><code class="py"># 创建test数据库
+create database test default character set utf8;
+# 创建学生表
+create table student(id int auto_increment primary key,name varchar(10) not null,class_id int not null);
+# 创建班级表
+create table class(id int auto_increment primary key, title varchar(20) not null);
+# 创建教师表
+create table teacher(id int auto_increment primary key,name varchar(10) not null);
+# 创建教师班级表
+create table teacher2class(id int primary key auto_increment,teacher_id int not null,class_id int not null);
+</code></pre>
+
+<hr>
+
+<h5 id="2_2">2. 后台引入母板</h5>
+<p>把重复用到的html代码放到一个html文件中，<strong><code>这个html文件被称为母板</code></strong>，需要用到这些代码的模板可以直接继承这个母板。这个html文件使用的标签是：<strong><code>{% block xxx %} {% endblock %},{% extends '母板.html'%}</code></strong>。
+<hr></p>
+<h5 id="3_2">3. 查询班级信息</h5>
+<p>首先要向班级表中插入一条测试数据：</p>
+<pre><code class="sql">insert class values(null,'软件工程'),(null,'计算机科学与技术');
+</code></pre>
+
+<p>可以在项目名所在的目录下创建一个名为 <strong><code>app01</code></strong> 的目录，并在该目录下创建 <strong><code>views.py</code></strong> 文件，下面开始在 <strong><code>urls.py</code></strong> 文件中加入查询班级的路由：</p>
+<pre><code class="py">from django.contrib import admin
+from django.urls import path
+from app01 import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    # 查询班级信息的路由以及对应的函数(对应views下的classes函数)
+    path('classes/', views.classes),
+]
+</code></pre>
+
+<p>在 <strong><code>views</code></strong> 下的 <strong><code>classes</code></strong> 函数写查询班级信息的逻辑代码：</p>
+<pre><code class="py"># 导入返回模板的函数render和重定向的redirect函数
+from django.shortcuts import render, redirect
+# 导入pymysql模块用来连接数据库，这里暂时使用pymysql
+import pymysql
+
+def classes(request):
+    '''
+    查询班级id、班级名称
+    :param request:对象相关的数据
+    :return:渲染后的模板
+    '''
+    # 创建连接
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql语句
+    cursor.execute(&quot;select id,title from class&quot;)
+    # 获取查询到的所有信息
+    classes_list = cursor.fetchall()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    # 返回模板和数据
+    return render(request, 'classes.html', {'classes_list': classes_list})
+</code></pre>
+
+<p>在 <strong><code>templates</code></strong> 文件夹下新建 <strong><code>classes.html</code></strong> 文件，也就是我们的模板：</p>
+<pre><code class="py">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;班级信息&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;a href=&quot;/add-class/&quot;&gt;添加&lt;/a&gt;&lt;/p&gt;
+{% for row in classes_list %}
+    &lt;tr&gt;
+        &lt;td&gt;{{ row.id }}&lt;/td&gt;
+        &lt;td&gt;{{ row.title }}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;br&gt;
+{% endfor %}
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>查询班级信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613214216239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="4_1">4. 添加班级信息</h5>
+<p>添加“添加班级信息”的路由，</p>
+<pre><code class="py">from django.contrib import admin
+from django.urls import path
+from app01 import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('classes/', views.classes),
+    path('add-class/', views.add_class),
+]
+</code></pre>
+
+<p>在 <strong><code>templates</code></strong> 目录下新建名为 <strong><code>add_class.html</code></strong> 的模板：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;添加班级信息&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;添加班级&lt;/h1&gt;
+&lt;form action=&quot;/add-class/&quot; method=&quot;post&quot;&gt;
+    &lt;label&gt;班级名称：&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;class_title&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>在 <strong><code>views.py</code></strong> 的 <strong><code>add_class</code></strong> 函数中写添加学生班级信息的逻辑代码：</p>
+<pre><code class="py">def add_class(request):
+    # 如果是get请求就返回add_class.html模板就可以
+    if request.method == 'GET':
+        return render(request, 'add_class.html')
+    # 如果是post请求则执行下面的代码
+    else:
+        # 获取班级的标题
+        class_title = request.POST.get('class_title')
+        # 创建数据库连接对象
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 将班级的名称传到sql语句中
+        cursor.execute('insert into class(title) values(%s)', class_title)
+        # cursor.execute(&quot;insert into class(title) values(%s)&quot;, [class_title, ])
+        # 提交(查询不需要，其它如添加、修改、更新数据是需要执行commit方法才能将数据插入成功)
+        conn.commit()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 添加之后就会重定向到/classes/路由，会显示添加后的班级
+        return redirect('/classes/')
+</code></pre>
+
+<p>在班级信息页面中点击添加按钮进入添加班级信息界面，添加班级信息后，页面会自动跳转到班级信息页面。</p>
+<p>添加班级信息页面效果：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613214306792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="5_1">5. 编辑班级信息</h5>
+<p>根据客户端传过来的班级id就可编辑班级信息，逻辑代码：</p>
+<pre><code class="py">def edit_class(request):
+    # 如果是get请求，这里额外也需要查询下数据库，把原来的信息也展示出来
+    if request.method == 'GET':
+        # 获取客户端传过来的班级id
+        nid = request.GET.get('nid')
+        # 创建数据库连接
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 执行游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行sql语句
+        cursor.execute('select id,title from class where id=%s', nid)
+        # 获取查询到的所有数据
+        result = cursor.fetchone()
+        # 创建游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 返回模板和数据
+        return render(request, 'edit_class.html', {'result': result})
+    # post请求用来修改班级信息
+    else:
+        # nid = request.POST.get('nid')  # 放到请求体
+        nid = request.GET.get('nid')  # 放到请求头
+        title = request.POST.get('title')
+        # 创建数据库连接
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行sql语句
+        cursor.execute('update class set title=%s where id = %s', [title, nid])
+         # 提交事务
+        conn.commit()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        return redirect('/classes/')
+</code></pre>
+
+<p>需要跳转到编辑信息的模板，将其命名为：<strong><code>edit_class.html</code></strong>：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;修改班级信息&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;编辑班级信息&lt;/h3&gt;
+&lt;form action=&quot;/edit-class/?nid={{ result.id }}&quot; method=&quot;post&quot;&gt;
+    &lt;label&gt;班级名称：&lt;/label&gt;
+    {#    &lt;input type=&quot;text&quot;style=&quot;display: none&quot; value=&quot;{{ result.id }}&quot;&gt;#}
+    &lt;input type=&quot;text&quot; name=&quot;title&quot; value=&quot;{{ result.title }}&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>编辑班级信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613214342969.png" />
+<hr></p>
+<h6 id="6">6. 删除班级信息</h6>
+<p>浏览器向服务端发送删除数据的请求，服务端接收请求删除数据后向浏览器发送响应，告诉浏览器重定向到 <strong><code>/classes/</code></strong>。服务端向浏览器发送响应的响应头中有 <strong><code>location:http://127.0.0.1:8000/classes/</code></strong>，即是：告诉浏览器向此链接发送一次请求。</p>
+<p>直接删除就可以了，删除的逻辑是：</p>
+<pre><code class="py">def del_class(request):
+    # 获取客户端传过来的nid，我们要个根据nid来删除数据
+    nid = request.GET.get('nid')
+    # 创建连接对象
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql语句
+    cursor.execute('delete from class where id=%s', nid)
+    # cursor.execute(&quot;insert into class(title) values(%s)&quot;, [class_title, ])
+    # 提交事务
+    conn.commit()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    return redirect('/classes/')
+</code></pre>
+
+<hr>
+
+<h5 id="7_1">7. 查询学生信息</h5>
+<p>首先向学生表中插入测试数据：</p>
+<pre><code class="sql">insert into student values(null,'thanlon',1);
+insert into student values(null,'kiku',2);
+</code></pre>
+
+<p>查询学生信息的逻辑代码：</p>
+<pre><code class="py">def students(request):
+    '''
+    学生列表
+    :param request:封装了请求相关的所有信息
+    :return:返回模板和数据
+    '''
+    # 创建连接对象
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql语句
+    cursor.execute(
+        'select student.id,student.name,class.title from  student left join class on student.class_id=class.id')
+    # 获取查询到的所有数据
+    student_list = cursor.fetchall()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    # 返回模板和数据
+    return render(request, 'students.html', {'student_list': student_list})
+</code></pre>
+
+<p>新建显示学生信息的模板 <strong><code>students.html</code></strong>：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;学生信息&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot;
+          href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot; style=&quot;margin-top: 20px&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;a class=&quot;btn btn-default&quot; href=&quot;&quot;&gt;添加&lt;/a&gt;&lt;/p&gt;
+            &lt;table class=&quot;table table-hover text-center&quot;&gt;
+                &lt;tr&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;ID&lt;/th&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;学生姓名&lt;/th&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;学生班级&lt;/th&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;操作&lt;/th&gt;
+                &lt;/tr&gt;
+                {% for row in student_list %}
+                    &lt;tr&gt;
+                        &lt;td&gt;{{ row.id }}&lt;/td&gt;
+                        &lt;td&gt;{{ row.name }}&lt;/td&gt;
+                        &lt;td&gt;{{ row.title }}&lt;/td&gt;
+                        &lt;td&gt;&lt;a href=&quot;/&quot;&gt;编辑&lt;/a&gt; &lt;a href=&quot;&quot;&gt;删除&lt;/a&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                {% endfor %}
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>查询学生信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613214424957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="8_1">8. 添加学生信息</h5>
+<p>和添加班级信息同样的逻辑：</p>
+<pre><code class="py">def add_student(request):
+    # 如果是get请求
+    if request.method == 'GET':
+        # 创建连接对象
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行查询的sql语句
+        cursor.execute(&quot;select id,title from class&quot;)
+        # 获取查询到的所有数据
+        classe_list = cursor.fetchall()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 返回模板和数据
+        return render(request, 'add_student.html', {'class_list': classe_list})
+    # 如果是post请求
+    else:
+        # 获取学生的名字
+        name = request.POST.get('name')
+        # 获取学生的班级id
+        class_id = request.POST.get('class_id')
+        # 创建连接
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 将学生的名字和班级的id信息放到sql中
+        cursor.execute(&quot;insert into student(name,class_id) values (%s,%s)&quot;, [name, class_id, ])
+        # 执行事务
+        conn.commit()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 返回模板
+        return redirect('/students/')
+</code></pre>
+
+<p>下面这部分是模板 <strong><code>add_student.html</code></strong>，注意模板语法的书写：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;添加学生信息&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot; style=&quot;margin-top: 20px&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;
+            &lt;form action=&quot;/add-student/&quot; method=&quot;post&quot;&gt;    {#如果没有写，默热提交到当前url#}
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;姓名：&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;&quot; placeholder=&quot;&quot; name=&quot;name&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;select class=&quot;form-control&quot; name=&quot;class_id&quot;&gt;
+                        {% for row in class_list %}
+                            &lt;option value=&quot;{{ row.id }}&quot;&gt;{{ row.title }}&lt;/option&gt;
+                        {% endfor %}
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;添加&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>添加学生信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020061321505232.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="9">9. 编辑学生信息</h5>
+<p>首先写将班级信息和当前学生信息渲染到编辑学生信息模板的逻辑，然后才是编辑学生信息的逻辑：</p>
+<pre><code class="py">def edit_student(request):
+    &quot;&quot;&quot;
+    编辑学生信息
+    &quot;&quot;&quot;
+    # get请求时
+    if request.method == 'GET':
+        # 获取传过来的学生id
+        nid = request.GET.get('nid')
+        # 创建连接对象
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行查询班级信息的sql
+        cursor.execute(&quot;select id,title from class&quot;)
+        # 获取所有班级信息
+        class_list = cursor.fetchall()
+        # 执行查询当前学生编号、名字和班级id的sql
+        cursor.execute(&quot;select id,name,class_id from student where id=%s&quot;, nid)
+        # 获取查询到的数据。因为数据只有一条，所以这里使用fetchone()就可以了
+        current_student_info = cursor.fetchone()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 返回模板和数据
+        return render(request, 'edit_student.html',
+                      {'class_list': class_list, 'current_student_info': current_student_info})
+    # post请求时
+    else:
+        # 从url中获取学生的id
+        nid = request.GET.get('nid')
+        # 从请求体(form表单)中获取当前学生的姓名
+        name = request.POST.get('name')
+        # 从请求体中获取当前学生的班级id
+        class_id = request.POST.get('class_id')
+        # 创建练级
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行sql语句
+        cursor.execute(&quot;update student set name=%s,class_id=%s where id = %s&quot;, [name, class_id, nid])
+        # 提交事务
+        conn.commit()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 重定向到学生信息页面
+        return redirect('/students/')
+</code></pre>
+
+<p>编辑学生信息的模板 <strong><code>edit_student.html</code></strong>：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;添加学生信息&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot; style=&quot;margin-top: 20px&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;
+            &lt;form action=&quot;/edit-student/?nid={{ current_student_info.id }}&quot; method=&quot;post&quot;&gt;
+                {#            还可以设置input标签将其隐藏#}
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;姓名：&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;&quot; placeholder=&quot;&quot; name=&quot;name&quot;
+                           value=&quot;{{ current_student_info.name }}&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;select class=&quot;form-control&quot; name=&quot;class_id&quot;&gt;
+                        {% for row in class_list %}
+                            {% if  row.id == current_student_info.class_id %}
+                                &lt;option selected=&quot;selected&quot; value=&quot;{{ row.id }}&quot;&gt;{{ row.title }}&lt;/option&gt;
+                            {% else %}
+                                &lt;option value=&quot;{{ row.id }}&quot;&gt;{{ row.title }}&lt;/option&gt;
+                            {% endif %}
+                        {% endfor %}
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;更新&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>编辑学生信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613215123950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="10">10. 删除学生信息</h5>
+<p>删除学生信息的逻辑，与删除班级相同，也是比较简单的：</p>
+<pre><code class="py">def del_student(request):
+    '''
+    删除学生信息
+    '''
+    # 获取学生编号
+    nid = request.GET.get('nid')
+    # 创建连接
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql
+    cursor.execute('delete from student where id=%s', nid)
+    # 提交事务
+    conn.commit()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    # 返回模板
+    return redirect('/students/')
+</code></pre>
+
+<hr>
+
+<h5 id="11-bootstrap">11. Bootstrap介绍</h5>
+<p><strong><code>Bootstrap是一个包含css和js的代码库</code></strong>，有很多已经构建好的组件，模态对话框就是其中的一种，因为接下来要使用到模态对话框，我们直接用就可以这个组件就可以。<strong><code>Bootstrap还支持响应式布局</code></strong>，响应式都是基于css的media来实现的，下面是一个使用media实现响应式的例子：</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    .page-header {
+        height: 20px;
+        background: rebeccapurple;
+    }
+
+    @media (max-width: 1200px) {
+        .page-header {
+            height: 20px;
+            background: yellowgreen; 
+        }
+    }
+    @media (max-width: 1000px) {
+        .page-header {
+            height: 20px;
+            background: lightcoral;
+        }
+    }
+    @media (max-width: 300px) {
+        .page-header {
+            height: 20px;
+            background: saddlebrown;
+        }
+    }
+&lt;/style&gt;
+&lt;body&gt;
+&lt;div class=&quot;page-header&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>当页面宽度大于等于是1200px的时候，显示yellowgreen的颜色，当页面宽度大于等于是1000px的时候，显示lightcoral的颜色，当页面宽度大于等于300px的时候，显示saddlebrown的颜色。
+<hr></p>
+<h5 id="12-ajax">12.  AJAX添加班级信息</h5>
+<p>添加班级信息的逻辑：</p>
+<pre><code class="py">def add_class_modal(request):
+    # 获取班级名称
+    title = request.POST.get('title')
+    # 输入的班级名称的长度需要大于0
+    if len(title) &gt; 0:
+        # 创建连接
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行sql
+        cursor.execute('insert into class (title) values (%s)', title)
+        # 提交事务
+        conn.commit()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 向前台返回ok
+        return HttpResponse('ok')
+    else:
+        # 如果提交过来的班级名称长度是小于0的,向前台返回不能为空，给前台提示信息
+        return HttpResponse('班级不能为空！')
+</code></pre>
+
+<p>添加一个模态对话框用来添加班级信息，由于以Form表单的方式提交，<strong><code>不论班级信息填写正确还是错误都会提交到后台并刷新页面</code></strong>，这样模态框就会消失。所以，我们这里使用AJAX的方式来提交请求，<strong><code>AJAX可以在不刷新页面的情况下与后台交互</code></strong>：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;班级信息&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot;
+          href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    &lt;style&gt;
+        .hide {display: none;}
+        .shadow {position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: black; opacity: 0.4; z-index: 999; }
+        .modal_layer { position: fixed; z-index: 1000; left: 50%; top: 50%; background-color: white; width: 400px; height: 150px; margin-top: -150px; margin-left: -200px;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot; style=&quot;margin-top: 20px&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;
+            {#            &lt;a class=&quot;btn btn-default&quot; href=&quot;/add-class/&quot;&gt;添加&lt;/a&gt;#}
+            &lt;a class=&quot;btn btn-default&quot; id=&quot;addClasses&quot;&gt;添加班级信息&lt;/a&gt;
+            &lt;div class=&quot;shadow hide&quot; id=&quot;shadow&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;modal_layer hide&quot; id=&quot;modal_layer&quot;&gt;
+                &lt;div class=&quot;panel panel-primary&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;添加班级信息&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;form action=&quot;/add-class-modal/&quot; method=&quot;post&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;&quot;&gt;班级名称&lt;/label&gt;
+                                &lt;input type=&quot;text&quot; name=&quot;title&quot; class=&quot;form-control&quot; id=&quot;title&quot; placeholder=&quot;&quot;
+                                       autofocus&gt;
+                                &lt;span id=&quot;error&quot; style=&quot;color: red&quot;&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;input type=&quot;button&quot; class=&quot;btn btn-primary&quot; value=&quot;确认添加&quot; id=&quot;add_class&quot;&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;table class=&quot;table table-hover text-center&quot;&gt;
+                &lt;tr&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;班级ID&lt;/th&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;班级名称&lt;/th&gt;
+                    &lt;th class=&quot;text-center&quot;&gt;操作&lt;/th&gt;
+                &lt;/tr&gt;
+                {% for row in classes_list %}
+                    &lt;tr&gt;
+                        &lt;td&gt;{{ row.id }}&lt;/td&gt;
+                        &lt;td&gt;{{ row.title }}&lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;a href=&quot;/edit-class/?nid={{ row.id }}&quot;&gt;编辑&lt;/a&gt; &lt;a href=&quot;/del-class/?nid={{ row.id }}&quot;&gt;删除&lt;/a&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                {% endfor %}
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;script
+        src=&quot;https://code.jquery.com/jquery-3.4.1.js&quot;
+        integrity=&quot;sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=&quot;
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script
+        src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js&quot;
+        integrity=&quot;sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa&quot;
+        crossorigin=&quot;anonymous&quot;&gt;
+&lt;/script&gt;
+&lt;script&gt;
+    $(document).ready(function () {
+        $('#addClasses').click(function () {
+            $('#shadow').removeClass('hide');
+            $('#modal_layer').removeClass('hide');
+        });
+        $('#add_class').click(function () {
+            $.ajax({
+                url: '/add-class-modal/',
+                type: 'POST',
+                data: {'title': $('#title').val()},
+                success: function (data) {
+                    //当服务端处理完，返回数据时，自动调用该函数
+                    if (data == 'ok') {
+                        alert('添加成功！');
+                        location.href = '/classes/';
+                    } else {
+                        $('#error').text(data);
+                    }
+                }
+            })
+        });
+         $('#shadow').click(function () {
+            $('#shadow').addClass('hide');
+            $('#modal_layer').addClass('hide');
+        });
+    })
+&lt;/script&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>模块对话框适用于 <strong><code>少量的输入标签和数据</code></strong> 的情况下，url适用于 <strong><code>操作多、对于大量的数据</code></strong> 的操作。</p>
+<p>AJAX添加班级信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613215229753.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="13-ajax">13. AJAX编辑班级信息</h5>
+<p>还是使用之前编辑班级信息的逻辑代码，可以在原来的基础上可以加上一些表单字段的判断：</p>
+<pre><code class="py">def edit_class(request):
+    '''
+    编辑班级信息
+    '''
+    # 获取班级编号
+    class_id = request.GET.get('class_id')
+    # 获取班级名称
+    class_title = request.GET.get('class_title')
+    # 获取的名称长度要大于0
+    if len(class_title) &gt; 0:
+        # 创建连接
+        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+        # 创建游标
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        # 执行sql
+        cursor.execute('update class set title=%s where id = %s', [class_title, class_id])
+        # 提交事务
+        conn.commit()
+        # 关闭游标
+        cursor.close()
+        # 关闭连接
+        conn.close()
+        # 向前台返回的data，前台通过这里来判断编辑是否完成
+        return HttpResponse('ok')
+    else:
+        # 返回错误提示信息
+        return HttpResponse('班级不能为空！')
+</code></pre>
+
+<p>使用AJAX发送请求和获取服务端传过来的数据：</p>
+<pre><code class="html">&lt;script&gt;
+
+        $(document).ready(function () {
+            function edit_class_modal(ths) {
+                $('#shadow').removeClass('hide');
+                $('#modal_edit').removeClass('hide');
+                var row = $(ths).parent().prevAll();
+                {#console.log(v[0])#}
+                console.log($(row[0]).text());
+                content_title = $(row[0]).text();
+                content_id = $(row[1]).text();
+                $('#edit_title').val(content_title);
+                $('#edit_id').val(content_id);
+            }
+            $('#edit_class').click(function () {
+                $.ajax({
+                    url: '/edit-class/',
+                    type: 'GET',
+                    data: {
+                        'class_id': $('#edit_id').val(),
+                        'class_title': $('#edit_title').val()
+                    },
+                    success: function (data) {
+                        if (data == 'ok') {
+                            location.href = '/classes/'
+                        } else {
+                            $('#edit_error').text(data);
+                        }
+                    }
+                })
+            })
+            $('#close_edit_modal').click(function () {
+                $('#shadow').addClass('hide');
+                $('#modal_edit').addClass('hide');
+            });
+        });
+    &lt;/script&gt;
+</code></pre>
+
+<p>AJAX编辑班级信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020061321532451.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="14-ajax">14. AJAX删除班级信息</h5>
+<p>删除班级的逻辑：</p>
+<pre><code class="py">def del_class(request):
+    '''
+    删除班级信息
+    '''
+    # 获取班级编号，需要通过编号删除班级信息
+    class_id = request.GET.get('class_id')
+    # 创建连接
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 将班级id传到sql豫剧中并执行sql
+    cursor.execute('delete from class where id=%s', class_id)
+    # 提交事务
+    conn.commit()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    # 返回操作成功的标识
+    return HttpResponse('ok')
+</code></pre>
+
+<p>AJAX删除班级信息：</p>
+<pre><code class="html">&lt;script&gt;
+    function del_class(ths) {
+        var row = $(ths).parent().prevAll();
+        class_id = $(row[1]).text();
+        $.ajax({
+            url: '/del-class/',
+            type: 'get',
+            data: {'class_id': class_id},
+            success: function (data) {
+                if (data == 'ok') {
+                    location.href = '/classes/'
+                } else {
+                    alert('删除失败！')
+                }
+            }
+        })
+    }
+ &lt;/script&gt;
+</code></pre>
+
+<hr>
+
+<h5 id="15">15. 数据库操作代码复用</h5>
+<p>视图函数操作数据库时有很多重复的操作步骤，可以把这些操作放到一个函数中，</p>
+<p><strong><code>sqlhelper.py</code></strong>：</p>
+<pre><code class="py">import pymysql
+
+def get_list(sql, args):
+    &quot;&quot;&quot;
+    返回查询到的所有结果
+    :param sql:
+    :param args:
+    :return:
+    &quot;&quot;&quot;
+    # 创建连接
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test', charset='utf8')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql
+    cursor.execute(sql, args)
+    # 获取查询到的内容
+    ret = cursor.fetchall()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    return ret
+
+def get_one(sql, args):
+    &quot;&quot;&quot;
+    返回查询到的一条结果
+    :param sql:
+    :param args:
+    :return:
+    &quot;&quot;&quot;
+    # 创建连接
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test', charset='utf8')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql
+    cursor.execute(sql, args)
+    # 获取查询到的内容
+    ret = cursor.fetchone()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    return ret
+
+def modify(sql, args):
+    &quot;&quot;&quot;
+    修改和删除操作
+    :param sql:
+    :param args:
+    :return:
+    &quot;&quot;&quot;
+    # 创建连接
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test', charset='utf8')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 执行sql
+    cursor.execute(sql, args)
+    # 提交事务
+    conn.commit()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+</code></pre>
+
+<hr>
+
+<h5 id="16-ajax">16. AJAX添加学生信息</h5>
+<p>添加学生信息的业务逻辑：</p>
+<pre><code class="py">def add_student_modal(request):
+    &quot;&quot;&quot;
+    模态对话框的方式添加班级信息
+    :param request:
+    :return:
+    &quot;&quot;&quot;
+    ret = {'status': True, 'msg': None}
+    try:
+        name = request.POST.get('name')
+        class_id = request.POST.get('class_id')
+        if len(name) &lt;= 0 or len(class_id) &lt;= 0:
+            ret['status'] = False
+            ret['msg'] = '学生姓名或班级不能为空'
+            return HttpResponse(json.dumps(ret))
+        sqlhelper.modify(sql='insert into student(name,class_id) values(%s,%s)', args=[name, class_id])
+    except Exception as e:
+        ret['status'] = False
+        ret['msg'] = str(e)
+    return HttpResponse(json.dumps(ret))
+</code></pre>
+
+<p>AJAX添加学生信息：</p>
+<pre><code class="js">$('#add_student').click(function () {
+              $.ajax({
+                  url: '/user/add_student_modal/',
+                  type: 'POST',
+                  data: {
+                      'name': $('#name').val(),
+                      'class_id': $('#class_id').val()
+                  },
+                  success: function (data) {
+                      data = JSON.parse(data) //把后台传过来的字符串转换成js中的对象
+                      if (data.status) {
+                          location.href = '/user/student/'
+                      } else {
+                          $('#add_student_error').text(data.msg);
+                      }
+                  }
+              });
+          })
+</code></pre>
+
+<p>AJAX添加学生信息：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020061321541890.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="17-ajax">17. AJAX编辑学生信息</h5>
+<p>编辑学生信息的业务逻辑：</p>
+<pre><code class="py">def edit_student_modal(request):
+    &quot;&quot;&quot;
+    模态框编辑学生信息
+    :param request: 
+    :return: 
+    &quot;&quot;&quot;
+    ret = {'status': True, 'msg': None}
+    try:
+        student_id = request.POST.get('student_id')
+        class_id = request.POST.get('class_id_edit')
+        student_name = request.POST.get('student_name')
+        sqlhelper.modify('update student set name=%s,class_id=%s where id=%s',
+                         [student_name, class_id, student_id])
+    except Exception as e:
+        ret['status'] = False
+        ret['msg'] = str(e)
+    return HttpResponse(json.dumps(ret))
+</code></pre>
+
+<p>AJAX编辑学生信息：</p>
+<pre><code class="js">function edit_student(ths) {
+    //编辑学生信息前的操作
+    $('#shadow').removeClass('hide');
+    $('#modal_edit_student').removeClass('hide');
+    var row = $(ths).parent().prevAll();
+    //学生ID
+    student_id = $(row[2]).text();
+    //学生姓名
+    student_name = $(row[1]).text();
+    //班级id
+    class_id_edit = $(row[0]).attr('cls_id');
+    $('#student_name').val(student_name);
+    //id不能重复，如果重复，哪个在前找哪个
+    $('#class_id_edit').val(class_id_edit);
+    $('#student_id').val(student_id);
+}
+</code></pre>
+
+<pre><code class="js">//修改班级信息
+$('#edit_student').click(function () {
+    $.ajax({
+        url: '/user/edit_student_modal/',
+        type: 'POST',
+        data: {
+            'student_id': $('#student_id').val(),
+            'student_name': $('#student_name').val(),
+            'class_id_edit': $('#class_id_edit').val(),
+        },
+        success: function (data) {
+            data = JSON.parse(data);
+            if (data.status) {
+                location.reload()
+            } else {
+                $('#edit_error').text(data.msg);
+            }
+        }
+    })
+})
+</code></pre>
+
+<p>AJAX编辑学生信息页面：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613215510933.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h6 id="18-ajax">18. AJAX删除学生信息</h6>
+<p>删除学生信息的业务逻辑：</p>
+<pre><code class="py">def del_student_modal(request):
+    &quot;&quot;&quot;
+    模态框删除学生信息
+    :param request: 
+    :return: 
+    &quot;&quot;&quot;
+    ret = {'status': True, 'msg': None}
+    try:
+        student_id = request.GET.get('student_id')
+        sqlhelper.modify('delete from student where id=%s', [student_id, ])
+    except Exception as e:
+        ret['status'] = False
+        ret['msg'] = str(e)
+    return HttpResponse(json.dumps(ret))
+</code></pre>
+
+<p>AJAX删除学生信息：</p>
+<pre><code class="js">function del_student(ths) {
+    var row = $(ths).parent().prevAll();
+    student_id = $(row[2]).text();
+    $.ajax({
+        url: '/user/del_student_modal/',
+        type: 'GET',
+        data: {
+            'student_id': student_id
+        },
+        success: function (data) {
+            data = JSON.parse(data);
+            if (data.status) {
+                location.reload()
+            } else {
+                alert('删除失败！');
+            }
+        }
+    })
+}
+</code></pre>
+
+<hr>
+
+<h5 id="19">19. 分页展示学生表</h5>
+<p>分页后台逻辑：</p>
+<pre><code class="py">def student(request):
+    '''
+    学生信息列表
+    :param request:封装了请求相关的所有信息
+    :return:返回模板和数据
+    '''
+    # 创建连接对象
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+    # 创建游标
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    # 查询学生信息列表
+    cursor.execute(
+        'select student.id,student.name,class_id,class.title from  student left join class on student.class_id=class.id')
+    # 获取查询到的所有数据
+    student_list = cursor.fetchall()
+    paginator = Paginator(student_list, 1)
+    current_page = request.GET.get('page')
+    try:
+        posts = paginator.page(current_page)
+    except PageNotAnInteger as e:
+        posts = paginator.page(1)
+    except EmptyPage as e:
+        posts = paginator.page(1)
+    # 查询班级信息
+    cursor.execute('select id,title from class')
+    # 获取查询到的所有班级列表
+    class_list = cursor.fetchall()
+    # 关闭游标
+    cursor.close()
+    # 关闭连接
+    conn.close()
+    # 返回模板和数据
+    return render(request, 'student.html', {'student_list': student_list, 'class_list': class_list, 'posts': posts})
+</code></pre>
+
+<p>前台分页展示：</p>
+<pre><code class="html">&lt;!--学生信息展示--&gt;
+&lt;table class=&quot;table table-hover text-center&quot; style=&quot;background: white;margin-bottom: 0&quot;&gt;
+    &lt;tr&gt;
+        &lt;th class=&quot;text-center&quot;&gt;ID&lt;/th&gt;
+        &lt;th class=&quot;text-center&quot;&gt;学生姓名&lt;/th&gt;
+        &lt;th class=&quot;text-center&quot;&gt;学生班级&lt;/th&gt;
+        &lt;th class=&quot;text-center&quot;&gt;操作&lt;/th&gt;
+    &lt;/tr&gt;
+    {% for row in posts.object_list %}
+        &lt;tr&gt;
+            &lt;td&gt;{{ row.id }}&lt;/td&gt;
+            &lt;td&gt;{{ row.name }}&lt;/td&gt;
+            &lt;td cls_id=&quot;{{ row.class_id }}&quot;&gt;{{ row.title }}&lt;/td&gt;
+            {#&lt;td&gt;{{ row.class_id }}&lt;/td&gt;#}
+            &lt;td&gt;
+                &lt;a href=&quot;/user/edit_student/?nid={{ row.id }}&quot;&gt;编辑(1)&lt;/a&gt;
+                &lt;a href=&quot;javascript:;&quot; onclick=&quot;edit_student(this)&quot;&gt;编辑(2)&lt;/a&gt;
+                &lt;a href=&quot;/user/del_student/?nid={{ row.id }}&quot;&gt;删除(1)&lt;/a&gt;
+                &lt;a href=&quot;javascript:;&quot; onclick=&quot;del_student(this)&quot;&gt;删除(2)&lt;/a&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    {% endfor %}
+&lt;/table&gt;
+&lt;!--分页--&gt;
+&lt;nav aria-label=&quot;Page navigation&quot; class=&quot;text-left&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        {% if posts.has_previous %}
+            &lt;li&gt;
+                {#&lt;a href=&quot;/user/student?page={{ posts.previous_page_number }}&quot;&gt;上一页&lt;/a&gt;#}
+                &lt;a href=&quot;{% url 'student' %}?page={{ posts.previous_page_number }}&quot;&gt;上一页&lt;/a&gt;
+            &lt;/li&gt;
+        {% endif %}
+
+        {% if posts.has_next %}
+            &lt;li&gt;
+                {#&lt;a href=&quot;/user/student?page={{ posts.next_page_number }}&quot;&gt;下一页&lt;/a&gt;#}
+                &lt;a href=&quot;{% url 'student' %}?page={{ posts.next_page_number }}&quot;&gt;下一页&lt;/a&gt;
+            &lt;/li&gt;
+        {% endif %}
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;!--/学生信息展示--&gt;
+</code></pre>
+
+<p>分页展示效果图：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200605132151941.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200605132220424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="20">20. 数据库操作封装</h5>
+<p>将数据库操作封装在类中，减少了重复的代码，使代码的非常友好的可读性和可维护性的同时，还提高了系统的执行效率：</p>
+<pre><code class="py">import pymysql
+
+class SqlHelper:
+    def __init__(self):
+        self.conn()
+
+    def conn(self):
+        self.conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test',
+                                    charset='utf8')
+        self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+
+    def get_list(self, sql, args):
+        self.cursor.execute(sql, args)
+        result = self.cursor.fetchall()
+        return result
+
+    def get_one(self, sql, args):
+        self.cursor.execute(sql, args)
+        result = self.cursor.fetchone()
+        return result
+
+    def modify(self, sql, args):
+        self.cursor.execute(sql, args)
+        self.conn.commit()
+
+    def multiple_modify(self, sql, args):
+        self.cursor.executemany(sql, args)
+        self.conn.commit()
+
+    def create(self, sql, args):
+        self.cursor.execute(sql, args)
+        self.conn.commit()
+        return self.cursor.lastrowid
+
+    def close(self):
+        self.cursor.close()
+        self.conn.close()
+</code></pre>
+
+<hr>
+
+<h5 id="21">21. 添加教师信息</h5>
+<p>后台添加教师信息的业务逻辑：</p>
+<pre><code class="py">def add_teacher(request):
+    &quot;&quot;&quot;
+    添加教师
+    :param request: 
+    :return: 
+    &quot;&quot;&quot;
+    if request.method == 'GET':
+        class_list = sqlhelper.get_list('select id,title from class', [])
+        return render(request, 'add_teacher.html', {'class_list': class_list})
+    else:
+        name = request.POST.get('name')
+        obj = sqlhelper.SqlHelper()
+        teacher_id = obj.create('insert into teacher(name) values (%s)', [name, ])
+        class_ids = request.POST.getlist('class_ids')  # ['1', '8', '9', '10']
+        # 多次连接，多次提交
+        &quot;&quot;&quot;
+        for class_id in class_ids:
+            sqlhelper.modify('insert into teacher2class(teacher_id,class_id) values (%s,%s)', [teacher_id, class_id])        
+        &quot;&quot;&quot;
+        # 一次连接，多次提交
+        &quot;&quot;&quot;
+        for class_id in class_ids:
+            obj.modify('insert into teacher2class(teacher_id,class_id) values (%s,%s)', [teacher_id, class_id])
+        obj.close()
+        &quot;&quot;&quot;
+        # 一次连接，一次提交
+        data_list = []  # [(9, '8'), (9, '9'), (9, '10')]
+        for class_id in class_ids:
+            data_list.append((teacher_id, class_id))
+        obj.multiple_modify('insert into teacher2class(teacher_id,class_id) values (%s,%s)', data_list)
+        obj.close()
+        return render(request, 'teacher.html')
+</code></pre>
+
+<p>前台添加教师信息:</p>
+<pre><code class="html">...
+&lt;form action=&quot;/user/add_teacher/&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;教师姓名：&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;&quot; placeholder=&quot;请输入教师的姓名&quot; name=&quot;name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;select multiple class=&quot;form-control&quot; name=&quot;class_ids&quot;&gt;
+            {% for row in class_list %}
+                &lt;option value=&quot;{{ row.id }}&quot;&gt;{{ row.title }}&lt;/option&gt;
+            {% endfor %}
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;添加&lt;/button&gt;
+&lt;/form&gt;
+...
+</code></pre>
+
+<p>添加教师信息页面效果：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613101806392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="22">22. 查询教师和任课班级信息</h5>
+<p>查询教师和任课班级信息的业务逻辑：</p>
+<pre><code class="py">def teacher(request):
+    &quot;&quot;&quot;
+    查询教师和任课班级信息
+    :param request:
+    :return:
+    &quot;&quot;&quot;
+    obj = sqlhelper.SqlHelper()
+    teacher_list = obj.get_list(
+        'select teacher.id as tid,teacher.name,class.title from teacher left join teacher2class on teacher.id = teacher2class.teacher_id left join class on teacher2class.class_id = class.id ;',
+        [])
+    &quot;&quot;&quot;
+    print(teacher_list)
+    [
+    {'tid': 1, 'name': '李娇', 'title': '网络工程'}, 
+    {'tid': 1, 'name': '李娇', 'title': '计算机科学与技术'},
+    {'tid': 1, 'name': '李娇', 'title': '软件技术'},
+    {'tid': 1, 'name': '李娇', 'title': '软件工程'},
+    {'tid': 2, 'name': '李晓', 'title': '网络工程'},
+    {'tid': 2, 'name': '李晓', 'title': '软件工程'}
+    ]
+    &quot;&quot;&quot;
+    result = {}
+    for row in teacher_list:
+        tid = row['tid']
+        if tid in result:
+            result[tid]['titles'].append(row['title'])
+        else:
+            result[tid] = {'tid': row['tid'], 'name': row['name'], 'titles': [row['title'], ]}
+    &quot;&quot;&quot;
+    print(ret)
+    {
+        1: {'tid': 1, 'name': '李娇', 'titles': ['网络工程', '计算机科学与技术', '软件技术', '软件工程']}, 
+        2: {'tid': 2, 'name': '李晓', 'titles': ['网络工程', '软件工程']}
+    }
+    &quot;&quot;&quot;
+    return render(request, 'teacher.html', {'teacher_list': result.values()})
+</code></pre>
+
+<p>前台查询教师和任课班级信息：</p>
+<pre><code class="html">...
+&lt;table class=&quot;table table-hover text-center&quot; style=&quot;background: white;margin-bottom: 0&quot;&gt;
+    &lt;tr&gt;
+        &lt;th class=&quot;text-center&quot;&gt;ID&lt;/th&gt;
+        &lt;th class=&quot;text-center&quot;&gt;教师姓名&lt;/th&gt;
+        &lt;th class=&quot;text-center&quot;&gt;任教班级&lt;/th&gt;
+        &lt;th class=&quot;text-center&quot;&gt;操作&lt;/th&gt;
+    &lt;/tr&gt;
+    {% for row in teacher_list %}
+        &lt;tr&gt;
+            &lt;td&gt;{{ row.tid }}&lt;/td&gt;
+            &lt;td&gt;{{ row.name }}&lt;/td&gt;
+            &lt;td&gt;
+                {% for item in row.titles %}
+                    &lt;span&gt;{{ item }}&lt;/span&gt;
+                {% endfor %}
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;a href=&quot;/user/edit_teacher/?nid={{ row.tid }}&quot;&gt;编辑&lt;/a&gt;
+                &lt;a href=&quot;/user/del_teacher/?nid={{ row.tid }}&quot;&gt;删除&lt;/a&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    {% endfor %}
+&lt;/table&gt;
+...
+</code></pre>
+
+<p>前台查询教师和任课班级信息的页面效果：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613123226394.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="23">23. 编辑教师信息</h5>
+<p>后台编辑教师信息逻辑：</p>
+<pre><code class="py">def edit_teacher(request):
+    if request.method == 'GET':
+        nid = request.GET.get('nid')
+        obj = sqlhelper.SqlHelper()
+        # 当前教师的信息
+        teacher_info = obj.get_one('select id,name from teacher where id = %s', [nid, ])
+        # 当前教师的任教班级的id信息
+        class_id_list = obj.get_list('select class_id from teacher2class where teacher_id=%s', [nid, ])
+        # 所有的班级信息
+        class_list = obj.get_list('select id,title from class', [])
+        &quot;&quot;&quot;
+        print(teacher_list) # {'id': 2, 'name': '李晓'}
+        print(class_list) # [{'id': 1, 'title': '软件工程'}, {'id': 8, 'title': '软件技术'}, {'id': 9, 'title': '计算机科学与技术'}, {'id': 10, 'title': '网络工程'}]
+        print(class_id_list) # [{'class_id': 1}, {'class_id': 10}]
+        &quot;&quot;&quot;
+        obj.close()
+        temp = []
+        for item in class_id_list:
+            temp.append(item['class_id'])
+        &quot;&quot;&quot;
+        print(temp)  # [1, 10]
+        &quot;&quot;&quot;
+        return render(request, 'edit_teacher.html',
+                      {'class_list': class_list, 'teacher_info': teacher_info, 'class_id_list': temp})
+    else:
+        # 获取post请求的url上的参数
+        nid = request.GET.get('nid')
+        print(nid)
+        name = request.POST.get('name')
+        class_ids = request.POST.getlist('class_ids')  # ['1', '8', '9', '10']
+        obj = sqlhelper.SqlHelper()
+        obj.modify('update teacher set name = %s where id = %s', [name, nid])
+        obj.modify('delete from teacher2class where teacher_id = %s', [nid])
+        data_list = []  # [('1', '1'), ('1', '8'), ('1', '9'), ('1', '10')]
+        &quot;&quot;&quot;
+        for class_id in class_ids:
+            temp = (nid, class_id,)
+            data_list.append(temp)
+        &quot;&quot;&quot;
+        # 使用lambda表达式
+        func = lambda nid, class_id: data_list.append((nid, class_id))
+        for class_id in class_ids:
+            func(nid, class_id)
+        obj.multiple_modify('insert into teacher2class(teacher_id,class_id) values (%s,%s)', data_list)
+        return redirect('/user/teacher/')
+</code></pre>
+
+<p>前台编辑教师信息：</p>
+<pre><code class="html">...
+&lt;form action=&quot;/user/edit_teacher/?nid={{ teacher_info.id }}&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;教师姓名：&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;&quot; placeholder=&quot;&quot; name=&quot;name&quot;
+               value=&quot;{{ teacher_info.name }}&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;select multiple class=&quot;form-control&quot; name=&quot;class_ids&quot;&gt;
+            {% for item in class_list %}
+                {% if item.id in class_id_list %}
+                    &lt;option selected value=&quot;{{ item.id }}&quot;&gt;{{ item.title }}&lt;/option&gt;
+                {% else %}
+                    &lt;option value=&quot;{{ item.id }}&quot;&gt;{{ item.title }}&lt;/option&gt;
+                {% endif %}
+            {% endfor %}
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;更新&lt;/button&gt;
+&lt;/form&gt;
+...
+</code></pre>
+
+<p>前台编辑教师信息的页面效果：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613132324693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="24-ajax">24. AJAX删除教师信息</h5>
+<p>AJAX方式删除教师信息的后台逻辑：</p>
+<pre><code class="py">def del_teacher_modal(request):
+    &quot;&quot;&quot;
+    AJAX的方式删除教师信息
+    :param request: 
+    :return: 
+    &quot;&quot;&quot;
+    if request.method == 'GET':
+        ret = {'status': True, 'msg': None}
+        try:
+            obj = sqlhelper.SqlHelper()
+            tid = request.GET.get('teacher_id')
+            obj.modify('delete from teacher where id =%s', [tid])
+            obj.modify('delete from teacher2class where teacher_id = %s', [tid])
+            obj.close()
+        except Exception as e:
+            ret['status'] = False
+            ret['msg'] = &quot;删除失败！&quot;
+        return HttpResponse(json.dumps(ret))
+</code></pre>
+
+<p>前台的部分代码：</p>
+<pre><code class="html">{% for row in teacher_list %}
+    &lt;tr&gt;
+        &lt;td&gt;{{ row.tid }}&lt;/td&gt;
+        &lt;td&gt;{{ row.name }}&lt;/td&gt;
+        &lt;td&gt;
+            {% for item in row.titles %}
+                &lt;span&gt;{{ item }}&lt;/span&gt;
+            {% endfor %}
+        &lt;/td&gt;
+        &lt;td&gt;
+            &lt;a href=&quot;/user/edit_teacher/?nid={{ row.tid }}&quot;&gt;编辑&lt;/a&gt;
+            &lt;a href=&quot;javascript:;&quot; class=&quot;del_teacher&quot; onclick=&quot;del_teacher_modal(this)&quot;&gt;删除&lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+{% endfor %}
+...
+&lt;script&gt;
+...
+//Ajax删除教师信息
+function del_teacher_modal(ths) {
+    falg = confirm('确定要删除？')
+    if (falg) {
+        var row = $(ths).parent().prevAll();
+        teacher_id = $(row[2]).text();
+        $.ajax({
+            url: '/user/del_teacher_modal/',
+            type: 'get',
+            data: {'teacher_id': teacher_id},
+            dataType: 'json',
+            success: function (arg) {
+                if (arg.status) {
+                    location.reload()
+                } else {
+                    alert(arg.msg)
+                }
+            }
+        })
+    }
+}
+...
+&lt;/script&gt;
+</code></pre>
+
+<p>前台的效果图：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613210035113.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="25-ajax">25. AJAX添加教师信息</h5>
+<p>AJAX添加教师信息后台逻辑：</p>
+<pre><code class="py">def add_teacher_modal(request):
+    &quot;&quot;&quot;
+    AJAX的方式添加教师信息
+    :param request: 
+    :return: 
+    &quot;&quot;&quot;
+    if request.method == 'GET':
+        obj = sqlhelper.SqlHelper()
+        class_list = obj.get_list('select id,title from class', [])
+        import time
+        # 这里是用来模拟用户网站压力比较大的情况下
+        time.sleep(0.2)
+        obj.close()
+        return HttpResponse(json.dumps(class_list))
+    if request.method == 'POST':
+        ret = {'status': True, 'msg': None}
+        # 一般ajax请求要加上try
+        try:
+            name = request.POST.get('name')
+            class_ids = request.POST.getlist('class_ids')  # ['1', '8', '9', '10']
+            # print(name,class_ids) #奈何 ['9', '10']
+            obj = sqlhelper.SqlHelper()
+            teacher_id = obj.create('insert into teacher(name) values (%s) ', [name, ])
+            data_list = []
+            func = lambda item: data_list.append((teacher_id, item))
+            for item in class_ids:
+                func(item)
+            # print(data_list)  # [(8, '8'), (8, '10')]
+            obj.multiple_modify('insert teacher2class(teacher_id,class_id) values(%s,%s)', data_list)
+            obj.close()
+        except Exception as e:
+            ret['status'] = False
+            ret['msg'] = '处理失败!'
+        return HttpResponse(json.dumps(ret))
+</code></pre>
+
+<p>前台AJAX添加教师信息：</p>
+<pre><code class="html">&lt;script&gt;
+    $(function () {
+        addBtn();
+        shadow_btn();
+        close_btn();
+        add_teacher_modal();
+    })
+
+    function shadow_btn() {
+        $('#shadow').click(function () {
+            $('#shadow,#modal_add_teacher').addClass('hide');
+        });
+    }
+
+    function close_btn() {
+        $('#close_btn').click(function () {
+            $('#shadow,#modal_add_teacher').addClass('hide');
+        });
+    }
+
+    //点击按钮之后如果数据没有拿到就不断动画加载
+    function addBtn() {
+        $('#addBtn').click(function () {
+            $('#shadow').removeClass('hide');
+            $('#loading').removeClass('hide');
+            $.ajax({
+                url: '/user/add_teacher_modal/',
+                type: 'get',
+                dataType: 'json',//拿到的是对象
+                success: function (arg) {
+                    //alert(arg)//[object Object],[object Object],[object Object],[object Object]
+                    $('#class_ids').html('') //保证上一次的标签内容不会留存再页面上
+                    $.each(arg, function (i, row) {
+                        var tag = $(&quot;&lt;option&gt;&lt;/option&gt;&quot;).html(row.title);
+                        tag.attr('value', row.id)
+                        $('#class_ids').append(tag)
+                    })
+                    $('#loading').addClass('hide');
+                    $('#modal_add_teacher').removeClass('hide');
+                }
+            })
+        })
+    }
+
+    //Ajax添加教师信息
+    function add_teacher_modal() {
+        $('#addTeacherBtn').click(function () {
+            var name = $('#name').val();
+            var class_ids = $('#class_ids').val();//['9', '10']
+            $.ajax({
+                url: '/user/add_teacher_modal/',
+                type: 'POST',
+                data: {'name': name, 'class_ids': class_ids},
+                traditional: true,//如果提交的数据有列表，需要添加这个属性
+                dataType: 'json', //如果后台返回的是json格式的数据则这里必须写上json，大小写忽略
+                success: function (arg) {
+                    if (arg.status) {
+                        location.reload();
+                    } else {
+                        $('#add_teacher_error').text(arg.msg);
+                    }
+                }
+            })
+        })
+    }
+&lt;/script&gt;
+</code></pre>
+
+<p>前台AJAX添加教师信息的页面效果：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200613210119205.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h4 id="djangocookie">Django操作cookie</h4>
 <hr>
 
 <h5 id="1-cookie">1. 初识cookie</h5>
@@ -1037,19 +2675,19 @@ def login(request):
 <h5 id="5-django_1">5. Django主流操作</h5>
 <p>以上 Django 的使用中至少有两点是非主流操作的：<font>第一点体现在创建 app 上，第二点体现在数据库操作上</font>。以后，我们将使用Django的主流操作来进行开发。<font>创建 app 方面，使用命令的方式来创建</font>。<font>操作数据库方面，不再使用 pymysql 或者 SqlAchemy，而是使用 ORM</font>。
 <hr></p>
-<h4 id="_2">项目的创建和目录文件的介绍</h4>
+<h4 id="django_2">Django项目创建和目录文件介绍</h4>
 <hr>
 
-<h5 id="1-django_1">1. 创建一个完整的Django项目</h5>
-<pre><code class="py"># 创建一个名为mysite的Django工程目录
-thanlon@thanlon-master:~$ django-admin startproject mysite
+<h5 id="1_3">1. 创建一个完整的项目</h5>
+<pre><code class="python"># 创建一个名为mysite的Django工程目录
+$ django-admin startproject mysite
 # 进入工程目录
-thanlon@thanlon-master:~$ cd mysite/
+$ cd mysite/
 # 创建一个名为app01的Django应用程序
-thanlon@thanlon-master:~/mysite$ python3 manage.py startapp app01
+$ python3 manage.py startapp app01
 </code></pre>
 
-<h5 id="2-django_1">2. Django主要相关目录文件介绍</h5>
+<h5 id="2-django_1">2. Django主要目录文件</h5>
 <pre><code class="py">mysite/
     manage.py
     mysite/
@@ -1074,10 +2712,10 @@ thanlon@thanlon-master:~/mysite$ python3 manage.py startapp app01
 <p><strong><code>test.py</code></strong>：用作单元测试</p>
 <p><strong><code>views.py</code></strong>：写视图函数，做业务处理。不一定只有一个 views.py，可以在app目录下单独创建一个 views 的目录用存放不同的视图函数。
 <hr></p>
-<h4 id="_3">路由系统</h4>
+<h4 id="django_3">Django路由系统</h4>
 <hr>
 
-<h5 id="1_2">1. 静态路由</h5>
+<h5 id="1_4">1. 静态路由</h5>
 <p>路由就是用户访问网站资源的路径，在Django中路由要和视图函数对应起来，路由和视图的对应关系有一对一和多对一。静态路由是比较常见的路由，不使用尖括号和正则表达式定义的路由，与视图函数是一对一关系。如默认的 <strong><code>/admin/</code></strong> 和我们自己定义的 <strong><code>/login/</code></strong>、<strong><code>edit/1/</code></strong>：</p>
 <pre><code class="py">urlpatterns = [
     # 匹配admin/
@@ -1093,7 +2731,7 @@ thanlon@thanlon-master:~/mysite$ python3 manage.py startapp app01
 
 <p>注意：最后加不加 <strong><code>/</code></strong> 匹配到的路径是不同的。 
 <hr></p>
-<h5 id="2_2">2. 动态路由</h5>
+<h5 id="2_3">2. 动态路由</h5>
 <p>使用尖括号定义的路由是动态的，可以定义传入变量并且指定变量的类型，其它类型还有字符串，用 <strong><code>str</code></strong> 表示：</p>
 <pre><code class="py">urlpatterns = [
     # 匹配任意整型，视图函数中必须用名为id的变量接收，当然也可以使用万能的**kwargs来接收,转换成字典后再找到索引id的值即为传入的参数
@@ -1135,7 +2773,7 @@ urlpatterns = [
 
 <p>注意：<font>Django中的路径匹配是顺序匹配</font>。也就是从上到下匹配，上面的路由匹配成功就停止匹配下面的路由。
 <hr></p>
-<h5 id="3_2">3. 路由分发</h5>
+<h5 id="3_3">3. 路由分发</h5>
 <p>多个 app 时可以使用路由分发，可以实现不同应用使用不同的路由，方便管理路由。可以在 app01 目录下新建 <strong><code>urls.py</code></strong> 文件用作 app01 应用的路由：</p>
 <pre><code class="py">urlpatterns = [
     path('login/', views.login),
@@ -1153,7 +2791,7 @@ urlpatterns = [
 
 <p>下面就可以通过 <font>http://127.0.0.1:8000/app01/login/</font> 来访问 app01 下的视图函数 login，这样就实现了路由的分发。
 <hr></p>
-<h5 id="4_1">4. 反向生成路由</h5>
+<h5 id="4_2">4. 反向生成路由</h5>
 <p>在写路由的时候，给路由命个名字，以后可使用这个名字找到这个路由，在存储用户路由信息的信息也可以存储路由的名字，节约空间，方便使用。<font>可以在 Python 代码中反向生成路由，也可以在模板中反向生成路由</font>。</p>
 <p>( 1 ) 在Python代码中使用。需要设置路由、业务逻辑：
 <strong><code>urls.py:</code></strong></p>
@@ -1226,13 +2864,13 @@ urlpatterns = [
 
 <p>注意：如果有多个参数，在id后面追加就可以，使用空格隔开，如：<strong><code>{% url 'index' id page %}</code></strong>
 <hr></p>
-<h4 id="orm">ORM操作</h4>
+<h4 id="djangoorm">Django的ORM操作</h4>
 <hr>
 
 <h5 id="1-orm">1. ORM的功能</h5>
 <p>Django 的ORM 可以操作数据库的表结构和数据行。操作表结构体现在创建表、修改表和删除表，操作数据行则体现在对表的 CURD 操作，也就是增删改查。<font>Django 的 ORM 本身不支持连接数据库，实质上使用的是第三方工具如 pymysql 或者是 sqlalchemy 来连接数据库</font>。
 <hr></p>
-<h5 id="2_3">2. 数据库设置</h5>
+<h5 id="2_4">2. 数据库设置</h5>
 <p>Django 默认使用的是 SQLite，也是 Django 中自带的数据库，但是我们一般不会使用。我们通常会使用 SQLite 之外的数据库，如 mysql、oracle、postgresql 等。所以，需要在 Django 中修改默认使用的 SQLite 为其它的数据库。在 <strong><code>settings.py</code></strong> 中找到 <strong><code>DATABASES</code></strong> 变量：</p>
 <pre><code class="py">DATABASES = {
     'default': {
@@ -1432,10 +3070,10 @@ def index(request):
 
 <hr>
 
-<h5 id="6">6. 正向连表操作</h5>
+<h5 id="6_1">6. 正向连表操作</h5>
 <p>创建用户表和用户类型表，用户类型表是用户表的父表，用户表是用户类型的字表。</p>
 <p><strong><code>models.py:</code></strong></p>
-<pre><code class="py">class UserType(models.Model):
+<pre><code class="python">class UserType(models.Model):
     &quot;&quot;&quot;
     用户类型表
     &quot;&quot;&quot;
@@ -1451,7 +3089,7 @@ class UserInfo(models.Model):
 </code></pre>
 
 <p><strong><code>views.py:</code></strong>：</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     models.UserType.objects.create(title='普通用户')
     models.UserType.objects.create(title='VIP用户')
     models.UserInfo.objects.create(name='Thanlon', age=20, ut_id=1)
@@ -1460,7 +3098,7 @@ class UserInfo(models.Model):
 </code></pre>
 
 <p>正向连表查的是 UserInfo 表，是通过 UserInfo 表的外健 ut 字段来获取父表与之对应的字段。<font>一个用户只有一个用户类型</font>。</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     result = models.UserInfo.objects.all()
     for obj in result:
         # print(obj.id,obj.name,obj.age,obj.ut,obj.ut.id,obj.ut.title)
@@ -1473,9 +3111,11 @@ class UserInfo(models.Model):
     return HttpResponse('...')
 </code></pre>
 
-<h5 id="7_1">7. 反向连表操作</h5>
+<hr>
+
+<h5 id="7_2">7. 反向连表操作</h5>
 <p>反向连表查询的父表 UserType，通过父表隐藏的字段来获取子表 UserInfo 的字段，这个“隐藏”的字段的格式是 <strong><code>表名_set</code></strong>。<font>一个用户类型下可以有多个用户</font>。</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     # 一个用户类型下可以有多个用户
     # obj = models.UserType.objects.first()
     # print(obj.id, obj.title, obj.userinfo_set.all())
@@ -1496,7 +3136,7 @@ class UserInfo(models.Model):
 
 <p>如果是查 Userinfo 的所有字段，使用反向连表和正向连表都能查询到结果，但是我们发现反向连表的时间复杂度比正向连表要大。</p>
 <p>反向连表可以获取用户类型下对应的所有用户，还可以通过过滤这些用户：</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     obj = models.UserType.objects.first()
     print(obj.id, obj.title, obj.userinfo_set.filter(name='Thanlon'))
     for row in obj.userinfo_set.filter(name='Thanlon'):
@@ -1510,9 +3150,9 @@ class UserInfo(models.Model):
 
 <hr>
 
-<h5 id="8_1">8. 获取数据的三种方式</h5>
+<h5 id="8_2">8. 获取数据的三种方式</h5>
 <p>第一种方式，获取的是对象：</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     result = models.UserType.objects.all()
     print(result)  # [obj,obj,obj,,,]
     &quot;&quot;&quot;
@@ -1529,7 +3169,7 @@ class UserInfo(models.Model):
 </code></pre>
 
 <p>第二种方式，获取的是字典：</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     # 获取所有字段
     # result = models.UserInfo.objects.values()
     # 获取指定字段
@@ -1549,7 +3189,7 @@ class UserInfo(models.Model):
 </code></pre>
 
 <p>第三种方式，获取的是元组：</p>
-<pre><code class="py">def user(request):
+<pre><code class="python">def user(request):
     # 获取所有字段
     # result = models.UserInfo.objects.values_list()
     # 获取指定字段
@@ -1567,9 +3207,686 @@ class UserInfo(models.Model):
     return HttpResponse('...')
 </code></pre>
 
-<p>三种方式都支持跨表操作，只不过对象的方式跨表是在循环对象的时候，而字典和元组的方式是在查询的的时候。
-<hr></p>
-<h4 id="cbv">CBV的使用</h4>
+<p><font>三种方式都支持跨表操作</font>，只不过对象的方式跨表是在循环对象的时候，而字典和元组的方式是在查询的的时候。</p>
+<hr>
+
+<h5 id="9_1">9. 查询相关的关键字</h5>
+<p>( 1 ) all</p>
+<p>获取所有的数据对象，参数使用参考：</p>
+<pre><code class="python">def all(self):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 2 ) filter</p>
+<p>条件查询，条件也可以是字典类型，参数使用参考：</p>
+<pre><code class="python">def filter(self, *args, **kwargs):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    # result = models.UserInfo.objects.filter(id__gt=1)
+    # result = models.UserInfo.objects.filter(id__lt=1)
+    # result = models.UserInfo.objects.filter(id__gte=1)
+    result = models.UserInfo.objects.filter(id__lte=1)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE `app01_userinfo`.`id` &lt;= 1
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(id__in=[1, 2, 3])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT &quot;app01_userinfo&quot;.&quot;id&quot;, &quot;app01_userinfo&quot;.&quot;name&quot;, &quot;app01_userinfo&quot;.&quot;age&quot;, &quot;app01_userinfo&quot;.&quot;ut_id&quot; 
+    FROM &quot;app01_userinfo&quot; 
+    WHERE &quot;app01_userinfo&quot;.&quot;id&quot; IN (1, 2, 3)
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(id__range=[1, 3])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT &quot;app01_userinfo&quot;.&quot;id&quot;, &quot;app01_userinfo&quot;.&quot;name&quot;, &quot;app01_userinfo&quot;.&quot;age&quot;, &quot;app01_userinfo&quot;.&quot;ut_id&quot; 
+    FROM &quot;app01_userinfo&quot; 
+    WHERE &quot;app01_userinfo&quot;.&quot;id&quot; BETWEEN 1 AND 3
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(name__startswith='xxx')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT &quot;app01_userinfo&quot;.&quot;id&quot;, &quot;app01_userinfo&quot;.&quot;name&quot;, &quot;app01_userinfo&quot;.&quot;age&quot;, &quot;app01_userinfo&quot;.&quot;ut_id&quot; 
+    FROM &quot;app01_userinfo&quot; 
+    WHERE &quot;app01_userinfo&quot;.&quot;name&quot; LIKE xxx%
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.exclude(id=1)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT &quot;app01_userinfo&quot;.&quot;id&quot;, &quot;app01_userinfo&quot;.&quot;name&quot;, &quot;app01_userinfo&quot;.&quot;age&quot;, &quot;app01_userinfo&quot;.&quot;ut_id&quot; 
+    FROM &quot;app01_userinfo&quot; 
+    WHERE NOT (&quot;app01_userinfo&quot;.&quot;id&quot; = 1)
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(name__endswith='xxx')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT &quot;app01_userinfo&quot;.&quot;id&quot;, &quot;app01_userinfo&quot;.&quot;name&quot;, &quot;app01_userinfo&quot;.&quot;age&quot;, &quot;app01_userinfo&quot;.&quot;ut_id&quot; 
+    FROM &quot;app01_userinfo&quot; 
+    WHERE &quot;app01_userinfo&quot;.&quot;name&quot; LIKE %xxx
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(id=1, name='thanlon')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (`app01_userinfo`.`id` = 1 AND `app01_userinfo`.`name` = thanlon)
+    &quot;&quot;&quot;
+    condition = {
+        'id': 1,
+        'name': 'thanlon'
+    }
+    result = models.UserInfo.objects.filter(**condition)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (`app01_userinfo`.`id` = 1 AND `app01_userinfo`.`name` = thanlon)
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 3 ) order_by</p>
+<p>order_by 用于排序，参数使用参考：</p>
+<pre><code class="python">def order_by(self, *field_names):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    # 1、按照id从小到大排序
+    result = models.UserInfo.objects.all().order_by('id')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    ORDER BY `app01_userinfo`.`id` ASC
+    &quot;&quot;&quot;
+    # 2、按照id从小到大排序
+    result = models.UserInfo.objects.all().order_by('-id')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    ORDER BY `app01_userinfo`.`id` DESC
+    &quot;&quot;&quot;
+    # 3、按照id从大到小排序,如果有重复的按照name从小到大排序
+    result = models.UserInfo.objects.all().order_by('-id', 'name')
+    print(result.query)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    ORDER BY `app01_userinfo`.`id` DESC, `app01_userinfo`.`name` ASC
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 4 ) reverse</p>
+<p>reverse 用来对查询结果进行倒序排序，<strong><code>只有在使用 order_by 之后才会有用</code></strong>，参数使用参考：</p>
+<pre><code class="python">def reverse(self):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().reverse()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().reverse().order_by('id')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    ORDER BY `app01_userinfo`.`id` DESC
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().order_by('id').reverse()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    ORDER BY `app01_userinfo`.`id` DESC
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 5 ) defer</p>
+<p>映射中排除某列数据，id 列不可以去除，参数:</p>
+<pre><code class="python">def defer(self, *fields):
+    pass
+</code></pre>
+
+<p>使用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    # id列不可使用defer来去除
+    result = models.UserInfo.objects.all().defer('id','name','age')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`ut_id` FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 6 ) only</p>
+<p>只取某些列，参数使用参考：</p>
+<pre><code class="python">def only(self, *fields):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().only('id','age')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`age` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 7 ) annotate</p>
+<p>annotate 可以实现聚合分组查询，参数使用参考：</p>
+<pre><code class="python">def annotate(self, *args, **kwargs):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+
+def user_list(request):
+    result = models.UserInfo.objects.values('ut_id')
+    result = models.UserInfo.objects.values('ut_id').annotate()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`ut_id` FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    from django.db.models import Count, Min, Max, F, Q
+    result = models.UserInfo.objects.values('ut_id').annotate(xxx=Count('id'))
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`ut_id`, COUNT(`app01_userinfo`.`id`) AS `xxx` 
+    FROM `app01_userinfo` 
+    GROUP BY `app01_userinfo`.`ut_id` 
+    ORDER BY NULL
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.values('ut_id').annotate(xxx=Count('id')).filter(xxx__gt=2)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`ut_id`, COUNT(`app01_userinfo`.`id`) AS `xxx` 
+    FROM `app01_userinfo` GROUP BY `app01_userinfo`.`ut_id` 
+    HAVING COUNT(`app01_userinfo`.`id`) &gt; 2 
+    ORDER BY NULL
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(id__gt=2).values('ut_id').annotate(xxx=Count('id')).filter(xxx__gt=2)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`ut_id`, COUNT(`app01_userinfo`.`id`) AS `xxx` 
+    FROM `app01_userinfo` 
+    WHERE `app01_userinfo`.`id` &gt; 2 
+    GROUP BY `app01_userinfo`.`ut_id` 
+    HAVING COUNT(`app01_userinfo`.`id`) &gt; 2 
+    ORDER BY NULL
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 8 ) F </p>
+<p>F 会认为是数据库原有的值，参数：</p>
+<pre><code class="python">
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    from django.db.models import F
+    # 不可用来更新id的值，可能是id是自动递增的原因
+    result = models.UserInfo.objects.all().update(age=F(&quot;age&quot;) + 1)
+    print(result)  # 更新的结果数
+    return HttpResponse()
+</code></pre>
+
+<p>( 9 ) Q </p>
+<p>Q 是用来构造复杂的查询条件，有两种适用方式，一种是 <strong><code>对象方式</code></strong>：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    from django.db.models import Q
+    result = models.UserInfo.objects.filter(Q(id__gt=1))
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE `app01_userinfo`.`id` &gt; 1
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(Q(id__gt=1) &amp; Q(name='thanlon'))
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (`app01_userinfo`.`id` &gt; 1 AND `app01_userinfo`.`name` = thanlon)
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.filter(Q(id__gt=1) | Q(name='thanlon'))
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (`app01_userinfo`.`id` &gt; 1 OR `app01_userinfo`.`name` = thanlon)
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>另一种是 <strong><code>方法</code></strong> 的方式：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    from django.db.models import Q
+    q1 = Q()
+    q1.connector = 'OR'
+    q1.children.append(('id__gt', 1))
+    q1.children.append(('id__lt', 5))
+    print(q1)  # (OR: ('id__gt', 1), ('id__lt', 5))
+    print(q1.children)  # [('id__gt', 1), ('id__lt', 5)]
+    result = models.UserInfo.objects.filter(q1)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (`app01_userinfo`.`id` &gt; 1 OR `app01_userinfo`.`id` &lt; 5)
+    &quot;&quot;&quot;
+
+    q2 = Q()
+    q2.connector = 'AND'
+    q2.children.append(('age__gt', 16))
+    q1.add(q2, 'OR')
+    result = models.UserInfo.objects.filter(q1)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (`app01_userinfo`.`id` &gt; 1 OR `app01_userinfo`.`id` &lt; 5 OR `app01_userinfo`.`age` &gt; 16)
+    &quot;&quot;&quot;
+
+    q3 = Q()
+    q3.add(q1, 'AND')
+    q3.add(q2, 'AND')
+    result = models.UserInfo.objects.filter(q3)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE ((`app01_userinfo`.`id` &gt; 1 OR `app01_userinfo`.`id` &lt; 5 OR `app01_userinfo`.`age` &gt; 16) AND `app01_userinfo`.`age` &gt; 16)
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 10 ) extra</p>
+<p>extra 可以构造额外的查询条件或者映射，如子查询等，参数：</p>
+<pre><code class="python">def extra(self, select=None, where=None, params=None, tables=None,
+              order_by=None, select_params=None):
+    pass     
+</code></pre>
+
+<p>子查询：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().extra()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().extra(select={'n': 'select count(1) from app01_usertype'})
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT (select count(1) from app01_usertype) AS `n`, `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().extra(select={'n': 'select count(1) from app01_usertype where id&gt;%s'},
+                                                 select_params=[1])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT (select count(1) from app01_usertype where id&gt;1 and id&lt;3) AS `n`, `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().extra(
+        select={'n': 'select count(1) from app01_usertype where id&gt;%s and id&lt;%s'},
+        select_params=[1, 3])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT (select count(1) from app01_usertype where id&gt;1 and id&lt;3) AS `n`, 
+    `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().extra(
+        select={
+            'n': 'select count(1) from app01_usertype where id&gt;%s and id&lt;%s',
+            'm': 'select count(1) from app01_usertype where id&gt;%s and id&lt;%s'
+        },
+        select_params=[1, 2, 3, 4])
+    &quot;&quot;&quot;
+    for obj in result:
+        print(obj.name, obj.id, obj.n, obj.m)
+    print(result.query)
+    SELECT 
+    (select count(1) from app01_usertype where id&gt;1 and id&lt;2) AS `n`, 
+    (select count(1) from app01_usertype where id&gt;3 and id&lt;4) AS `m`, 
+    `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>根据条件查询，与 filter 功能是相同的：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().extra(where=['id=1', 'name=thanlon'])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (id=1) AND (name=thanlon)
+    &quot;&quot;&quot;
+    result = models.UserInfo.objects.all().extra(where=['id=1 or id = %s', &quot;name='%s'&quot;], params=[2, 'thanlon'])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    WHERE (id=1 or id = 2) AND (name='thanlon')
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>在原来的基础上增加查询范围：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().extra(tables=['app01_usertype'])
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` , `app01_usertype`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>进行排序，与 <strong><code>models.UserInfo.objects.all().order_by('-age')</code></strong> 具有相同的功能：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().extra(order_by=['-age'])
+    print(result.query)
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo` 
+    ORDER BY `app01_userinfo`.`age` DESC
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>如果在 extra 中使用了 order_by 参数，又在 extra 之外使用了 order_by('-age')，如</p>
+<pre><code class="python">models.UserInfo.objects.all().extra(order_by=['-age']).order_by('-age')
+</code></pre>
+
+<p>或</p>
+<pre><code class="python">models.UserInfo.objects.all().order_by('-age').extra(order_by=['-age'])
+</code></pre>
+
+<p>哪个在后面哪个就生效，其它 extra 中的参数也是一样。</p>
+<p>extra 的综合应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().extra(
+        select={
+            'm': 'select count(1) from app01_usertype where id&gt;%s and id&lt;%s',
+            'n': 'select count(1) from app01_usertype where id&gt;%s and id&lt;%s'
+        },
+        select_params=[1, 2, 3, 4],
+        where=['age&gt;%s'],
+        params=[18, ],
+        order_by=['-age'],
+        tables=['app01_usertype']
+    )
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT 
+        (select count(1) from app01_usertype where id&gt;1 and id&lt;2) AS `m`, 
+        (select count(1) from app01_usertype where id&gt;3 and id&lt;4) AS `n`, 
+        `app01_userinfo`.`id`, 
+        `app01_userinfo`.`name`, 
+        `app01_userinfo`.`age`, 
+        `app01_userinfo`.`ut_id` 
+        FROM `app01_userinfo` , `app01_usertype` 
+        WHERE (age&gt;18) 
+        ORDER BY `app01_userinfo`.`age` DESC
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 11 ) distinct
+用于去重，使用参考：</p>
+<pre><code class="python">def distinct(self, *field_names):
+    pass
+</code></pre>
+
+<p>应用：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().values('id','name').distinct()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT DISTINCT `app01_userinfo`.`id`, `app01_userinfo`.`name` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>如果是 PostgreSQL 数据库使用方式：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.distinct('id','name')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT DISTINCT `app01_userinfo`.`id`, `app01_userinfo`.`name` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 12 ) select_related
+与性能相关，表之间进行 join 连表操作，一次性获取关联数据：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    result = models.UserInfo.objects.all().select_related()
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id`, `app01_usertype`.`id`, `app01_usertype`.`title` 
+        FROM `app01_userinfo`
+        INNER JOIN `app01_usertype`
+        ON (`app01_userinfo`.`ut_id` = `app01_usertype`.`id`)
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 13 ) prefetch_related
+性能相关，多表连表操作时速度会慢，使用其执行多次 SQL 查询在 Python 代码中实现连表操作：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+
+def user_list(request):
+    # result = models.UserInfo.objects.all().prefetch_related()
+    # 加不加外键都是同样的结果
+    result = models.UserInfo.objects.all().prefetch_related('ut_id')
+    &quot;&quot;&quot;
+    print(result.query)
+    SELECT `app01_userinfo`.`id`, `app01_userinfo`.`name`, `app01_userinfo`.`age`, `app01_userinfo`.`ut_id` 
+    FROM `app01_userinfo`
+    &quot;&quot;&quot;
+    return HttpResponse()
+</code></pre>
+
+<p>( 14 ) 原生sql
+ORM 可以解决绝大多数查询，但是可能解决不了非常复杂的请求。这个时候只能使用原生 sql 了，Django 中使用原生sql 的方式：</p>
+<pre><code class="python">from django.shortcuts import HttpResponse
+from app01 import models
+from django.db import connection, connections
+
+def user_list(request):
+    try:
+        # cursor = connection.cursor()  # connections['default'].cursor()
+        cursor = connections['mysql'].cursor()
+        cursor.execute(&quot;&quot;&quot;select *from app01_userinfo where id &gt;= 2 and id &lt;= 4&quot;&quot;&quot;)
+        # row = cursor.fetchone()#(2, 'Thanlon', 23, 1)
+        row = cursor.fetchall()  # (((2, 'Thanlon', 33, 1), (3, 'Kiku', 36, 2), (4, 'lili', 33, 1))
+        print(row)
+    except Exception as e:
+        print(e)
+    return HttpResponse()
+</code></pre>
+
+<p><strong><code>settings.py:</code></strong></p>
+<pre><code class="python">DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'mysql': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_test',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306'
+    }
+}
+</code></pre>
+
+<hr>
+
+<h5 id="10-orm">10. ORM提高性能的操作</h5>
+<p>( 1 ) 把 MODEL 转换为迭代器去执行</p>
+<pre><code class="python">Article.objects.all(),iterator()
+</code></pre>
+
+<p>( 2 ) only 获取字段等同于 values 和 values_list，但是使用 only 这种方式不会一下获取全部数据</p>
+<pre><code class="python">Article.objects.only('FIELD1','FIELD2','')
+</code></pre>
+
+<p>( 3 ) 如果要用于判断某个条件的数据是否存在，建议使用 exists，这比使用 count 或者直接判断 QuerySet 更加高效</p>
+<p>使用 exists：</p>
+<pre><code class="python">if Article.objects.filter(title='xxx').exists():
+    print(True)
+</code></pre>
+
+<p>使用 count：</p>
+<pre><code class="python">if Article.objects.filter(title='xxx').count()&gt;0:
+    print(True)
+</code></pre>
+
+<p>直接判断 QuerySet：</p>
+<pre><code class="python">if Article.objects.filter(title='xxx'):
+    print(True)
+</code></pre>
+
+<hr>
+
+<h5 id="11">11. 查询过滤综合</h5>
+<p>( 1 ) 返回查询集</p>
+<p><kbd>filter()</kbd>：条件满足的查询集合</p>
+<p><kbd>order_by()</kbd>：排序的集合</p>
+<p><kbd>values()</kbd>：一个对象构成一个字典，然后构成一个列表返回。相当于 json 数据，很方便使用</p>
+<p>限制查询集：返回的查询集支持切片操作，但是不支持负索引</p>
+<p>( 2 ) 返回单个值</p>
+<p><kbd>get()</kbd>：返回单个满足条件的对象，如果未找到会引发 “模型类.DoesNotExist” 异常</p>
+<p><kbd>count()</kbd>：返回当前查询的总条数</p>
+<p><kbd>first()</kbd>：返回第一个对象</p>
+<p><kbd>last()</kbd>：返回最后一个对象</p>
+<p><kbd>exists()</kbd>：判断查询集中是否有数据，如果有返回 True, 否则返回 False</p>
+<hr>
+
+<h5 id="12">12. 格式化参数</h5>
+<p>( 1 ) slice：切片操作，返回列表</p>
+<pre><code class="djangotemplate">{{ [1,2,3] | slice:':2' }}  # [1,2]
+</code></pre>
+
+<p>( 2 ) slugify：在字符串中留下减号和下划线。其它符号删除，空格用减号替换</p>
+<pre><code class="djangotemplate">{{'1-2=3and4 5=6' | slugify}} # 5-23and4-56
+</code></pre>
+
+<p>( 3 ) stringformat：字符串格式化，语法同 Python</p>
+<pre><code class="djangotemplate">1 | stringformat:&quot;i&quot; # '1'
+</code></pre>
+
+<p>( 4 ) time：返回日期的时间部分</p>
+<p>( 5 ) timesince：到现在为止过长时间。结果可能是 45day、3hours</p>
+<p>( 6 ) timeuntil：给定日期到现在过去了多少时间</p>
+<p>( 7 ) lower：大写字母转换成小写</p>
+<hr>
+
+<h4 id="djangocbv">Django的CBV使用</h4>
 <hr>
 
 <h5 id="1-cbv">1. CBV的引入</h5>
@@ -1783,11 +4100,11 @@ class Login(View):
 
 <hr>
 
-<h4 id="_4">内置分页</h4>
+<h4 id="django_4">Django内置分页</h4>
 <hr>
 
-<h5 id="1_3">1. 后台分页逻辑</h5>
-<pre><code class="py">from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+<h5 id="1_5">1. 后台分页逻辑</h5>
+<pre><code class="python">from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 def student(request):
     # 获取所有的结果集
@@ -1804,7 +4121,7 @@ def student(request):
     pagenator.per_page：每页显示的条目数量
     pagenator.count：数据总个数
     pagenator.num_pages：总页数
-    pagenator.page_range：总页数的索引范围，如(1,10)
+    pagenator.page_range：页码列表，总页数的索引范围，如(1,10)
     &quot;&quot;&quot;
     # 获取传入的页码
     current_page = request.GET.get('page')
@@ -1822,7 +4139,9 @@ def student(request):
     posts.number:当前页
     posts.paginator：paginator对象
     &quot;&quot;&quot;
-    # 如果传入的页码不是int类型，如传入的是/student.html/?page=abc
+    # PageNotAnInteger：如果传入的页码不是整数的值时会抛出异常，如传入的是/student.html/?page=abc
+    # InvalidPage：当向page()传入一个无效的页码时抛出
+    # EmptyPage：当向page()提供一个有效值但是那个页面上没有任何对象时抛出
     except EmptyPage as e:
         posts = pagenator.page(1)  # 如果传入的页码是空页，则默认显示第一页，如传入的是/student.html/?page=-10
     return render(request, 'student.html', {'posts': posts})
@@ -1830,7 +4149,7 @@ def student(request):
 
 <hr>
 
-<h5 id="2_4">2. 前台分页展示</h5>
+<h5 id="2_5">2. 前台分页展示</h5>
 <pre><code class="html">&lt;table class=&quot;table table-hover text-center&quot; style=&quot;background: white;margin-bottom: 0&quot;&gt;
     &lt;tr&gt;
         &lt;th class=&quot;text-center&quot;&gt;ID&lt;/th&gt;
@@ -1863,14 +4182,14 @@ def student(request):
 
 <hr>
 
-<h4 id="_5">自定义分页</h4>
+<h4 id="django_5">Django自定义分页</h4>
 <hr>
 
-<h5 id="1_4">1. 自定义分页效果</h5>
+<h5 id="1_6">1. 自定义分页效果</h5>
 <p>可以实现查找 <font>首页和最后一页，上一页和下一页，以及指定页</font>：</p>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200614162457430.png" />
 <hr></p>
-<h5 id="2_5">2. 自定义分页的实现</h5>
+<h5 id="2_6">2. 自定义分页的实现</h5>
 <p>模型 Model 部分的代码：</p>
 <p><strong><code>models.py</code></strong>:</p>
 <pre><code class="py">from django.db import models
@@ -2002,7 +4321,7 @@ def index(request):
 
 <hr>
 
-<h5 id="3_3">3. 分页插件</h5>
+<h5 id="3_4">3. 分页插件</h5>
 <p>可以把控制器部分的 PageInfo 类放在单独的 Python 文件中，可以复用。新建 utils 目录，然后将其放在 utils 目录下：</p>
 <p><strong><code>pager.py</code></strong></p>
 <pre><code class="py">class PageInfo:
@@ -2080,7 +4399,7 @@ def index(request):
 
 <hr>
 
-<h4 id="xss">跨站脚本攻击XSS</h4>
+<h4 id="django_6">Django解决跨站脚本攻击</h4>
 <hr>
 
 <h5 id="1-djangoxss">1. Django处理XSS攻击</h5>
@@ -2108,7 +4427,7 @@ def index(request):
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020061419582245.png" /></p>
 <p>但是当传入到模板的数据是我们自己的并且是安全的，我们想要告诉系统这是安全的应该如何去做呢！有两种方法，分别是后端标记字符串和前端标记字符串。
 <hr></p>
-<h5 id="2_6">2. 前端标记字符串</h5>
+<h5 id="2_7">2. 前端标记字符串</h5>
 <p>在模板上写 <strong><code>|safe</code></strong> 的方法可以标记字符串是安全的，可以去解析执行：</p>
 <p><strong><code>test.html</code></strong>:</p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
@@ -2125,7 +4444,7 @@ def index(request):
 
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200614200239547.png" />
 <hr></p>
-<h5 id="3_4">3. 后端标记字符串</h5>
+<h5 id="3_5">3. 后端标记字符串</h5>
 <p>后台把字符串标记成安全的需要在传入模板之前就操作，使用到的是 <strong><code>django.utils.safestring</code></strong> 模块中的 <kbd>mark_safe</kbd> 函数：</p>
 <p><strong><code>views.py</code></strong>:</p>
 <pre><code class="py">def test(request):
@@ -2151,10 +4470,10 @@ def index(request):
 <p>与前端标记一样：
 <img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200614200239547.png" />
 <hr></p>
-<h4 id="csrf">跨站请求伪造CSRF</h4>
+<h4 id="django_7">Django处理跨站请求伪造</h4>
 <hr>
 
-<h5 id="1_5">1. 基本应用</h5>
+<h5 id="1_7">1. 基本应用</h5>
 <p>Django 中通过生成随机字符串的方式对客户发送提交数据的请求（POST）进行验证，基本原理：客户端向服务端先发送GET请求，服务端会把随机字符串写到请求的页面上，客户端再来提交数据的时候需要带上这个随机字符串，服务端才会处理请求。默认中间件的配置中 CSRF 是开启的状态：</p>
 <p><strong><code>settings.py:</code></strong></p>
 <pre><code class="py">MIDDLEWARE = [
@@ -2215,7 +4534,7 @@ def index(request):
 <p>客户端直接带着这个随机字符串提交提交数据即可，不会再包请求拒绝的问题。
 <strong><code>{{ csrf_token }}</code></strong> 会在页面上直接显示这个随机字符串，而 <strong><code>{% csrf_token %}</code></strong> 会生成 input 标签，这是有区别的。
 <hr></p>
-<h5 id="2_7">2. 全站禁用</h5>
+<h5 id="2_8">2. 全站禁用</h5>
 <p>如果全站都不想使用 CSRF 的验证，可以全局禁用处理里 CSRF，只需要在配置文件中的中间件部分注释掉CSRF的过滤，</p>
 <pre><code class="py">MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -2230,7 +4549,7 @@ def index(request):
 
 <p>如果是这样，客户端提交数据请求时不会进行CSRF的处理。
 <hr></p>
-<h5 id="3_5">3. 局部禁用</h5>
+<h5 id="3_6">3. 局部禁用</h5>
 <p>如果不想在某些页面提交请求数据时做CSRF验证，这个时候 <strong><code>django.middleware.csrf.CsrfViewMiddleware</code></strong> 中间件是（全局）开启的状态，那就可以通过 <font>装饰器</font> 的方式单独禁用这个页面发送提交数据请求的CSRF的验证，只需要 <font>在视图函数中加入 csrf_exempt 装饰器</font>：</p>
 <p><strong><code>views.py:</code></strong></p>
 <pre><code class="py">from django.views.decorators.csrf import csrf_exempt
@@ -2246,7 +4565,7 @@ def csrf(request):
 
 <hr>
 
-<h5 id="4_2">4. 局部使用</h5>
+<h5 id="4_3">4. 局部使用</h5>
 <p>如果在全局禁用的状态下，局部使用 CSRF 验证。需要在视图函数中加上 <font>装饰器</font>，表示在这个视图函数对应的模板中提交数据的请求必须进行 CSRF 验证：</p>
 <p><strong><code>views.py:</code></strong></p>
 <pre><code class="py">from django.views.decorators.csrf import csrf_protect
@@ -2366,7 +4685,7 @@ def csrf(request):
 
 <hr>
 
-<h4 id="session">Session基本使用</h4>
+<h4 id="djangosession">Django中Session的使用</h4>
 <hr>
 
 <h5 id="1-session">1. Session简介</h5>
@@ -2566,7 +4885,7 @@ SESSION_CACHE_ALIAS = 'default'  # 使用缓存别名（默认内存缓存）,de
 
 <p><font>推荐使用数据和缓存来存放Session！</font>
 <hr></p>
-<h4 id="wsgi">WSGI</h4>
+<h4 id="web">Web服务网关接口</h4>
 <hr>
 
 <h5 id="1-wsgi">1. WSGI</h5>
@@ -2604,17 +4923,17 @@ if __name__ == '__main__':
 <hr></p>
 <p>Django 请求的生命周期流程：用户-&gt;WSGI-&gt;中间件-&gt;视图函数(数据库和模板进行渲染)-&gt;中间件-&gt;WSGI-&gt;用户，中间件和视图函数部分属于 Django。
 <hr></p>
-<h4 id="_6">中间件</h4>
+<h4 id="django_8">Django中间件</h4>
 <hr>
 
-<h5 id="1_6">1. 中间件执行流程</h5>
+<h5 id="1_8">1. 中间件执行流程</h5>
 <p>Django 1.10之前，请求到达第一个中间件，会找到最后一个中间件的 process_response 返回：
 <img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200618005438431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
 <p>而Django 1.10之后，会找到自己的 process_response 返回：
 <img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200618005323503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
 <p><font>中间件是有序执行的！</font>
 <hr></p>
-<h5 id="2_8">2. 中间件原理浅析</h5>
+<h5 id="2_9">2. 中间件原理浅析</h5>
 <p>中间件是类，首先查看 Django 源码中的中间件：
 <img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200618011158584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200618011204639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
@@ -2957,10 +5276,10 @@ def test(request):
 
 <p><font>视图函数返回的对象且对象中有 render 方法才会执行 process_template_response方法。</font>
 <hr></p>
-<h5 id="3_6">3. 中间件的应用</h5>
+<h5 id="3_7">3. 中间件的应用</h5>
 <p>中间件可以对 <font>所有请求或一部分请求做批量处理</font>。使用缓存时，需要对 <font>所有请求进行判断</font>，缓存中如果有就把缓存中的数据返回，没有就执行视图函数。对所有的请求进行判断就需要使用到中间件。
 <hr></p>
-<h5 id="4_3">4. 中间件解决跨域问题</h5>
+<h5 id="4_4">4. 中间件解决跨域问题</h5>
 <p>由于浏览器同源策略的限制（同一主机不同端口之间），会产生客户端向服务端请求存在跨域的问题，如向服务端发送获取数据的请求，客户端：</p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -3118,13 +5437,13 @@ class M1(MiddlewareMixin):
 
 <hr>
 
-<h4 id="form">Form组件</h4>
+<h4 id="djangoform">Django的Form组件</h4>
 <hr>
 
 <h5 id="1-form">1. Form组件的功能</h5>
 <p>对用户提交表单数据进行校验、保留上次输入内容。
 <hr></p>
-<h5 id="2_9">2. 数据校验</h5>
+<h5 id="2_10">2. 数据校验</h5>
 <p>Form组件对Form表单的方式提交的数据进行校验：</p>
 <p><strong><code>login.html:</code></strong></p>
 <pre><code class="py">&lt;!DOCTYPE html&gt;
@@ -3347,7 +5666,7 @@ def ajax_login(request):
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200622164034109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
 <p><font>AJAX 仅用来验证功能，Form 可以验证功能也可以生成 HTML 标签</font>。
 <hr></p>
-<h5 id="3_7">3. 常用字段和参数</h5>
+<h5 id="3_8">3. 常用字段和参数</h5>
 <pre><code class="py">Field：
     required = True,  # 是否允许为空
     label = None,  # 用于生成Label标签
@@ -3403,7 +5722,7 @@ GenericIPAddressField(CharField)
 
 <hr>
 
-<h5 id="4_4">4. 保留上次输入内容</h5>
+<h5 id="4_5">4. 保留上次输入内容</h5>
 <p>Form 表单的方式提交数据，页面会刷新会失去提交的内容。AJAX 方式提交时页面不刷新，上次输入内容自动保存。使用 Form 表单提交数据保存上次输入的内容也是可以实现的，需要应用到 Form 组件提供的第二个功能生成HTML标签。只需要在 input 框中加入验证通过的数据 <strong><code>obj.cleaned_data</code></strong>：</p>
 <p><strong><code>views.py:</code></strong></p>
 <pre><code class="py">class LoginForm(Form):
@@ -3467,10 +5786,10 @@ def ajax_login(request):
 <p>上一次验证通过的数据才会被保存：
 <img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200622173852651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
 <hr></p>
-<h4 id="_7">信号</h4>
+<h4 id="django_9">Django信号</h4>
 <hr>
 
-<h5 id="1-django_2">1. Django信号使用场景</h5>
+<h5 id="1-django_1">1. Django信号使用场景</h5>
 <p>对 Django 数据库中的某张表做增加、删除、修改之前记录一条日志可以使用 Django 中的信号，Django 中的信号是 <font>Django 框架内部帮助开发者预留的可自定义扩展的位置</font>。Flask 和 Scrapy 框架也有信号。
 <hr></p>
 <h5 id="2-django_3">2. Django内置信号</h5>
@@ -3638,10 +5957,266 @@ Database Wrappers
 
 <hr>
 
+<h4 id="djangocontenttype">Django的contenttype组件</h4>
+<hr>
+
+<h5 id="1-contenttype">1. contenttype组件作用</h5>
+<p>1） contenttype 组件帮助我们 <font>生成了所有关联数据库的表</font>，使用 ForeignKey 与 contenttyp e表直接关联就可以</p>
+<p>2）在模型类中使用 GenericForeignKey 可以帮助我们 <font>快速插入数据</font>，实现 content_typ e操作</p>
+<p>3）在模型类中使用 GenericRelation 可以实现 <font>快速查找</font>，不用自己去连表
+<hr></p>
+<h5 id="2-contenttype">2. contenttype组件示例</h5>
+<p>有这样的业务场景，课程分为普通课程和 VIP 课程，需要为这两种课程设置价值策略。在价格策略表中需要记录两种课程的课程 ID，为了区分是哪个表的课程ID，还需要记录表名称。表设计如下：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200802103218703.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>创建表，<strong><code>models.py:</code></strong></p>
+<pre><code class="py">from django.db import models
+from django.contrib.contenttypes.models import ContentType
+
+# Create your models here.
+class Course(models.Model):
+    &quot;&quot;&quot;
+    普通课程
+    &quot;&quot;&quot;
+    name = models.CharField(max_length=32, help_text='课程的名称')
+
+class VipCourse(models.Model):
+    &quot;&quot;&quot;
+    VIP普通课程
+    &quot;&quot;&quot;
+    name = models.CharField(max_length=32, help_text='Vip课程的名称')
+
+class PricePolicy(models.Model):
+    &quot;&quot;&quot;
+    价格策略
+    &quot;&quot;&quot;
+    price = models.FloatField(help_text='价格')
+    period = models.IntegerField(help_text='时间周期')
+    # table_name = models.CharField(verbose_name='关联的表名称')
+    # course_id = models.IntegerField(verbose_name='关联的表中的数据行的ID，即课程ID')
+    table_name = models.ForeignKey(ContentType, verbose_name='关联的表名称')  # ContentType表中有表名称字段
+    course_id = models.IntegerField(verbose_name='关联的表中的数据行的ID，即课程ID')
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200802121819727.png" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200802121921982.png" /></p>
+<p>在 models.py 中设置的价格策略的字段 table_name 在生成表的时候变成了 table_name_id，下面将使用 content_type 来替换 table_name，这样生成表的字段就是 content_type_id，这将更方便我们知道该字段关联 content_type 表。</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200802121928937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>我们用 <font>常规的方式</font> 在 <strong><code>views.py</code></strong> 中为课程添加价格策略，</p>
+<p><strong><code>urls.py:</code></strong></p>
+<pre><code class="py">from django.urls import path
+from app import views
+
+urlpatterns = [
+    # path('admin/', admin.site.urls),
+    path('test/', views.test)
+]
+</code></pre>
+
+<p><strong><code>views.py:</code></strong></p>
+<pre><code class="py">from django.shortcuts import render, HttpResponse
+
+from app import models
+
+
+# Create your views here.
+def test(request):
+    &quot;&quot;&quot;
+    # 添加之前向两个课程表中添加数据
+    models.Course.objects.create(name='Python')
+    models.Course.objects.create(name='Flask')
+    models.Course.objects.create(name='Django')
+    models.VipCourse.objects.create(name='DRF')
+    models.VipCourse.objects.create(name='VUE')
+    models.VipCourse.objects.create(name='Scrapy')
+    &quot;&quot;&quot;
+    &quot;&quot;&quot;
+    添加一条普通课程为“Python”价格为99.9，学习周期为3个月的价格策略记录(首先还要查询相关字段的值)
+    &quot;&quot;&quot;
+    course_obj = models.Course.objects.filter(name='Python').first()
+    print(course_obj)  # Course object (1)
+    # 首先需要获取根据课程的名称获取课程的id
+    course_id = course_obj.id
+    # 然后还要获取content_type表中course表对应的id
+    content_type_obj = models.ContentType.objects.filter(model='course').first()
+    content_type_id = content_type_obj.id
+    models.PricePolicy.objects.create(price=99.9, period=3, course_id=course_id, content_type_id=content_type_id)
+    return HttpResponse('...')
+</code></pre>
+
+<p>这样就成功创建策略：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200802125559876.png" /></p>
+<p>1）这样为课程添加价格策略未免有些麻烦，<font>借助contenttype组件可以帮助我们快速实现content_type操作。</font>修改 <strong><code>models.py</code></strong>：</p>
+<pre><code class="py">...
+from django.contrib.contenttypes.fields import GenericForeignKey
+...
+class PricePolicy(models.Model):
+    &quot;&quot;&quot;
+    价格策略
+    &quot;&quot;&quot;
+    price = models.FloatField(help_text='价格')
+    period = models.IntegerField(help_text='时间周期')
+    content_type = models.ForeignKey(ContentType, verbose_name='关联的表名称',
+                                     on_delete=models.CASCADE)  # ContentType表中有表名称字段
+    course_id = models.IntegerField(verbose_name='关联的表中的数据行的ID，即课程ID')
+    content_object = GenericForeignKey('content_type', 'course_id')
+
+</code></pre>
+
+<p>因此添加策略的时候可以这样：</p>
+<pre><code class="py">from django.shortcuts import render, HttpResponse
+
+from app import models
+
+
+# Create your views here.
+def test(request):
+    &quot;&quot;&quot;
+    # 添加之前向两个课程表中添加数据
+    models.Course.objects.create(name='Python')
+    models.Course.objects.create(name='Flask')
+    models.Course.objects.create(name='Django')
+    models.VipCourse.objects.create(name='DRF')
+    models.VipCourse.objects.create(name='VUE')
+    models.VipCourse.objects.create(name='Scrapy')
+    &quot;&quot;&quot;
+    &quot;&quot;&quot;
+    # 添加一条普通课程为“Python”价格为99.9，学习周期为3个月的价格策略记录(首先还要查询相关字段的值)
+    course_obj = models.Course.objects.filter(name='Python').first()
+    print(course_obj)  # Course object (1)
+    # 首先需要获取根据课程的名称获取课程的id
+    course_id = course_obj.id
+    # 然后还要获取content_type表中course表对应的id
+    content_type_obj = models.ContentType.objects.filter(model='course').first()
+    content_type_id = content_type_obj.id
+    models.PricePolicy.objects.create(price=99.9, period=3, course_id=course_id, content_type_id=content_type_id)
+    &quot;&quot;&quot;
+    &quot;&quot;&quot;
+    1.借助content_type快速实现数据插入(content_type)操作
+    &quot;&quot;&quot;
+    course_obj = models.Course.objects.filter(name='Python').first()
+    models.PricePolicy.objects.create(price=99.9, period=3, content_object=course_obj)
+    return HttpResponse('...')
+</code></pre>
+
+<p>只需要两行代码即可以，不需要查课程的 ID 和课程对应 content_type 表中的 ID。表中成功插入一条课程策略记录：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020080213155559.png" /></p>
+<p>2）根据课程 ID 获取该课程所有的价格策略，这里可以使用 contenttype 组件中的 GenericRelation 来实现反向查找，需要修改 <strong><code>models.py:</code></strong></p>
+<pre><code class="py">from django.db import models
+from django.contrib.contenttypes.models import ContentType
+from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
+
+
+# Create your models here.
+class Course(models.Model):
+    &quot;&quot;&quot;
+    普通课程
+    &quot;&quot;&quot;
+    name = models.CharField(max_length=32, help_text='课程的名称')
+    # 仅仅用于反向查找（无须修改表结构）
+    price_policy_list = GenericRelation('PricePolicy')
+
+
+class VipCourse(models.Model):
+    &quot;&quot;&quot;
+    VIP普通课程
+    &quot;&quot;&quot;
+    name = models.CharField(max_length=32, help_text='Vip课程的名称')
+    # 仅仅用于反向查找（无须修改表结构）
+    price_policy_list = GenericRelation('PricePolicy')
+
+
+class PricePolicy(models.Model):
+    &quot;&quot;&quot;
+    价格策略
+    &quot;&quot;&quot;
+    price = models.FloatField(help_text='价格')
+    period = models.IntegerField(help_text='时间周期')
+    # table_name = models.CharField(verbose_name='关联的表名称')
+    # course_id = models.IntegerField(verbose_name='关联的表中的数据行的ID，即课程ID')
+    content_type = models.ForeignKey(ContentType, verbose_name='关联的表名称', on_delete=models.CASCADE)
+    &quot;&quot;&quot;
+    课程的ID，要使用object_id，不要使用course_id，这是个坑
+    &quot;&quot;&quot;
+    object_id = models.IntegerField(verbose_name='关联的表中的数据行的ID，即课程ID')
+    # 仅仅用于快速操作content_type（无须修改表结构）
+    content_object = GenericForeignKey('content_type', 'object_id')
+</code></pre>
+
+<p><strong><code>views.py:</code></strong></p>
+<pre><code class="py">from django.shortcuts import render, HttpResponse
+
+from app import models
+
+
+# Create your views here.
+def test(request):
+    &quot;&quot;&quot;
+    # 添加之前向两个课程表中添加数据
+    models.Course.objects.create(name='Python')
+    models.Course.objects.create(name='Flask')
+    models.Course.objects.create(name='Django')
+    models.VipCourse.objects.create(name='DRF')
+    models.VipCourse.objects.create(name='VUE')
+    models.VipCourse.objects.create(name='Scrapy')
+    &quot;&quot;&quot;
+    &quot;&quot;&quot;
+    # 添加一条普通课程为“Python”价格为99.9，学习周期为3个月的价格策略记录(首先还要查询相关字段的值)
+    course_obj = models.Course.objects.filter(name='Python').first()
+    print(course_obj)  # Course object (1)
+    # 首先需要获取根据课程的名称获取课程的id
+    course_id = course_obj.id
+    # 然后还要获取content_type表中course表对应的id
+    content_type_obj = models.ContentType.objects.filter(model='course').first()
+    content_type_id = content_type_obj.id
+    models.PricePolicy.objects.create(price=99.9, period=3, course_id=course_id, content_type_id=content_type_id)
+    &quot;&quot;&quot;
+    &quot;&quot;&quot;
+    1. 借助content_type快速实现数据插入(content_type)操作
+    1. 借助content_type快速实现数据插入(content_type)操作
+    course_obj = models.Course.objects.filter(name='Python').first()
+    models.PricePolicy.objects.create(price=99.9, period=3, content_object=course_obj)
+    &quot;&quot;&quot;
+    &quot;&quot;&quot;
+    2. 根据课程ID获取该课程所有的价格策略(借助GenericRelation实现反向查找)
+    &quot;&quot;&quot;
+    try:
+        course_obj = models.Course.objects.filter(id=1).first()  # id=1是Python课程
+        price_policy_list = course_obj.price_policy_list.all()
+        print(
+            price_policy_list)  # &lt;QuerySet [&lt;PricePolicy: PricePolicy object (1)&gt;, &lt;PricePolicy: PricePolicy object (2)&gt;]&gt;
+        for i in price_policy_list:
+            print(i)
+        &quot;&quot;&quot;
+        PricePolicy object (1)
+        PricePolicy object (2)
+        &quot;&quot;&quot;
+    except Exception as e:
+        print(
+            e)  # Cannot resolve keyword 'object_id' into field. Choices are: content_object, content_type, content_type_id, course_id, id, period, price
+    return HttpResponse('...')
+</code></pre>
+
+<hr>
+
+<h4 id="django_10">Django缓存</h4>
+<hr>
+
+<h5 id="1-django_2">1. Django缓存</h5>
+<p>由于 Django 是动态网站，所以每次请求都会去数据库进行相应的操作。当程序访问量大时，耗时必然会更加明显，最简单解决方式是使用缓存。缓存将 views
+的返回值保存至内存或者 Memcache、redis 等内存数据库中，几分钟内再有人访问时，则不再去执行 views 中的操作，直接获取缓存的内容，并返回。Django
+提供了六种缓存方式：</p>
+<p>( 1 ) 开发调试</p>
+<p>( 2 ) 内存</p>
+<p>( 3 ) 文件</p>
+<p>( 4 ) 数据库</p>
+<p>( 5 ) Memcache缓存 ( memcached 模块 )</p>
+<p>( 6 ) Memcache缓存 ( pylibmc 模块)</p>
+<hr>
+
 <h4 id="api">API接口开发</h4>
 <hr>
 
-<h5 id="1_7">1. 模型的创建</h5>
+<h5 id="1_9">1. 模型的创建</h5>
 <p>创建模型用于测试，设计一张简单的数据表存放在 Pycharm 自带的 sqlite 数据库中：</p>
 <p><strong><code>models.py</code></strong></p>
 <pre><code class="py">from django.db import models
@@ -3659,7 +6234,7 @@ class User(models.Model):
 
 <hr>
 
-<h5 id="2_10">2. 路由系统的创建</h5>
+<h5 id="2_11">2. 路由系统的创建</h5>
 <p>添加和查询信息使用的路由是 <strong><code>user/</code></strong>，修改（更新）和删除信息使用路由是 <strong><code>user/&lt;int:pk&gt;/</code></strong>，路由创建如下：</p>
 <p><strong><code>urls.py：</code></strong></p>
 <pre><code class="py">from django.contrib import admin
@@ -3675,7 +6250,7 @@ urlpatterns = [
 
 <hr>
 
-<h5 id="3_8">3. 添加数据的接口</h5>
+<h5 id="3_9">3. 添加数据的接口</h5>
 <p>添加数据的业务逻辑：</p>
 <p><strong><code>views.py:</code></strong></p>
 <pre><code class="py">class UserView(View):
@@ -3732,7 +6307,7 @@ class UserForm(forms.Form):
 <p>验证数据库，已经添加完成：</p>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200619220354492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
 <hr></p>
-<h5 id="4_5">4. 获取所有数据的接口</h5>
+<h5 id="4_6">4. 获取所有数据的接口</h5>
 <p>获取所有数据的业务逻辑：</p>
 <pre><code class="py">class UserView(View):
     def get(self, request):
@@ -3752,7 +6327,7 @@ class UserForm(forms.Form):
 <p>Postman 向后台发送获取所有数据的 GET 请求，<font>返回的状态码是0</font>，说明查询数据成功：</p>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200619220847519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
 <hr></p>
-<h5 id="5_1">5. 获取单条数据的接口</h5>
+<h5 id="5_2">5. 获取单条数据的接口</h5>
 <p>获取单条数据的业务逻辑，走的路由是 <strong><code>/user/&lt;int:pk&gt;/</code></strong>：</p>
 <p><strong><code>views.py:</code></strong></p>
 <pre><code class="py">class UserDetail(View):
@@ -3779,7 +6354,7 @@ class UserForm(forms.Form):
 <p>Postman 向后台发送查询单条数据的GET请求，<font>返回的状态码是0</font>，说明添加成功：</p>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200619221220532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
 <hr></p>
-<h5 id="6_1">6. 更新数据的接口</h5>
+<h5 id="6_2">6. 更新数据的接口</h5>
 <p>更新数据的业务逻辑：</p>
 <pre><code class="py">class UserDetail(View):
     def put(self, request, pk):
@@ -3841,7 +6416,7 @@ class UserForm(forms.Form):
 <p>Postman 向后台发送更新数据的PUT请求，<font>返回的状态码是0</font>，说明修改成功：</p>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200619223522714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
 <hr></p>
-<h5 id="7_2">7. 删除数据的接口</h5>
+<h5 id="7_3">7. 删除数据的接口</h5>
 <p>删除数据的业务逻辑：</p>
 <p><strong><code>views.py:</code></strong></p>
 <pre><code class="py">class UserDetail(View):
@@ -3885,12 +6460,12 @@ class UserForm(forms.Form):
 <p><hr>
 <div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
     <div style="position: relative;float: right">
-        <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
+        <a target="" href="javascript:;" id="weibo"
            style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
-            <img width="22" height="20" src="../img/csdn.jpeg" alt=""
+            <img width="22" height="20" src="../img/weibo.png" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+       <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=5838160dbeb2a49f264d5e2d13d6336248d74a60cf56ecad" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
             <img width="20" height="20" src="../img/qq.png" 
                  style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
         </a>
@@ -3905,28 +6480,121 @@ class UserForm(forms.Form):
                  style="margin-top: 10px;margin-left: 9px">
         </a>
     </div>
+</div>
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;bottom: 0;" id="support_us" hidden="hidden">
+        <div id="alipei_and_wechat">
+            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            <img class="img-responsive" width="180px" height="" src="../img/public/33659FBDE4AF3F7A005E17D9BA173D04.jpg" alt="..."><br>
+            <img class="img-responsive" width="180px" height="" src="../img/public/B37F6EA6DF3F4C1CA0A65C0E80AE131E.jpg" alt="...">
+        </div>
+</div>
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 </div></p></div>
         </div>
 
         <footer class="col-md-12">
 <!--    <hr>-->
-    
-    <p>Copyright © 2020-2022 bysj39.com All Rights Reserved.</p>
-    <p><a href="https://beian.miit.gov.cn" target="_blank">豫ICP备19037971号-1</a><a target="_blank">
-                <img src="http://47.102.145.225:5000/static/home/images/beian.png" style="padding-bottom:6px">
-                <span style="color: black">豫公网安备 41152802000091号</span>
-            </a></p>
-    <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+<!---->
+<!--以前的-->
+<!--<p>Copyright © 2020-2022 <a href="https://pythoneers.cn/">pythoneers.cn</a> All Rights Reserved.</p>-->
+<!--<p>-->
+<!--    <a href="https://beian.miit.gov.cn" target="_blank" style="color:#555;">豫ICP备19037971号-2</a><a target="_blank"></a>-->
+<!--    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279280889'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279280889%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
+<!--</p>-->
+<!--<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>-->
+<!--以前的/-->
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <br>
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">云服务器</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">伽马运维栈</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;PYTHONEERS 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
 
         </footer>
+
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js" defer></script>
         <script src="../js/main.js" defer></script>
-        <script src="../js/busuanzi.pure.mini.js" defer></script>
         <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">

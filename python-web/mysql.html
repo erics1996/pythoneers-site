@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Erics">
-        <link rel="canonical" href="https://docs.pythoneers.cn/python-web/mysql.html">
+        <link rel="canonical" href="https://pythoneers.cn/python-web/mysql.html">
         <link rel="shortcut icon" href="../img/favicon.ico">
+<!--sougou-->
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+<!--!sougou-->
+
         <title>MySQL - PYTHONEERS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -15,15 +23,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../css/nav.css" rel="stylesheet">
         <link href="../css/public.css" rel="stylesheet">
-    
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-    <script data-ad-client="ca-pub-6937898095875663" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!--    <script async src="../js/somelib.js"></script>-->
- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell script.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -52,7 +61,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../python/python3.html">基础到进阶</a>
+    <a href="../python/python-basis.html">Python基础入门</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
 </li>
                                     
 <li >
@@ -68,11 +85,27 @@
 </li>
                                     
 <li >
-    <a href="../python/leetcode.html">Leetcode</a>
+    <a href="../python/interviews-python.html">Python面试题</a>
 </li>
                                     
 <li >
-    <a href="../python/offer.html">剑指Offer</a>
+    <a href="../python/interviews-network.html">网络相关面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer</a>
 </li>
                                 </ul>
                             </li>
@@ -92,12 +125,36 @@
     <a href="flask.html">Flask</a>
 </li>
                                     
+<li >
+    <a href="celery.html">Celery</a>
+</li>
+                                    
 <li class="active">
     <a href="mysql.html">MySQL</a>
 </li>
                                     
 <li >
-    <a href="redis.html">Redis</a>
+    <a href="interviews-flask.html">Flask面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-django.html">Django面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-mysql.html">MySQL面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-redis.html">Redis面试题</a>
+</li>
+                                    
+<li >
+    <a href="project-flask.html">Flask项目实战</a>
+</li>
+                                    
+<li >
+    <a href="project-django.html">Django项目实战</a>
 </li>
                                 </ul>
                             </li>
@@ -154,19 +211,25 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../deep-learning/deep-learning.html">深度学习</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                             <li >
-                                <a rel="next" href="flask.html">
+                                <a rel="next" href="celery.html">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="redis.html">
+                                <a rel="prev" href="interviews-flask.html">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -178,32 +241,250 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">数据库索引</a></li>
+            <li><a href="#1">1. 索引的作用</a></li>
+            <li><a href="#2">2. 索引种类</a></li>
+            <li><a href="#3">3. 覆盖索引</a></li>
+            <li><a href="#4">4. 索引合并</a></li>
+            <li><a href="#5">5. 联合索引</a></li>
+        <li class="main "><a href="#_2">数据库加锁</a></li>
+            <li><a href="#1_1">1. 行锁</a></li>
+            <li><a href="#2_1">2. 表锁</a></li>
+        <li class="main "><a href="#_3">数据库引擎</a></li>
+            <li><a href="#1-innodb">1. innodb</a></li>
+            <li><a href="#2-mysaim">2. mysaim</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<p>django.md</p></div>
+<p><img alt="" src="../img/mysql/mysql.jpeg" /></p>
+<hr>
+
+<h4 id="_1">数据库索引</h4>
+<hr>
+
+<h5 id="1">1. 索引的作用</h5>
+<p>加速查找、约束</p>
+<hr>
+
+<h5 id="2">2. 索引种类</h5>
+<p>主键索引：加速查找、不重复、非空</p>
+<p>唯一索引：加速查找、不重复</p>
+<p>普通索引：加速查找</p>
+<p>联合索引：加速查找</p>
+<p>联合唯一索引：加速查找、不重复</p>
+<hr>
+
+<h5 id="3">3. 覆盖索引</h5>
+<p>在索引文件中就可以得到想要的数据</p>
+<hr>
+
+<h5 id="4">4. 索引合并</h5>
+<p>使用多个单列索引去查找数据</p>
+<hr>
+
+<h5 id="5">5. 联合索引</h5>
+<p>联合索引遵循最左前缀原则，最左侧字段才能使用索引。name 不是最左侧字段，id 是最左侧字段：</p>
+<pre><code class="sql">SELECT *FROM test WHERE id = 1 AND name = 'erics';
+</code></pre>
+
+<hr>
+
+<h4 id="_2">数据库加锁</h4>
+<hr>
+
+<h5 id="1_1">1. 行锁</h5>
+<p>当一个用户 A 对表的字段加了行锁后 ( 加锁是在事务中完成的 )，其他用户 B 不能再对该表的字段再次加行锁、修改字段数据等 ( 这样保证数了据唯一性 ) 但可以正常查询字段的值 ( 用户 A 事务执行之前的 )：</p>
+<p>用户A：</p>
+<p><img alt="" src="../img/mysql/rowblock01.png" /></p>
+<p>用户B：</p>
+<p><img alt="" src="../img/mysql/rowblock02.png" /></p>
+<p><img alt="" src="../img/mysql/rowblock03.png" /></p>
+<p>用户 A 执行事务在加锁之后修改数据值，然后提交这个事务。其他用户 B 如果在 A 提交事务之前已经开启了事务，查询到的结果还是修改之前的。否则，就是 A
+修改过之后新数据！当然，这不影响其他用户 B 修改数据，B 完成数据的修改提交事务之后再获取的就是最新的数据 ( 用户 A 和其他用户 B 提交的数据 )。</p>
+<p>用户A：</p>
+<p><img alt="" src="../img/mysql/rowblock04.png" /></p>
+<p>用户B：</p>
+<p><img alt="" src="../img/mysql/rowblock05.png" /></p>
+<p><img alt="" src="../img/mysql/rowblock06.png" /></p>
+<p>pymysql 加行锁：</p>
+<pre><code class="python"> # 创建连接对象
+conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='test')
+# 创建游标
+cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+# 执行查询的sql语句
+cursor.execute(&quot;select id,title from class for update&quot;)
+# 获取查询到的所有数据
+classe_list = cursor.fetchall()
+# 关闭游标
+cursor.close()
+# 关闭连接
+conn.close()
+</code></pre>
+
+<p>ORM 操作加行锁：</p>
+<pre><code class="python">with trancation.automic():
+    model.User.objects.all().for_update()
+</code></pre>
+
+<hr>
+
+<h5 id="2_1">2. 表锁</h5>
+<hr>
+
+<h4 id="_3">数据库引擎</h4>
+<hr>
+
+<h5 id="1-innodb">1. innodb</h5>
+<p>( 1 ) 支持事务</p>
+<p>( 2 ) 锁：行锁、表锁</p>
+<hr>
+
+<h5 id="2-mysaim">2. mysaim</h5>
+<p>( 1 ) 不支持事务</p>
+<p>( 2 ) 锁：表锁</p>
+<p>( 3 ) 查询速度快</p>
+<hr>
+
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="" href="javascript:;" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/weibo.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+      <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=5838160dbeb2a49f264d5e2d13d6336248d74a60cf56ecad" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;bottom: 0;" id="support_us" hidden="hidden">
+        <div id="alipei_and_wechat">
+            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            <img class="img-responsive" width="180px" height="" src="../img/public/33659FBDE4AF3F7A005E17D9BA173D04.jpg" alt="..."><br>
+            <img class="img-responsive" width="180px" height="" src="../img/public/B37F6EA6DF3F4C1CA0A65C0E80AE131E.jpg" alt="...">
+        </div>
+</div>
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+</div></div>
         </div>
 
         <footer class="col-md-12">
 <!--    <hr>-->
-    
-    <p>Copyright © 2020-2022 bysj39.com All Rights Reserved.</p>
-    <p><a href="https://beian.miit.gov.cn" target="_blank">豫ICP备19037971号-1</a><a target="_blank">
-                <img src="http://47.102.145.225:5000/static/home/images/beian.png" style="padding-bottom:6px">
-                <span style="color: black">豫公网安备 41152802000091号</span>
-            </a></p>
-    <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+<!---->
+<!--以前的-->
+<!--<p>Copyright © 2020-2022 <a href="https://pythoneers.cn/">pythoneers.cn</a> All Rights Reserved.</p>-->
+<!--<p>-->
+<!--    <a href="https://beian.miit.gov.cn" target="_blank" style="color:#555;">豫ICP备19037971号-2</a><a target="_blank"></a>-->
+<!--    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279280889'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279280889%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
+<!--</p>-->
+<!--<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>-->
+<!--以前的/-->
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <br>
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">云服务器</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">伽马运维栈</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;PYTHONEERS 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
 
         </footer>
+
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js" defer></script>
         <script src="../js/main.js" defer></script>
-        <script src="../js/busuanzi.pure.mini.js" defer></script>
         <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">

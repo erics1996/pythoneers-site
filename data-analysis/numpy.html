@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Erics">
-        <link rel="canonical" href="https://docs.pythoneers.cn/data-analysis/numpy.html">
+        <link rel="canonical" href="https://pythoneers.cn/data-analysis/numpy.html">
         <link rel="shortcut icon" href="../img/favicon.ico">
+<!--sougou-->
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+<!--!sougou-->
+
         <title>NumPy - PYTHONEERS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -15,15 +23,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../css/nav.css" rel="stylesheet">
         <link href="../css/public.css" rel="stylesheet">
-    
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-    <script data-ad-client="ca-pub-6937898095875663" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!--    <script async src="../js/somelib.js"></script>-->
- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell script.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -52,7 +61,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../python/python3.html">基础到进阶</a>
+    <a href="../python/python-basis.html">Python基础入门</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
 </li>
                                     
 <li >
@@ -68,11 +85,27 @@
 </li>
                                     
 <li >
-    <a href="../python/leetcode.html">Leetcode</a>
+    <a href="../python/interviews-python.html">Python面试题</a>
 </li>
                                     
 <li >
-    <a href="../python/offer.html">剑指Offer</a>
+    <a href="../python/interviews-network.html">网络相关面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer</a>
 </li>
                                 </ul>
                             </li>
@@ -93,11 +126,35 @@
 </li>
                                     
 <li >
+    <a href="../python-web/celery.html">Celery</a>
+</li>
+                                    
+<li >
     <a href="../python-web/mysql.html">MySQL</a>
 </li>
                                     
 <li >
-    <a href="../python-web/redis.html">Redis</a>
+    <a href="../python-web/interviews-flask.html">Flask面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-django.html">Django面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-mysql.html">MySQL面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-redis.html">Redis面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/project-flask.html">Flask项目实战</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/project-django.html">Django项目实战</a>
 </li>
                                 </ul>
                             </li>
@@ -154,8 +211,14 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../deep-learning/deep-learning.html">深度学习</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -178,30 +241,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#1-numpy">1 Numpy简介</a></li>
-        <li class="main "><a href="#2-ndarray">2 ndarray简介</a></li>
-        <li class="main "><a href="#3-ndarraylist">3 ndarray与list执行效率的对比</a></li>
-        <li class="main "><a href="#4-ndarray">4 ndarray的优势</a></li>
-        <li class="main "><a href="#5-ndarray">5 ndarray数组的属性</a></li>
-        <li class="main "><a href="#6-ndarray">6 ndarray数组的形状</a></li>
-        <li class="main "><a href="#7-ndarray">7 ndarray数组的类型</a></li>
-        <li class="main "><a href="#8-ndarray">8 ndarray数组的生成</a></li>
-        <li class="main "><a href="#9-ndarray">9 ndarray数组的索引和切片</a></li>
-        <li class="main "><a href="#10-ndarray">10 ndarray数组形状的修改</a></li>
-        <li class="main "><a href="#11-ndarray">11 ndarray数组类型的修改</a></li>
-        <li class="main "><a href="#12-ndarray">12 ndarray数组的去重</a></li>
-        <li class="main "><a href="#13-ndarray">13 ndarray的运算</a></li>
-        <li class="main "><a href="#14-ndrray">14 ndrray统计运算相关的函数</a></li>
-        <li class="main "><a href="#15">15 数组间的运算</a></li>
-        <li class="main "><a href="#16">16 矩阵与向量相关</a></li>
+        <li class="main active"><a href="#numpy">NumPy</a></li>
+            <li><a href="#1-ndarray">1. ndarray简介</a></li>
+            <li><a href="#2-ndarraylist">2. ndarray与list执行效率的对比</a></li>
+            <li><a href="#3-ndarray">3. ndarray的优势</a></li>
+            <li><a href="#4-ndarray">4. ndarray数组的属性</a></li>
+            <li><a href="#5-ndarray">5. ndarray数组的形状</a></li>
+            <li><a href="#6-ndarray">6. ndarray数组的类型</a></li>
+            <li><a href="#7-ndarray">7. ndarray数组的生成</a></li>
+            <li><a href="#8-ndarray">8. ndarray数组的索引和切片</a></li>
+            <li><a href="#9-ndarray">9. ndarray数组形状的修改</a></li>
+            <li><a href="#10-ndarray">10. ndarray数组类型的修改</a></li>
+            <li><a href="#11-ndarray">11. ndarray数组的去重</a></li>
+            <li><a href="#12-ndarray">12. ndarray的运算</a></li>
+            <li><a href="#13-ndrray">13. ndrray统计运算相关的函数</a></li>
+            <li><a href="#14">14. 数组间的运算</a></li>
+            <li><a href="#15">15. 矩阵与向量相关</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h6 id="1-numpy">1 Numpy简介</h6>
-<p>Numpy(Numerical Python)是一个开源的高性能的科学计算和数据分析库，用于快速处理任意维度的数组。并且，Numpy支持常见的数组和矩阵操作。Numpy使用ndarray对象来处理多为数组，ndarray对象是一个快速灵活的大数据容器。</p>
-<h6 id="2-ndarray">2 ndarray简介</h6>
-<p>Python中有列表，可当数组使用。Python中也有array模块，但是不支持多维数组。并且列表和array模块都没有科学运算函数。所以，Python不适合做矩阵等科学计算。Numpy没有使用Python本身的数组机制，而是提供了ndarray这个n维数组类型对象，ndarray不仅能够很方便地对数组进行存取，而且拥有丰富的科学计算函数，如向量的加法、减法、乘法等。下面通过实例演示创建一个ndarray多维数组：</p>
+<p><img alt="" src="../img/numpy.jpeg" /></p>
+<h4 id="numpy">NumPy</h4>
+<p>NumPy（Numerical Python）是一个 <font>开源的高性能的科学计算和数据分析库，用于快速处理任意维度的数组。</font>并且，NumPy <font>支持常见的数组和矩阵操作。</font>NumPy 使用 ndarray 对象来处理多为数组，ndarray 对象是一个快速灵活的大数据容器。
+<hr></p>
+<h5 id="1-ndarray">1. ndarray简介</h5>
+<p>Python 中有列表，可当数组使用。Python 中也有 array 模块，但是不支持多维数组。并且列表和 array 模块都没有科学运算函数。所以，Python 不适合做矩阵等科学计算。Numpy 没有使用 Python 本身的数组机制，而是提供了 ndarray 这个 n 维数组类型对象，<font>ndarray 不仅能够很方便地对数组进行存取，而且拥有丰富的科学计算函数，如向量的加法、减法、乘法等。</font>下面通过实例演示创建一个 ndarray 多维数组：</p>
 <pre><code class="py"># 导入numpy函数库并指定库的别名
 import numpy as np
 # 创建一维数组
@@ -224,8 +289,10 @@ array3：array([[[ 1,  2,  3,  4],
         [ 9, 10, 11, 12]]])
 </code></pre>
 
-<h6 id="3-ndarraylist">3 ndarray与list执行效率的对比</h6>
-<p>使用Python的list可以作为一维数组，通过列表的嵌套可以实现多维数组。那为什么还要使用Numpy的ndarray，其实使用ndarray处理数组，其效率要比list要高很多，下面通过例子来比较下两者的执行效率：</p>
+<hr>
+
+<h5 id="2-ndarraylist">2. ndarray与list执行效率的对比</h5>
+<p>使用 Python 的 list 可以作为一维数组，通过列表的嵌套可以实现多维数组。那为什么还要使用 Numpy 的 ndarray，其实使用 ndarray 处理数组，其效率要比 list 要高很多，下面通过例子来比较下两者的执行效率：</p>
 <pre><code class="py">import random
 import numpy as np
 # 定义一个空列表用于存放(数组)元素
@@ -257,14 +324,14 @@ CPU times: user 4.23 ms, sys: 31 µs, total: 4.26 ms
 Wall time: 4.07 ms
 </code></pre>
 
-<p>很明显使用numpy的ndarray对数组求和的效率要比原生Python的sum函数求和高10倍以上。<font color='red'><strong>机器学习最大的特点是需要对大量的数据做运算，</strong></font>如果没有一个快速的解决方案，那么可能Python在机器学习领域就达不到很好的效果。Numpy专门对ndarray的操作和运算进行设计，所以，数组的存储效率和输入输出性能远优于Python中的嵌套列表。数组越大，Numpy的优势就越明显。</p>
-<h6 id="4-ndarray">4 ndarray的优势</h6>
-<ul>
-<li>内存块风格：ndarray在存储数据的时候是直接存储，Python的list中的数据不是直接存储，需要先找寻一个地址，然后通过地址找到需要的内容。<font color='red'><strong>ndarray中的所有元素的类型都是相同的</strong></font>，所以ndarray在存储元素时，内存是可以连续的。而<font color='red'><strong>Python中list中的元素是任意的，所以只能通过寻址的方式找到下一个元素</strong></font>。ndarray在通用性上要输于list，但在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python的list要简洁。</li>
-<li>ndarray支持并行化运算(向量化运算)：Numpy内置并行运算功能，当系统有多个核心时，做运算会自动做并行运算。</li>
-<li>效率远高于纯Python代码，Numpy底层使用C语言编写，内部解除GIL（全局解释器锁），其对数组的操作速度不受Python GIL的影响。</li>
-</ul>
-<h6 id="5-ndarray">5 ndarray数组的属性</h6>
+<p>很明显使用 numpy 的 ndarray 对数组求和的效率要比原生 Python 的 sum 函数求和高 10 倍以上。<font>机器学习最大的特点是需要对大量的数据做运算，</font>如果没有一个快速的解决方案，那么可能Python在机器学习领域就达不到很好的效果。Numpy 专门对 ndarray 的操作和运算进行设计。所以，数组的存储效率和输入输出性能远优于 Python 中的嵌套列表。数组越大，NumPy 的优势就越明显。
+<hr></p>
+<h5 id="3-ndarray">3. ndarray的优势</h5>
+<p>( 1 ) 内存块风格：ndarray 在存储数据的时候是直接存储，Python 的 list 中的数据不是直接存储，需要先找寻一个地址，然后通过地址找到需要的内容。<font>ndarray中的所有元素的类型都是相同的</font>，所以 ndarray 在存储元素时，内存是可以连续的。而 <font>Python 中 list 中的元素是任意的，所以只能通过寻址的方式找到下一个元素。</font>ndarray 在通用性上要输于 list，但在科学计算中，NumPy 的 ndarray 就可以省掉很多循环语句，代码使用方面比 Python 的 list 要简洁。</p>
+<p>( 2 ) ndarray 支持并行化运算(向量化运算)：NumPy 内置并行运算功能，当系统有多个核心时，做运算会自动做并行运算。</p>
+<p>( 3 ) 效率远高于纯 Python 代码，NumPy 底层使用C语言编写，内部解除 GIL（全局解释器锁），其对数组的操作速度不受 Python GIL 的影响。
+<hr></p>
+<h5 id="4-ndarray">4. ndarray数组的属性</h5>
 <p>数组的维度：</p>
 <pre><code class="py"># 导入numpy模块并为模块设置别名
 import numpy as np
@@ -340,7 +407,9 @@ array01.dtype
 <pre><code class="py">Out[]：dtype('int64')
 </code></pre>
 
-<h6 id="6-ndarray">6 ndarray数组的形状</h6>
+<hr>
+
+<h5 id="5-ndarray">5. ndarray数组的形状</h5>
 <p>一维数组：</p>
 <pre><code class="py">import numpy as np
 a = np.array([1, 2, 3, 4, 5])
@@ -386,8 +455,10 @@ print(c.shape)
 (2, 2, 5) # 第一个2：有2个二维数组；第二个2：二维数组中有2个一维数组；3：在一维数组中有3个元素
 </code></pre>
 
-<h6 id="7-ndarray">7 ndarray数组的类型</h6>
-<p>不指定数组类型(整型)：</p>
+<hr>
+
+<h5 id="6-ndarray">6. ndarray数组的类型</h5>
+<p>不指定数组类型（整型）：</p>
 <pre><code class="py">import numpy as np
 a = np.array([
     [[1, 2, 3, 4, 5, 6],
@@ -403,7 +474,7 @@ a.dtype
 <pre><code class="py">dtype('int64')
 </code></pre>
 
-<p>不指定数组类型(小数)：</p>
+<p>不指定数组类型（小数）：</p>
 <pre><code class="py">import numpy as np
 a = np.array([
     [[1.1, 2, 3, 4, 5, 6],
@@ -419,8 +490,8 @@ a.dtype
 <pre><code class="py">dtype('float64')
 </code></pre>
 
-<p>如果不指定，整型默认是int64，小数默认是float64。如果指定数组类型：</p>
-<p>指定数组类型，将整型指定为float64类型：</p>
+<p>如果不指定，整型默认是 int64，小数默认是 float64。如果指定数组类型：</p>
+<p>指定数组类型，将整型指定为 float64 类型：</p>
 <pre><code class="py">import numpy as np
 a = np.array([
     [[1, 2, 3, 4, 5, 6],
@@ -462,9 +533,11 @@ a
 <pre><code class="py">array([b'I', b'Like', b'qianqian'], dtype='|S8') # S：String；8：数组中最长字符串是8个字母
 </code></pre>
 
-<h6 id="8-ndarray">8 ndarray数组的生成</h6>
-<p>从已存在的数组中生成数组的两种方法，<code>numpy.array</code>和<code>numpy.asarray</code>方法，下面通过一个小案例来区别这两种方法：</p>
-<p><code>首先创建一个数组作为已存在数组：</code></p>
+<hr>
+
+<h5 id="7-ndarray">7. ndarray数组的生成</h5>
+<p>从已存在的数组中生成数组的两种方法，<kbd>numpy.array</kbd> 和 <kbd>numpy.asarray</kbd> 方法，下面通过一个小案例来区别这两种方法。</p>
+<p>首先创建一个数组作为已存在数组：</p>
 <pre><code class="py">import numpy as np
 a = np.array([[1, 2, 3, 4, 5, 6],[7,8,9,10,11,112]])
 a
@@ -474,7 +547,7 @@ a
        [  7,   8,   9,  10,  11, 112]])
 </code></pre>
 
-<p><code>使用array在原有数组的基础上生成数组（深度拷贝）：</code></p>
+<p>使用 array 在原有数组的基础上生成数组（深度拷贝）：</p>
 <pre><code class="py">a1 = np.array(a) # 深拷贝
 a1[0, 0] = 0
 a
@@ -484,7 +557,7 @@ a
        [  7,   8,   9,  10,  11, 112]])
 </code></pre>
 
-<p><code>使用asarray在原有数组的基础上生成数组：（浅拷贝）</code></p>
+<p>使用 asarray 在原有数组的基础上生成数组：（浅拷贝）</p>
 <pre><code class="py">a2 = np.asanyarray(a) # 浅拷贝
 a2[0, 0] = 0
 a
@@ -495,7 +568,7 @@ a
 </code></pre>
 
 <p>生成固定范围的数组：</p>
-<p><code>创建等差数列的数组，指定数量，使用的函数是：linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None,axis=0)</code></p>
+<p>创建等差数列的数组，指定数量，使用的函数是：<kbd>linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None,axis=0)</kbd></p>
 <pre><code class="py">import numpy as np
 arr = np.linspace(0,21,6) # start:0,序列的起始值; stop:20,序列的终止值; num:5, 要生成的等间隔样例数量, 默认是50。endpoint:序列中是否是否包含stop值，默认是True
 arr
@@ -504,7 +577,7 @@ arr
 <pre><code class="py">array([ 0. ,  4.2,  8.4, 12.6, 16.8, 21. ])
 </code></pre>
 
-<p><code>创建等差数列的数组，指定步长，使用的函数：arange(start=None, *args, **kwargs)</code></p>
+<p>创建等差数列的数组，指定步长，使用的函数：<kbd>arange(start=None, <em>args, </em>*kwargs)</kbd></p>
 <pre><code class="py">import numpy as np
 arr = np.arange(0, 20, 2, dtype=np.int64) # step:2,步长；dtype:数据类型
 arr
@@ -513,7 +586,7 @@ arr
 <pre><code class="py">array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
 </code></pre>
 
-<p><code>创建等比数列，使用的函数：logspace(start, stop, num=50, endpoint=True, base=10.0, dtype=None,axis=0)</code></p>
+<p>创建等比数列，使用的函数：<kbd>logspace(start, stop, num=50, endpoint=True, base=10.0, dtype=None,axis=0)</kbd></p>
 <pre><code class="py">import numpy as np
 # 注意这里是生成10的多少次方
 arr = np.logspace(0, 2, 3) # num是要生成等比数列的数量；0、2的意思分别是10的0次方～10的2次方；3：生成3个数
@@ -523,11 +596,11 @@ arr
 <pre><code class="py">array([  1.,  10., 100.])
 </code></pre>
 
-<p>创建随机数组（正太分布方式），使用np.random模块创建正太分布有三种方式，分别是：randn(*dn)，normal(loc=0.0, scale=1.0, size=None)，standard_normal(size=None)。
-- randn：从标准动态分布中返回一个或多个样本值。
-- <strong>normal</strong>：返回指定形状的标准正太分布数组。loc：此动态分布的均值(对应着整个分布的中心)；scale：概率分布的标准差，值越大越矮胖，反之越瘦高。size：输出的是shape，默认是None，只输出一个值。
-- standard_normal：返回指定形状的标准正太分布的数组</p>
-<p><code>生成均值为1.75，标准差为1的100000000个正态分布数据。使用到的函数：normal(loc=0.0, scale=1.0, size=None)</code></p>
+<p>创建随机数组（正太分布方式），使用 np.random 模块创建正太分布有三种方式，分别是：<kbd>randn(*dn)</kbd>，<kbd>normal(loc=0.0, scale=1.0, size=None)</kbd>，<kbd>standard_normal(size=None)</kbd>。</p>
+<p>( 1 ) randn：从标准动态分布中返回一个或多个样本值。</p>
+<p>( 2 ) normal：返回指定形状的标准正太分布数组。loc：此动态分布的均值（对应着整个分布的中心）；scale：概率分布的标准差，值越大越矮胖，反之越瘦高。size：输出的是shape，默认是None，只输出一个值。</p>
+<p>( 3 ) standard_normal：返回指定形状的标准正太分布的数组</p>
+<p>生成均值为1.75，标准差为1的100000000个正态分布数据。使用到的函数：normal(loc=0.0, scale=1.0, size=None)：</p>
 <pre><code class="py"># 导入相关模块
 import numpy as np
 import matplotlib.pyplot as plt
@@ -541,8 +614,8 @@ plt.hist(x, 1000) # 1000:1000组数据
 plt.show()
 </code></pre>
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200119140455378.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<code>模拟生成一组股票的涨跌幅数据：随机生成4支股票1周的交易日涨幅数据（随机生成涨跌幅在某个正太分布内，如均值是0，方差是1）：</code></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200119140455378.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>模拟生成一组股票的涨跌幅数据：随机生成4支股票1周的交易日涨幅数据（随机生成涨跌幅在某个正太分布内，如均值是 0，方差是 1）：</p>
 <pre><code class="py">import numpy as np
 arr = np.random.normal(0, 1, (4,5))
 arr
@@ -554,10 +627,10 @@ arr
        [ 1.67693295, -2.22111556,  1.5863305 ,  0.69848128,  2.25766984]])
 </code></pre>
 
-<p>创建随机数组(均匀分布方式)，使用np.random模块创建正太分布有三种方式，分别是：rand(*dn)，uniform(low=0.0, high=1.0, size=None)，randint(low, high=None, size=None, dtype='l')
--  rand：返回[0.0,1.0)内的一组均匀分布的数。
--  <strong>uniform</strong>：从一个均匀分布[low=0.0, hegh=1.0, size=None)中随机采样，low是采用下界，float类型，默认是0；high是采样下界，float类型，默认值是1。size是输出样本的数目，int或元祖类型。如size=(m,n,k)则输出mnk个样本，缺省时输出1个值。返回值：ndarray类型，其形状和参数size中的描述一致。
-- randint：从一个均匀分布中随机采样，生成一个整数或N维整数数组。对于取数范围，如果high不是None时，取[low,high)之间的随机数，否则取值[low,high)之间随机整数。</p>
+<p>创建随机数组(均匀分布方式)，使用np.random模块创建正太分布有三种方式，分别是：<kbd>rand(*dn)</kbd>，<kbd>uniform(low=0.0, high=1.0, size=None)</kbd>，<kbd>randint(low, high=None, size=None, dtype='l')</kbd></p>
+<p>( 1 ) rand：返回 [ 0.0,1.0 ) 内的一组均匀分布的数。</p>
+<p>( 2 ) uniform：从一个均匀分布（low=0.0, hegh=1.0, size=None）中随机采样，low 是采用下界，float 类型，默认是0；high 是采样下界，float 类型，默认值是1。size 是输出样本的数目，int 或元祖类型。如 size=(m,n,k) 则输出 mnk 个样本，缺省时输出 1 个值。返回值：ndarray 类型，其形状和参数 size 中的描述一致。</p>
+<p>( 3 ) randint：从一个均匀分布中随机采样，生成一个整数或 N 维整数数组。对于取数范围，如果 high 不是 None 时，取 [ low,high ) 之间的随机数，否则取值 [ low,high ) 之间随机整数。</p>
 <pre><code class="py"># 导入模块
 import numpy as np
 # 准别数据，生成均匀分布的数据
@@ -570,11 +643,10 @@ plt.hist(x, 1000) # 1000:1000组数据
 plt.show()
 </code></pre>
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200119150523323.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
-<h6 id="9-ndarray">9 ndarray数组的索引和切片</h6>
-<ul>
-<li>一维数组的索引和切片</li>
-</ul>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200119150523323.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="8-ndarray">8. ndarray数组的索引和切片</h5>
+<p>( 1 ) 一维数组的索引和切片</p>
 <pre><code class="py">import numpy as np
 arr = np.array([1, 2, 3, 4])
 print(arr)
@@ -585,9 +657,7 @@ arr[0]
 1
 </code></pre>
 
-<ul>
-<li>二维数组的索引和切片</li>
-</ul>
+<p>( 2 ) 二维数组的索引和切片</p>
 <pre><code class="py">import numpy as np
 arr2 = np.array([[1, 2, 3, 4],[5, 6, 7, 8]])
 print(arr2)
@@ -599,9 +669,7 @@ arr2[1,1]
 6
 </code></pre>
 
-<ul>
-<li>三维数组的索引和切片</li>
-</ul>
+<p>( 3 ) 三维数组的索引和切片</p>
 <pre><code class="py">import numpy as np
 arr3 = np.array([[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]], [[13, 14, 15, 16], [17, 18, 19, 20], [21, 21, 22, 23]]])
 print(arr3)
@@ -618,10 +686,10 @@ arr3[1, 1, 1]
 18
 </code></pre>
 
-<h6 id="10-ndarray">10 ndarray数组形状的修改</h6>
-<ul>
-<li>reshape(self, shape, order='C ')函数的应用</li>
-</ul>
+<hr>
+
+<h5 id="9-ndarray">9. ndarray数组形状的修改</h5>
+<p>( 1 ) <kbd>reshape(self, shape, order='C')</kbd> 函数的应用</p>
 <pre><code class="py">import numpy as np
 arr = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]])
 # 打印这个数组的形状
@@ -690,9 +758,7 @@ array([[ 1,  2],
        [17, 18]])
 </code></pre>
 
-<ul>
-<li>resize(self, new_shape, refcheck=True)函数的应用，要区别与reshape方法，其返回结果并不是新的数组，而是把原来的数组给修改了</li>
-</ul>
+<p>( 2 ) <kbd>resize(self, new_shape, refcheck=True)</kbd> 函数的应用，要区别与reshape方法，其返回结果并不是新的数组，而是把原来的数组给修改了</p>
 <pre><code class="py">import numpy as np
 arr = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]])
 # 打印这个数组的形状
@@ -710,9 +776,7 @@ array([[ 1,  2,  3,  4,  5,  6,  7,  8],
        [ 9, 10, 11, 12, 13, 14, 15, 16]])
 </code></pre>
 
-<ul>
-<li>数组的转置，将数组的行列进行互换，使用数组名.T</li>
-</ul>
+<p>( 3 ) 数组的转置，将数组的行列进行互换，使用数组名.T</p>
 <pre><code class="py"># 数组的转置
 import numpy as np
 arr = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]])
@@ -727,10 +791,10 @@ arr.T
        [ 6, 12, 18]])
 </code></pre>
 
-<h6 id="11-ndarray">11 ndarray数组类型的修改</h6>
-<ul>
-<li>ndarray.astype(type)：返回修改类型之后的数组</li>
-</ul>
+<hr>
+
+<h5 id="10-ndarray">10. ndarray数组类型的修改</h5>
+<p>( 1 ) <kbd>ndarray.astype(type)</kbd>：返回修改类型之后的数组</p>
 <pre><code class="py"># 返回修改了类型之后的数组
 import numpy as np
 arr = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]])
@@ -745,9 +809,7 @@ array([[ 1.,  2.,  3.,  4.,  5.,  6.],
        [13., 14., 15., 16., 17., 18.]])
 </code></pre>
 
-<ul>
-<li>ndarray.tostring([order])或者ndarray.tobytes([order])：构造包含数组原始数据字节的Python字节</li>
-</ul>
+<p>( 2 ) <kbd>ndarray.tostring([order])或者ndarray.tobytes([order])</kbd>：构造包含数组原始数据字节的Python字节</p>
 <pre><code class="py"># 构造包含数组原始数据字节的Python字节1
 import numpy as np
 arr = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]])
@@ -768,8 +830,10 @@ str_arr
 <pre><code class="py">b'\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x00\x00\x00\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x00\x00\x00\x00\r\x00\x00\x00\x00\x00\x00\x00\x0e\x00\x00\x00\x00\x00\x00\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x00\x00\x00\x00\x00\x11\x00\x00\x00\x00\x00\x00\x00\x12\x00\x00\x00\x00\x00\x00\x00'
 </code></pre>
 
-<h6 id="12-ndarray">12 ndarray数组的去重</h6>
-<p>数组去重的方法是<code>unique(ar, return_index=False, return_inverse=False,return_counts=False, axis=None)：</code></p>
+<hr>
+
+<h5 id="11-ndarray">11. ndarray数组的去重</h5>
+<p>数组去重的方法是 <kbd>unique(ar, return_index=False, return_inverse=False,return_counts=False, axis=None)</kbd>：`</p>
 <pre><code class="py"># 返回修改了类型之后的数组
 import numpy as np
 arr = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 2, 10, 5, 6], [13, 14, 15, 16, 17, 18]])
@@ -780,10 +844,10 @@ arr2
 <pre><code class="py">array([ 1,  2,  3,  4,  5,  6,  7,  8, 10, 13, 14, 15, 16, 17, 18])
 </code></pre>
 
-<h6 id="13-ndarray">13 ndarray的运算</h6>
-<ul>
-<li>逻辑运算</li>
-</ul>
+<hr>
+
+<h5 id="12-ndarray">12. ndarray的运算</h5>
+<p>( 1 ) 逻辑运算</p>
 <pre><code class="py"># 生成10名同学5门课程的分数
 import numpy as np
 scores = np.random.randint(50, 100, (10, 5))
@@ -807,9 +871,7 @@ array([[54, 51, 59,  1,  1],
 '''
 </code></pre>
 
-<ul>
-<li>通用判断函数</li>
-</ul>
+<p>( 2 ) 通用判断函数</p>
 <p><code>numpy.all方法：</code></p>
 <pre><code class="py">'''
 numpy.all方法是：只要有一个不满足条件，就返回False；所有都满足条件，返回True
@@ -844,9 +906,7 @@ ret
 True
 </code></pre>
 
-<ul>
-<li>三元运算符</li>
-</ul>
+<p>( 3 ) 三元运算符</p>
 <p>通过使用numpy.where能够进行更加复杂的运算：</p>
 <pre><code class="py"># 将前四名学生的前四门课程中成绩中大于60的置为1，否则置为0
 import numpy as np
@@ -900,8 +960,10 @@ array([[0, 0, 1, 0],
        [1, 1, 0, 0]])
 </code></pre>
 
-<h6 id="14-ndrray">14 ndrray统计运算相关的函数</h6>
-<p>max(a, axis)函数的使用：</p>
+<hr>
+
+<h5 id="13-ndrray">13. ndrray统计运算相关的函数</h5>
+<p><kbd>max(a, axis)</kbd> 函数的使用：</p>
 <pre><code class="py"># 取最大值
 import numpy as np
 scores = np.random.randint(50, 100, (10, 5))
@@ -922,7 +984,7 @@ np.max(scores)
 97
 </code></pre>
 
-<p>min(a, axis)函数的使用：</p>
+<p><kbd>min(a, axis)</kbd> 函数的使用：</p>
 <pre><code class="py"># 取最小值
 import numpy as np
 scores = np.random.randint(50, 100, (10, 5))
@@ -943,7 +1005,7 @@ np.min(scores)
 50
 </code></pre>
 
-<p>mean(a, axis, dtype)函数的使用：</p>
+<p><kbd>mean(a, axis, dtype)</kbd> 函数的使用：</p>
 <pre><code class="py"># 取平均值
 import numpy as np
 scores = np.random.randint(50, 100, (10, 5))
@@ -1005,7 +1067,7 @@ np.max(scores, axis=1)  # axis=1表示按照行来求解
 array([85, 95, 95, 94, 91, 97, 94, 99, 99, 96])
 </code></pre>
 
-<p>argmax(a, axis)方法的使用：</p>
+<p><kbd>argmax(a, axis)</kbd> 方法的使用：</p>
 <pre><code class="py"># 最大值的下标
 import numpy as np
 scores = np.random.randint(50, 100, (10, 5))
@@ -1066,10 +1128,11 @@ np.argmax(scores, axis=1)
 array([3, 1, 3, 0, 4, 0, 2, 2, 1, 3])
 </code></pre>
 
-<p>argmin(a, axis)的使用同argmax(a, axis)的相似，统计运算中还可以求中位数[median(a, axis)]、平均值、标准差[std(a, axis, dtype)]和方差[var(a, axis, dtype)]等。</p>
-<h6 id="15">15 数组间的运算</h6>
+<p><kbd>argmin(a, axis)</kbd> 的使用同 <kbd>argmax(a, axis)</kbd> 的相似，统计运算中还可以求中位数 [ median(a, axis) ]、平均值、标准差 [ std(a, axis, dtype) ] 和方差 [ var(a, axis, dtype) ] 等。
+<hr></p>
+<h5 id="14">14. 数组间的运算</h5>
 <p>数组与数之间的运算：</p>
-<p><code>执行程序1：</code></p>
+<p>执行程序1：</p>
 <pre><code class="py">import numpy as np
 arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 arr + 3 # 所有元素加3
@@ -1080,7 +1143,7 @@ arr + 3 # 所有元素加3
        [ 9, 10, 11, 12, 13]])
 </code></pre>
 
-<p><code>执行程序2：</code></p>
+<p>执行程序2：</p>
 <pre><code class="py">import numpy as np
 arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 arr / 2 # 所有元素除以2
@@ -1091,7 +1154,7 @@ arr / 2 # 所有元素除以2
        [3. , 3.5, 4. , 4.5, 5. ]])
 </code></pre>
 
-<p><code>执行程序3：</code></p>
+<p>执行程序3：</p>
 <pre><code class="py">import numpy as np
 arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 arr * 3 # 所有元素乘3
@@ -1103,10 +1166,10 @@ arr * 3 # 所有元素乘3
 </code></pre>
 
 <blockquote>
-<p><strong>注意：如果是列表*3，则只会分别粘贴复制3次列表中的元素，组成新的列表</strong></p>
+<p><font>注意：如果是列表*3，则只会分别粘贴复制3次列表中的元素，组成新的列表</font></p>
 </blockquote>
 <p>数组与数组的运算：(不同形状的数组是不可以在一起运算的)</p>
-<p><code>测试程序：</code></p>
+<p>测试程序：</p>
 <pre><code class="py">import numpy as np
 arr1 = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 arr2 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
@@ -1124,10 +1187,10 @@ ValueError                                Traceback (most recent call last)
 ValueError: operands could not be broadcast together with shapes (2,4) (2,5) 
 </code></pre>
 
-<p>广播机制：数组在进行矢量运算时，<font color='red'><strong>要求数组的形状是相等的</strong></font>。当形状不相等的数组执行算术运算时，就会出现广播机制，该机制会对数组进行扩展，使数组的形状属性值一样。这样，就可以进行矢量化运算。广播机制实现了两个或两个以上数组的运算，即使这些数组的shape不是完全相同的，只要满足一个条件即可：
-- 数组的某一维度等长
-- 其中一个数组的某一个维度是1</p>
-<p><code>执行程序：</code></p>
+<p>广播机制：数组在进行矢量运算时，<font>要求数组的形状是相等的</font>。当形状不相等的数组执行算术运算时，就会出现广播机制，该机制会对数组进行扩展，使数组的形状属性值一样。这样，就可以进行矢量化运算。广播机制实现了两个或两个以上数组的运算，即使这些数组的shape不是完全相同的，只要满足一个条件即可：</p>
+<p>( 1 ) 数组的某一维度等长</p>
+<p>( 2 ) 其中一个数组的某一个维度是 1</p>
+<p>执行程序：</p>
 <pre><code class="py">import numpy as np
 arr1 = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12]])
 arr2 = np.array([[1], [2]])
@@ -1143,21 +1206,25 @@ array([[ 2,  3,  4,  5,  6,  7],
        [ 9, 10, 11, 12, 13, 14]])
 </code></pre>
 
-<p><font color='red'><strong>广播机制需要扩展维度小的数组</strong></font>，使得它与维度大的数组的shape值相同，以便使用元素级函数或者运算符进行运算。</p>
-<h6 id="16">16 矩阵与向量相关</h6>
+<blockquote>
+<p><font>广播机制需要扩展维度小的数组，使得它与维度大的数组的shape值相同，以便使用元素级函数或者运算符进行运算。</font></p>
+</blockquote>
+<hr>
+
+<h5 id="15">15. 矩阵与向量相关</h5>
 <p>矩阵和数组的区别是矩阵必须是二维的，而数组可以是多维的。矩阵和向量的区别是向量是特殊的矩阵。
 矩阵的加法：行和列相等可以进行加法，对应元素进行加和。
 标量乘法：矩阵中的每个元素都要一一和标量进行相乘。
-矩阵和向量乘法：m * n阶的矩阵和n * 1阶的向量进行相乘，得到m * 1阶的向量
-矩阵乘法：m * n矩阵乘以n * o，得到m*n阶矩阵
-矩阵乘法的性质：
-- 矩阵乘法不满足交换律：AxB不等于BxA
-- 矩阵乘法满足结合律：(AxB)xC=Ax(BxC)
-- 单位矩阵：主对角线上的元素都是1，其它元素都是0，这种矩阵是单位矩阵</p>
-<p>矩阵的逆：如矩阵是一个m*m矩阵(方阵)，如果有逆矩阵，则AA<sup>-1</sup>=A<sup>-1</sup>A。低阶矩阵球逆的方法是<strong>待定系数法和初等变换</strong>。
-矩阵的转置：矩阵的行转置后变成矩阵的列，矩阵的列变成矩阵的行。
-矩阵的运算：矩阵的运算可以使用在大学求最终成绩上，很多位学生(决定矩阵的行数)的平时成绩和期末成绩组成n行2列的矩阵，再乘以0.7和0.3组成的2行1列的矩阵，得到n行1列的矩阵就是每位学生的最终成绩。在numpy库中矩阵乘法使用到matmul和dot函数：<font color='red'>两者相同点是都可以做矩阵之间的乘法，不同点是matmul不支持矩阵与标量的乘法，而dot支持</font>。</p>
-<p><code>测试两者都可以做矩阵之间的乘法</code></p>
+矩阵和向量乘法：m * n阶的矩阵和 n * 1 阶的向量进行相乘，得到 m * 1 阶的向量
+矩阵乘法：m * n 矩阵乘以 n * o，得到 m*n 阶矩阵
+矩阵乘法的性质：</p>
+<p>( 1 ) 矩阵乘法不满足交换律：AxB 不等于 BxA</p>
+<p>( 2 ) 矩阵乘法满足结合律：(AxB)xC=Ax(BxC)</p>
+<p>( 3 ) 单位矩阵：主对角线上的元素都是 1，其它元素都是 0，这种矩阵是单位矩阵</p>
+<p>矩阵的逆：如矩阵是一个 m*m 矩阵(方阵)，如果有逆矩阵，则 AA<sup>-1</sup>=A<sup>-1</sup>A 。低阶矩阵球逆的方法是<strong>待定系数法和初等变换</strong>。</p>
+<p>矩阵的转置：矩阵的行转置后变成矩阵的列，矩阵的列变成矩阵的行。</p>
+<p>矩阵的运算：矩阵的运算可以使用在大学求最终成绩上，很多位学生(决定矩阵的行数)的平时成绩和期末成绩组成 n 行 2 列的矩阵，再乘以 0.7 和 0.3 组成的 2 行 1 列的矩阵，得到 n 行 1 列的矩阵就是每位学生的最终成绩。在 numpy 库中矩阵乘法使用到 matmul 和 dot 函数：<font>两者相同点是都可以做矩阵之间的乘法，不同点是 matmul 不支持矩阵与标量的乘法，而 dot 支持</font>。</p>
+<p>测试两者都可以做矩阵之间的乘法：</p>
 <pre><code class="py"># 测试dot和matmul函数都可以做矩阵之间的乘法
 import numpy as np
 a = np.array([[89, 90], [88, 89], [87, 78]])
@@ -1173,7 +1240,7 @@ print(arr2)
 [89.3 88.3 84.3]
 </code></pre>
 
-<p><code>测试只有dot函数支持矩阵与标量的乘法：</code></p>
+<p>测试只有dot函数支持矩阵与标量的乘法：</p>
 <pre><code class="py"># 测试只有dot函数支持矩阵与标量的乘法
 import numpy as np
 a = np.array([[89, 90], [88, 89], [87, 78]])
@@ -1197,12 +1264,12 @@ ValueError: matmul: Input operand 0 does not have enough dimensions (has 0, gufu
 
 <div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
     <div style="position: relative;float: right">
-        <a target="_blank" href="https://blog.csdn.net/thanlon" id="weibo"
+        <a target="" href="javascript:;" id="weibo"
            style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
-            <img width="22" height="20" src="../img/csdn.ico" alt=""
+            <img width="22" height="20" src="../img/weibo.png" alt=""
                  style="margin-top: 10px;margin-left: 9px">
         </a>
-        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+         <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=5838160dbeb2a49f264d5e2d13d6336248d74a60cf56ecad" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
             <img width="20" height="20" src="../img/qq.png" 
                  style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
         </a>
@@ -1217,28 +1284,123 @@ ValueError: matmul: Input operand 0 does not have enough dimensions (has 0, gufu
                  style="margin-top: 10px;margin-left: 9px">
         </a>
     </div>
+</div>
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;bottom: 0;" id="support_us" hidden="hidden">
+        <div id="alipei_and_wechat">
+            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            <img class="img-responsive" width="180px" height="" src="../img/public/33659FBDE4AF3F7A005E17D9BA173D04.jpg" alt="..."><br>
+            <img class="img-responsive" width="180px" height="" src="../img/public/B37F6EA6DF3F4C1CA0A65C0E80AE131E.jpg" alt="...">
+        </div>
+</div>
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 </div></div>
         </div>
 
         <footer class="col-md-12">
 <!--    <hr>-->
-    
-    <p>Copyright © 2020-2022 bysj39.com All Rights Reserved.</p>
-    <p><a href="https://beian.miit.gov.cn" target="_blank">豫ICP备19037971号-1</a><a target="_blank">
-                <img src="http://47.102.145.225:5000/static/home/images/beian.png" style="padding-bottom:6px">
-                <span style="color: black">豫公网安备 41152802000091号</span>
-            </a></p>
-    <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+<!---->
+<!--以前的-->
+<!--<p>Copyright © 2020-2022 <a href="https://pythoneers.cn/">pythoneers.cn</a> All Rights Reserved.</p>-->
+<!--<p>-->
+<!--    <a href="https://beian.miit.gov.cn" target="_blank" style="color:#555;">豫ICP备19037971号-2</a><a target="_blank"></a>-->
+<!--    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279280889'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279280889%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
+<!--</p>-->
+<!--<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>-->
+<!--以前的/-->
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <br>
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">云服务器</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">伽马运维栈</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;PYTHONEERS 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
 
         </footer>
+
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js" defer></script>
         <script src="../js/main.js" defer></script>
-        <script src="../js/busuanzi.pure.mini.js" defer></script>
         <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">

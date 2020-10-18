@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Erics">
-        <link rel="canonical" href="https://docs.pythoneers.cn/python-web/flask.html">
+        <link rel="canonical" href="https://pythoneers.cn/python-web/flask.html">
         <link rel="shortcut icon" href="../img/favicon.ico">
+<!--sougou-->
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+<!--!sougou-->
+
         <title>Flask - PYTHONEERS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -15,15 +23,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="../css/nav.css" rel="stylesheet">
         <link href="../css/public.css" rel="stylesheet">
-    
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-    <script data-ad-client="ca-pub-6937898095875663" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!--    <script async src="../js/somelib.js"></script>-->
- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell script.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -52,7 +61,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../python/python3.html">基础到进阶</a>
+    <a href="../python/python-basis.html">Python基础入门</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
 </li>
                                     
 <li >
@@ -68,11 +85,27 @@
 </li>
                                     
 <li >
-    <a href="../python/leetcode.html">Leetcode</a>
+    <a href="../python/interviews-python.html">Python面试题</a>
 </li>
                                     
 <li >
-    <a href="../python/offer.html">剑指Offer</a>
+    <a href="../python/interviews-network.html">网络相关面试题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer</a>
 </li>
                                 </ul>
                             </li>
@@ -93,11 +126,35 @@
 </li>
                                     
 <li >
+    <a href="celery.html">Celery</a>
+</li>
+                                    
+<li >
     <a href="mysql.html">MySQL</a>
 </li>
                                     
 <li >
-    <a href="redis.html">Redis</a>
+    <a href="interviews-flask.html">Flask面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-django.html">Django面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-mysql.html">MySQL面试题</a>
+</li>
+                                    
+<li >
+    <a href="interviews-redis.html">Redis面试题</a>
+</li>
+                                    
+<li >
+    <a href="project-flask.html">Flask项目实战</a>
+</li>
+                                    
+<li >
+    <a href="project-django.html">Django项目实战</a>
 </li>
                                 </ul>
                             </li>
@@ -154,8 +211,14 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../deep-learning/deep-learning.html">深度学习</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -166,7 +229,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="mysql.html">
+                                <a rel="prev" href="celery.html">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -184,45 +247,53 @@
             <li><a href="#3-flask">3. 安装Flask</a></li>
             <li><a href="#4-werkzurg">4. werkzurg</a></li>
             <li><a href="#5-flask">5. 第一个Flask应用</a></li>
-        <li class="main "><a href="#flask_1">Flask配置文件</a></li>
-        <li class="main "><a href="#flask_2">Flask路由系统</a></li>
+            <li><a href="#6-flask">6. Flask配置文件</a></li>
+        <li class="main "><a href="#flask_1">Flask路由系统</a></li>
             <li><a href="#1-url">1. 反向生成URL</a></li>
             <li><a href="#2">2. 动态路由的构造</a></li>
-        <li class="main "><a href="#flask_3">Flask请求与响应相关数据</a></li>
+        <li class="main "><a href="#flask_2">Flask请求与响应相关数据</a></li>
             <li><a href="#1">1. 请求相关数据</a></li>
             <li><a href="#2_1">2. 响应响应体</a></li>
             <li><a href="#3">3. 响应响应头</a></li>
-        <li class="main "><a href="#flask_4">Flask用户认证</a></li>
+        <li class="main "><a href="#flask_3">Flask用户认证</a></li>
             <li><a href="#1_1">1. 第一种用户认证</a></li>
             <li><a href="#2_2">2. 装饰器知识点补充</a></li>
             <li><a href="#3-endpoint">3. endpoint参数</a></li>
             <li><a href="#4">4. 装饰器的先后顺序</a></li>
-            <li><a href="#5">5. 第二种用户认证方式（装饰器）</a></li>
-            <li><a href="#6">6. 第三种用户认证方式（推荐）</a></li>
-        <li class="main "><a href="#flaskflash">Flask之flash</a></li>
-        <li class="main "><a href="#flask_5">Flask中间件</a></li>
+            <li><a href="#5">5. 第二种用户认证方式</a></li>
+            <li><a href="#6">6. 第三种用户认证方式</a></li>
+        <li class="main "><a href="#flaskflash">Flask中的flash</a></li>
+            <li><a href="#1-flash">1. flash的使用</a></li>
+        <li class="main "><a href="#flask_4">Flask中间件</a></li>
             <li><a href="#1-call">1. call方法的执行</a></li>
             <li><a href="#2_3">2. 自定义中间件</a></li>
-        <li class="main "><a href="#flask_6">Flask路由和视图</a></li>
+        <li class="main "><a href="#flask_5">Flask路由和视图</a></li>
             <li><a href="#1_2">1. 路由和视图函数对应关系</a></li>
             <li><a href="#2_4">2. 路由设置两种方式</a></li>
-            <li><a href="#3-approuteappadd_url_url">3. @app.route和app.add_url_url参数</a></li>
+            <li><a href="#3-approute">3. app.route方法的参数</a></li>
             <li><a href="#4-cbv">4. CBV</a></li>
             <li><a href="#5_1">5. 自定义正则</a></li>
-        <li class="main "><a href="#flask_7">FLask蓝图</a></li>
-            <li><a href="#1_3">1. 蓝图（一）</a></li>
-            <li><a href="#2_5">2. 蓝图（二）</a></li>
+        <li class="main "><a href="#flask_6">FLask蓝图</a></li>
+            <li><a href="#1_3">1. 蓝图 ( 一 )</a></li>
+            <li><a href="#2_5">2. 蓝图 ( 二 )</a></li>
         <li class="main "><a href="#flasksession">Flask中session的使用</a></li>
             <li><a href="#1-session">1. session的基本使用</a></li>
             <li><a href="#2-session">2. 自定义Session配置</a></li>
-        <li class="main "><a href="#flaskwtforms">Flask之wtforms组件</a></li>
+        <li class="main "><a href="#flaskwtforms">Flask中的wtforms组件</a></li>
             <li><a href="#1_4">1. 用户登录</a></li>
             <li><a href="#2_6">2. 用户注册</a></li>
             <li><a href="#3_1">3. 数据库实时更新</a></li>
-            <li><a href="#4-wtformsdjango">4. wtforms的作用与django示例</a></li>
-        <li class="main "><a href="#flaskflask-session">FLask之flask-session组件</a></li>
-        <li class="main "><a href="#flasksqlalchemy">Flask之SQLAlchemy</a></li>
-            <li><a href="#1_5">1. 简介</a></li>
+            <li><a href="#4-wtforms">4. wtforms的作用</a></li>
+            <li><a href="#5-django">5. django实现数据实时更新</a></li>
+        <li class="main "><a href="#flask-session">flask-session组件</a></li>
+            <li><a href="#1-flask-session">1. 安装 flask-session</a></li>
+            <li><a href="#2-session-redis">2. 将 session 保存在 Redis 中</a></li>
+            <li><a href="#3-redissession">3. 查看Redis中存入的session</a></li>
+            <li><a href="#4-flask-session">4. flask-session的原理</a></li>
+            <li><a href="#5flask-session">5.flask-session源码</a></li>
+            <li><a href="#6-flask-session">6. flask-session更多配置</a></li>
+        <li class="main "><a href="#flasksqlalchemy">Flask中的SQLAlchemy</a></li>
+            <li><a href="#1-sqlalchemy">1. SQLAlchemy简介</a></li>
             <li><a href="#2-curd">2. CURD</a></li>
             <li><a href="#3_2">3. 常用操作</a></li>
             <li><a href="#4_1">4. 外键操作</a></li>
@@ -237,44 +308,65 @@
             <li><a href="#2_7">2. 命令的方式启动项目</a></li>
             <li><a href="#3_3">3. 定制命令</a></li>
             <li><a href="#4-flask-script">4. Flask-Script应用</a></li>
-        <li class="main "><a href="#flask-migrate">Flask-Migrate数据库迁移组件</a></li>
+        <li class="main "><a href="#flask-migrate">Flask-Migrate组件</a></li>
+            <li><a href="#1-flask-migrate">1. Flask-Migrate组件的使用</a></li>
         <li class="main "><a href="#flask-sqlalchemy">Flask-SQLALchemy组件</a></li>
-            <li><a href="#1-flask-sqlalchemy">1. 安装Flask-SQLALchemy</a></li>
-            <li><a href="#2-flask-sqlalchemy">2. 使用Flask-SQLALchemy</a></li>
+            <li><a href="#1-flask-sqlalchemy">1. Flask-SQLALchemy的安装</a></li>
+            <li><a href="#2-flask-sqlalchemy">2. Flask-SQLALchemy的使用</a></li>
             <li><a href="#3_4">3. 源码相关图示</a></li>
-        <li class="main "><a href="#flask_8">Flask简单登录案例</a></li>
-            <li><a href="#1_6">1. 案例目录结构</a></li>
-            <li><a href="#2_8">2. 案例主要代码</a></li>
-        <li class="main "><a href="#flask_9">Flask模板渲染</a></li>
-            <li><a href="#1_7">1. 数据类型的渲染</a></li>
-            <li><a href="#2_9">2. 传入函数</a></li>
+            <li><a href="#2_8">2. 查询命令</a></li>
+        <li class="main "><a href="#flask_7">Flask简单登录案例</a></li>
+            <li><a href="#1_5">1. 案例目录结构</a></li>
+            <li><a href="#2_9">2. 案例主要代码</a></li>
+        <li class="main "><a href="#flask_8">Flask模板渲染</a></li>
+            <li><a href="#1_6">1. 数据类型的渲染</a></li>
+            <li><a href="#2_10">2. 传入函数</a></li>
             <li><a href="#3_5">3. 全局定义函数</a></li>
             <li><a href="#4_2">4. 模板的继承</a></li>
             <li><a href="#5_3">5. 模板的包含</a></li>
             <li><a href="#6_2">6. 宏定义的使用</a></li>
             <li><a href="#7">7. 模板安全</a></li>
+        <li class="main "><a href="#flask_9">Flask特殊的装饰器</a></li>
+            <li><a href="#1-before_requestafter_request">1. before_request与after_request</a></li>
+            <li><a href="#2-before_first_request">2. before_first_request</a></li>
+            <li><a href="#3-template_global-template_filter">3. template_global 与 template_filter</a></li>
+            <li><a href="#4-errorhandler">4. errorhandler</a></li>
+        <li class="main "><a href="#flask_10">Flask扩展</a></li>
+            <li><a href="#1-formview">1. 为什么将把Form和View分开</a></li>
+            <li><a href="#2_11">2. 控制文件上传的大小</a></li>
+            <li><a href="#3-flask_1">3. Flask源码入口</a></li>
+            <li><a href="#4-requestsession">4. 上下文管理之请求上下文request/session</a></li>
+            <li><a href="#5appappg">5.上下文管理之App上下文app/g</a></li>
+            <li><a href="#6-flaskwsgi">6. Flask中wsgi协议是如何体现的</a></li>
+            <li><a href="#7_1">7. 获取当前日期</a></li>
+            <li><a href="#8">8. 文件/文件夹压缩和解压缩</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<p><span id="busuanzi_container_page_pv">阅读量：<span id="busuanzi_value_page_pv"></span>次</span>
-<hr></p>
 <p><img alt="软件设计模式" src="../img/flask.jpeg" /></p>
 <h4 id="flask">第一个Flask应用</h4>
-<h6 id="1-flask">1. Flask概述</h6>
-<p>Flask框架是一个短小精悍且可扩展强的Web框架，同Django框架一样依赖于第三方实现socket模块。</p>
+<hr>
+
+<h5 id="1-flask">1. Flask概述</h5>
+<p>Flask 框架是一个短小精悍且可扩展强的 Web 框架，同 Django 框架一样依赖于第三方实现 socket 模块。</p>
 <blockquote>
-<p><strong><code>Flask特有上下文管理机制！</code></strong></p>
+<p><font>Flask 特有上下文管理机制！</font></p>
 </blockquote>
-<h6 id="2-wsgi">2. wsgi</h6>
-<p>WEB服务网关接口，是一个协议。Flask 中实现该协议的模块有 <strong><code>wsgiref</code></strong> 和 <strong><code>werkzeug</code></strong>，模块本质上就是 <strong><code>socket服务端用于接收客户端的请求并处理</code></strong>。</p>
+<hr>
+
+<h5 id="2-wsgi">2. wsgi</h5>
+<p>WEB 服务网关接口，是一个协议。Flask 中实现该协议的模块有 <strong><code>wsgiref</code></strong> 和 <strong><code>werkzeug</code></strong>，模块本质上就是 socket服务端用于接收客户端的请求并处理。</p>
 <blockquote>
-<p><strong><code>面试中可能会被用到wsgi是什么？</code></strong></p>
+<p><font>面试中可能会被问道 wsgi 是什么？</font></p>
 </blockquote>
-<h6 id="3-flask">3. 安装Flask</h6>
-<p>一般使用 pip 安装 Flask：<strong><code>pip install Flask</code></strong>，如果想加速下载，可以指定国内阿里云 pipy 的源，安装方法是：<strong><code>pip install flask -i https://mirrors.aliyun.com/pypi/simple</code></strong></p>
-<h6 id="4-werkzurg">4. werkzurg</h6>
-<p>Flask 中实现 wsgi 的模块是 werkzurg，它是Flask第三方模块。</p>
+<hr>
+
+<h5 id="3-flask">3. 安装Flask</h5>
+<p>一般使用 pip 安装 Flask：<strong><code>pip install Flask</code></strong>，如果想加速下载，可以指定国内阿里云 pipy 的源，安装方法是：<strong><code>pip install flask -i https://mirrors.aliyun.com/pypi/simple</code></strong>
+<hr></p>
+<h5 id="4-werkzurg">4. werkzurg</h5>
+<p>Flask 中实现 wsgi 的模块是 werkzurg，它是 Flask 第三方模块。</p>
 <pre><code class="py">from werkzeug.serving import run_simple
 
 def run(environ, start_response):
@@ -296,9 +388,11 @@ if __name__ == '__main__':
 </code></pre>
 
 <blockquote>
-<p><strong><code>Django中实现wsgi的模块是wsgiref</code></strong></p>
+<p><font>Django中实现wsgi的模块是wsgiref</font></p>
 </blockquote>
-<h6 id="5-flask">5. 第一个Flask应用</h6>
+<hr>
+
+<h5 id="5-flask">5. 第一个Flask应用</h5>
 <pre><code class="python">from flask import Flask
 
 app = Flask(__name__)  # 实例化Flask类
@@ -311,8 +405,10 @@ if __name__ == '__main__':
     app.run()  # run方法启动socket
 </code></pre>
 
-<h4 id="flask_1">Flask配置文件</h4>
-<p>Flask配置文件是一个 <strong><code>flask.config.Config</code></strong> 对象，它继承字典，默认配置文件如下：</p>
+<hr>
+
+<h5 id="6-flask">6. Flask配置文件</h5>
+<p>Flask 配置文件是一个 <strong><code>flask.config.Config</code></strong> 对象，它继承字典，默认配置文件如下：</p>
 <pre><code class="py">print(type(app.config), app.config)
 &quot;&quot;&quot;
 &lt;class 'flask.config.Config'&gt;
@@ -379,19 +475,20 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<h4 id="flask_2">Flask路由系统</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1-url">1. 反向生成URL</h6>
-<p>使用 <strong><code>url_for</code></strong> 方法生成 <strong><code>url</code></strong>：</p>
+<hr>
+
+<h4 id="flask_1">Flask路由系统</h4>
+<hr>
+
+<h5 id="1-url">1. 反向生成URL</h5>
+<p>使用 <kbd>url_for()</kbd> 方法生成 <strong><code>url</code></strong>：</p>
 <pre><code class="python">@app.route('/index', methods=['GET', 'POST'], endpoint='name')
 def index():
     print(url_for('name'))
     return 'Flask!'
 </code></pre>
 
-<p>使用 <strong><code>url_for</code></strong> 方法生成url时设置参数：</p>
+<p>使用 <kbd>url_for()</kbd> 方法生成 url 时设置参数：</p>
 <pre><code class="python">@app.route('/index/&lt;int:id&gt;')
 def index(id):
     print(url_for('index', id=1))
@@ -419,8 +516,12 @@ def index():
     return 'Flask!'
 </code></pre>
 
-<p>如果endpoint非要重名，必须保证函数相同。</p>
-<h6 id="2">2. 动态路由的构造</h6>
+<blockquote>
+<p><font>如果 endpoint 非要重名，必须保证函数相同。</font></p>
+</blockquote>
+<hr>
+
+<h5 id="2">2. 动态路由的构造</h5>
 <pre><code class="python">@app.route('/index/&lt;username&gt;') # 没有指定类型是字符串类型
 @app.route('/index/&lt;int:id&gt;')
 @app.route('/index/&lt;float:id&gt;') 
@@ -438,11 +539,12 @@ def index(id):
 控制台输出：&lt;class 'float'&gt; 1.0
 </code></pre>
 
-<h4 id="flask_3">Flask请求与响应相关数据</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1">1. 请求相关数据</h6>
+<hr>
+
+<h4 id="flask_2">Flask请求与响应相关数据</h4>
+<hr>
+
+<h5 id="1">1. 请求相关数据</h5>
 <p>常用请求的相关信息：</p>
 <pre><code class="py">request.method
 request.args
@@ -466,7 +568,9 @@ obj = request.files['the_file_name']
 obj.save('/uploads/'+secure_filename(f.filename))
 </code></pre>
 
-<h6 id="2_1">2. 响应响应体</h6>
+<hr>
+
+<h5 id="2_1">2. 响应响应体</h5>
 <p>响应字符串：</p>
 <pre><code class="python">@app.route('/index')
 def index():
@@ -485,24 +589,23 @@ def index():
     return redirect('') # 重定向
 </code></pre>
 
-<p>响应json格式数据 [<strong><code>from flask import json</code></strong>]：</p>
+<p>响应 json 格式数据 [<strong><code>from flask import json</code></strong>]：</p>
 <pre><code class="python">@app.route('/index')
 def index():
     return json.dumps({'name': 'thanlon'})  # {'name': 'thanlon'}
 </code></pre>
 
-<p>另一种响应json格式数据的方式 [<strong><code>from flask import jsonify</code></strong>]：</p>
+<p>另一种响应 json 格式数据的方式 [<strong><code>from flask import jsonify</code></strong>]：</p>
 <pre><code class="python">@app.route('/index')
 def index():
     return jsonify({'name': 'thanlon'}) # {'name': 'thanlon'}
 </code></pre>
 
-<blockquote>
-<p><strong><code>不能响应字典，即return dic是错误的!</code></strong></p>
-</blockquote>
-<h6 id="3">3. 响应响应头</h6>
-<p>以上是响应响应体，还可以响应响应头和cookie，只需要从Flask模块中导入make_response进行封装即可。(<strong><code>from flask import make_response</code></strong>）</p>
-<p>示例：将字符串类型的响应体与响应头和cookie一同封装响应：</p>
+<hr>
+
+<h5 id="3">3. 响应响应头</h5>
+<p>以上是响应响应体，还可以响应响应头和 cookie，只需要从 Flask 模块中导入 make_response 进行封装即可。(<strong><code>from flask import make_response</code></strong>）</p>
+<p>将字符串类型的响应体与响应头和 cookie 一同封装响应：</p>
 <pre><code class="py">@app.route('/index')
 def index():
     obj = make_response('Flask')
@@ -511,12 +614,12 @@ def index():
     return obj
 </code></pre>
 
-<p>响应模板、响应重定向、响应json格式数据和示例就一样的。</p>
-<h4 id="flask_4">Flask用户认证</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_1">1. 第一种用户认证</h6>
+<p>响应模板、响应重定向、响应json格式数据和示例就一样的。
+<hr></p>
+<h4 id="flask_3">Flask用户认证</h4>
+<hr>
+
+<h5 id="1_1">1. 第一种用户认证</h5>
 <p><strong><code>settings.py</code></strong>：</p>
 <pre><code class="python"># 存放开发环境、线上环境、测试环境共有的配置文件
 class Config(object):
@@ -570,7 +673,7 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<p><kbd>index.html</kbd>:</p>
+<p><strong><code>index.html</code></strong>：</p>
 <pre><code class="html">……
 &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -620,7 +723,9 @@ if __name__ == '__main__':
 &lt;/body&gt;
 </code></pre>
 
-<h6 id="2_2">2. 装饰器知识点补充</h6>
+<hr>
+
+<h5 id="2_2">2. 装饰器知识点补充</h5>
 <p>函数没有加装饰器：</p>
 <pre><code class="python"># coding:utf-8
 def auth(func):
@@ -634,7 +739,7 @@ print(index.__name__)  # 打印函数名
 '''index'''
 </code></pre>
 
-<p>函数加装饰器，让inner函数伪装成index函数：</p>
+<p>函数加装饰器，让 <kbd>inner()</kbd> 函数伪装成 <kbd>index()</kbd> 函数：</p>
 <pre><code class="py"># coding:utf-8
 def auth(func):
     def inner(*args, **kwargs):
@@ -653,7 +758,7 @@ print(login.__name__)  # 打印函数名
 '''inner'''
 </code></pre>
 
-<p>上面的例子中加装饰器虽然把名字伪装成功，但是内部没有伪装成功，可以使用functools.wraps(func)：把原来函数执行的信息放到inner函数中（把原来的函数名放进闭包）：</p>
+<p>上面的例子中加装饰器虽然把名字伪装成功，但是内部没有伪装成功，可以使用 <kbd>functools.wraps(func)</kbd>：把原来函数执行的信息放到inner函数中（把原来的函数名放进闭包）：</p>
 <pre><code class="python"># coding:utf-8
 import functools
 def auth(func):
@@ -676,8 +781,10 @@ login
 '''
 </code></pre>
 
-<h6 id="3-endpoint">3. endpoint参数</h6>
-<p>可以指定，默认是函数名。作用是：反向生成url，如果同名会出错。查看route函数源码：</p>
+<hr>
+
+<h5 id="3-endpoint">3. endpoint参数</h5>
+<p>可以指定，默认是函数名。作用是：反向生成 url，如果同名会出错。查看 route 函数源码：</p>
 <pre><code class="py">def add_url_rule(self, rule, endpoint=None, view_func=None,
 provide_automatic_options=None, **options):
     if view_func is not None:
@@ -695,8 +802,10 @@ def route(self, rule, **options):
     return decorator
 </code></pre>
 
-<h6 id="4">4. 装饰器的先后顺序</h6>
-<p>装饰器和路由配合，把url和函数加入到路由关系中：</p>
+<hr>
+
+<h5 id="4">4. 装饰器的先后顺序</h5>
+<p>装饰器和路由配合，把 url 和函数加入到路由关系中：</p>
 <pre><code class="python">@app.route('/login', methods=['GET', 'POST'])  # 默认允许GET请求
 def hello_world():
     if not session.get('username'):
@@ -704,15 +813,15 @@ def hello_world():
     return render_template('index.html', user_dict=USER_DICT)
 </code></pre>
 
-<p>如果想要再加入一个登录验证的装饰器，如果把 <strong><code>@auth&lt;/kbd&gt;加入到&lt;kbd&gt;@app.route('/login', methods=['GET', 'POST'])</code></strong> 上面，那就是url和函数是一个大整体，再用 <strong><code>@auth</code></strong> 装饰，这显然不是我们的目标。函数应该优先和 <strong><code>@auth</code></strong> 结合，再去做路由和函数的路由对应关系。装饰完成之后，多个路由都对应 inner，endpoint 默认是函数名，这样所有的函数都是 inner，这也是有问题。有两种解决方式。</p>
-<p>方式一：自己定义endpoint，</p>
+<p>如果想要再加入一个登录验证的装饰器，如果把 <strong><code>@auth</code></strong> 加入到 <kbd>@app.route('/login', methods=['GET', 'POST'])</kbd> 上面，那就是url和函数是一个大整体，再用 <strong><code>@auth</code></strong> 装饰，这显然不是我们的目标。函数应该优先和 <strong><code>@auth</code></strong> 结合，再去做路由和函数的路由对应关系。装饰完成之后，多个路由都对应 inner，endpoint 默认是函数名，这样所有的函数都是 inner，这也是有问题。有两种解决方式。</p>
+<p>方式一：自己定义 endpoint，</p>
 <pre><code class="py">@app.route('/index',endpoint='1')
 ……
 @app.route('/delete/&lt;int:nid&gt;',endpoint='2')
 ……
 </code></pre>
 
-<p>方式二：使用 <strong><code>@functools.wraps(func)</code></strong></p>
+<p>方式二：使用 <kbd>@functools.wraps(func)</kbd></p>
 <pre><code class="python">import functools
 def auth(func):
     @functools.wraps(func)
@@ -729,7 +838,10 @@ def hello_world():
     return render_template('index.html', user_dict=USER_DICT)
 </code></pre>
 
-<h6 id="5">5. 第二种用户认证方式（装饰器）</h6>
+<hr>
+
+<h5 id="5">5. 第二种用户认证方式</h5>
+<p>第二种用户认证方式是加装饰器，</p>
 <p><strong><code>app.py</code></strong>：</p>
 <pre><code class="python">def auth(func):
     @functools.wraps(func)
@@ -746,12 +858,14 @@ def hello_world():
     return render_template('index.html', user_dict=USER_DICT)
 </code></pre>
 
-<p>这有个不好的地方，就是每一个需要做认证的都需要一个一个加入装饰器<kbd>@auth</kbd>。</p>
+<p>这有个不好的地方，就是每一个需要做认证的都需要一个一个加入装饰器 <kbd>@auth</kbd>。</p>
 <blockquote>
-<p><strong><code>应用场景：比较少的函数中需要额外加入功能。</code></strong></p>
+<p><font>应用场景：比较少的函数中需要额外加入功能。</font></p>
 </blockquote>
-<h6 id="6">6. 第三种用户认证方式（推荐）</h6>
-<p>可以使用 <strong><code>before_request</code></strong>，返回None表示可以通过执行，如果返回其它，不能通过执行：</p>
+<hr>
+
+<h5 id="6">6. 第三种用户认证方式</h5>
+<p>可以使用 <strong><code>before_request</code></strong>，返回None表示可以通过执行，如果返回其它，不能通过执行。这是比较推荐的方式：</p>
 <pre><code class="py">@app.before_request
 def auth():
     if request.path == '/login':
@@ -763,23 +877,15 @@ def auth():
 </code></pre>
 
 <blockquote>
-<p><strong><code>应用场景：批量给函数加额外的功能!</code></strong></p>
+<p><font>应用场景：批量给函数加额外的功能!</font></p>
 </blockquote>
-<h4 id="flaskflash">Flask之flash</h4>
-<pre><code class="py">@app.route('/page1')
-def page1():
-    session['xxx'] = 123456
-    return 'session'
+<hr>
 
-@app.route('/page2')
-def page2():
-    print(session.get('xxx'))  # print(session['xxx'])
-    del session['xxx']
-    session.pop('xxx')
-    return 'session'
-</code></pre>
+<h4 id="flaskflash">Flask中的flash</h4>
+<hr>
 
-<pre><code class="py">@app.route('/page1')
+<h5 id="1-flash">1. flash的使用</h5>
+<pre><code class="python">@app.route('/page1')
 def page1():
     flash('临时数据存储') # 临时存在内存中一个数据
     return 'session'
@@ -797,7 +903,7 @@ def page2():
 </code></pre>
 
 <p>对临时数据也可以做分类：</p>
-<pre><code class="py">@app.route('/page1')
+<pre><code class="python">@app.route('/page1')
 def page1():
     flash('临时数据存储','info')
     flash('error','error')
@@ -814,12 +920,13 @@ def page2():
 '''
 </code></pre>
 
-<h4 id="flask_5">Flask中间件</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1-call">1. call方法的执行</h6>
-<p>call方法在用户发起请求时才执行。flask 依赖 wsgi ，程序启动时执行的是 <strong><code>run_simple(host, port, self, **options)</code></strong>。在 <strong><code>app.py</code></strong> 文件中，会把 app 对象传入 run_simple 方法中。请求进来，第三个参数加括号，<strong><code>对象加括号执行__call__方法</code></strong>。</p>
+<hr>
+
+<h4 id="flask_4">Flask中间件</h4>
+<hr>
+
+<h5 id="1-call">1. call方法的执行</h5>
+<p><kbd>__call__</kbd> 方法在用户发起请求时才执行。flask 依赖 wsgi ，程序启动时执行的是 <kbd>run_simple(host, port, self, **options)</kbd>。在 <code>app.py</code> 文件中，会把 app 对象传入 <kbd>run_simple</kbd> 方法中。请求进来，第三个参数加括号，对象加括号执行 call 方法。</p>
 <pre><code class="py">def wsgi_app(self, environ, start_response):
         ctx = self.request_context(environ)
         error = None
@@ -847,7 +954,7 @@ def page2():
     app.run()
 </code></pre>
 
-<p><strong><code>app.run()</code></strong> 方法执行后，运行 <strong><code>run_simple(host, port, self, **options)</code></strong>，在内部就是死循环，等待客户端发送请求（socket在监听连接）。此时 <strong><code>__call__</code></strong> 方法不会执行，有请求就会执行该方法。</p>
+<p><kbd>app.run()</kbd> 方法执行后，运行 <kbd>run_simple(host, port, self, **options)</kbd>，在内部就是死循环，等待客户端发送请求（socket在监听连接）。此时 __call__ 方法不会执行，有请求就会执行该方法。</p>
 <p>修改源码：</p>
 <pre><code class="py">def __call__(self, environ, start_response):
         &quot;&quot;&quot;The WSGI server calls the Flask application object as the
@@ -869,8 +976,9 @@ def page2():
 '''
 </code></pre>
 
-<p>这样做是不合适的，修改源代码是不可选的。</p>
-<h6 id="2_3">2. 自定义中间件</h6>
+<p>这样做是不合适的，修改源代码是不可选的。
+<hr></p>
+<h5 id="2_3">2. 自定义中间件</h5>
 <pre><code class="py">class Middleware(object):
     def __init__(self, old):
         self.old = old
@@ -886,12 +994,12 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<p>通过 Middleware 中间件，在请求之前和请求之后做一些操作。  </p>
-<h4 id="flask_6">Flask路由和视图</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_2">1. 路由和视图函数对应关系</h6>
+<p>通过 Middleware 中间件，在请求之前和请求之后做一些操作。<br />
+<hr></p>
+<h4 id="flask_5">Flask路由和视图</h4>
+<hr>
+
+<h5 id="1_2">1. 路由和视图函数对应关系</h5>
 <pre><code class="py"># /index和/login是路由;index和login是视图函数
 [
     ('/index', 'index'),
@@ -899,8 +1007,9 @@ if __name__ == '__main__':
 ]
 </code></pre>
 
-<p>请求来了，一个个筛选，并且前面的匹配成功，后面的都不再进行匹配了。</p>
-<h6 id="2_4">2. 路由设置两种方式</h6>
+<p>请求来了，一个个筛选，并且前面的匹配成功，后面的都不再进行匹配了。
+<hr></p>
+<h5 id="2_4">2. 路由设置两种方式</h5>
 <p>① @app.route('/xxx')</p>
 <pre><code class="py">@app.route('/')
 def index():
@@ -913,7 +1022,7 @@ def index():
 app.add_url_rule('/index', None, index)
 </code></pre>
 
-<p>注意：不要让endpoint重名，如果重名函数一定要相同。</p>
+<p>注意：不要让 endpoint 重名，如果重名函数一定要相同。</p>
 <pre><code class="py">@app.route('/index', endpoint=1)
 def index():
     return 'index'
@@ -922,24 +1031,21 @@ def index():
     return 'index'
 </code></pre>
 
-<p>上面两个index函数是不同的。</p>
-<h6 id="3-approuteappadd_url_url">3. @app.route和app.add_url_url参数</h6>
-<ul>
-<li>rule：url规则</li>
-<li>view_func：视图函数名称</li>
-<li>defaults = None：默认值，当url中无参数数时，使用defaults = {'k':'v'}为函数提供参数</li>
-</ul>
+<p>上面两个 index 函数是不同的。
+<hr></p>
+<h5 id="3-approute">3. app.route方法的参数</h5>
+<p>( 1 ) rule：url规则</p>
+<p>( 2 ) view_func：视图函数名称</p>
+<p>( 3 ) defaults = None：默认值，当 url 中无参数数时，使用 defaults = {'k':'v'} 为函数提供参数</p>
 <pre><code class="py">@app.route('/index', defaults={'k': 'v'})
 def index(k):
     return 'index'
 </code></pre>
 
-<ul>
-<li>endpoint = None：名称，用于反向生成 url，即 url_for('名称')</li>
-<li>methods = None：允许请求的方式，如：['get','post']</li>
-<li>strict_slashes  = None：对url最后/符号是严格要求的。对于@app.route('/login',strict_slashes = False)，访问<a href="https://www.blueflags.cn/login">https://www.blueflags.cn/login</a>或<a href="https://www.blueflags.cn/login/">https://www.blueflags.cn/login/</a>都可以。但对于@app.route('/login',strict_slashes = True)，仅能访问<a href="https://www.blueflags.cn/login">https://www.blueflags.cn/login</a>。建议使strict_slashes = True，只有写了什么，才能访问什么，默认也是True。</li>
-<li>redirect_to = None：重定向到指定的地址</li>
-</ul>
+<p>( 4 ) endpoint = None：名称，用于反向生成 url，即 url_for('名称')</p>
+<p>( 5 ) methods = None：允许请求的方式，如：[ 'get', 'post' ]</p>
+<p>( 6 ) strict_slashes  = None：对url最后 / 符号是严格要求的。对于 <kbd>@app.route('/login',strict_slashes = False)</kbd>，访问 [ https://www.xxx.com/login ] 或 [ https://www.xxx.com/login/ ] 都可以。但对于 <kbd>@app.route('/login',strict_slashes = True)</kbd>，仅能访问 [ https://www.xxx.com/login ]。建议使 strict_slashes = True，只有写了什么，才能访问什么，默认也是 True。</p>
+<p>( 7 ) redirect_to = None：重定向到指定的地址</p>
 <p>① 一般的重定向：</p>
 <pre><code class="py">@app.route('/index', redirect_to='/login')
 def index():
@@ -968,11 +1074,9 @@ def index():
     return 'index'
 </code></pre>
 
-<ul>
-<li>subdomain = None：子域名访问
-绑定域名：</li>
-</ul>
-<p><kbd>hosts</kbd></p>
+<p>( 8 ) subdomain = None：子域名访问
+绑定域名：</p>
+<p><strong><code>hosts</code></strong>：</p>
 <pre><code class="py"># localhost name resolution is handled within DNS itself.
 #   127.0.0.1       localhost
 #   ::1             localhost
@@ -981,7 +1085,7 @@ def index():
     127.0.0.1       admin.thanlon.com
 </code></pre>
 
-<p><kbd>app.py</kbd>：</p>
+<p><strong><code>app.py</code></strong>：</p>
 <pre><code class="py">from flask import Flask
 app = Flask(__name__)
 app.config['SERVER_NAME'] = 'thanlon.com:5000'
@@ -1014,7 +1118,10 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<h6 id="4-cbv">4. CBV</h6>
+<hr>
+
+<h5 id="4-cbv">4. CBV</h5>
+<p>CBV 是 Flask 从 Django 框架中借鉴过来的，</p>
 <pre><code class="py">from flask import Flask, views
 import functools
 app = Flask(__name__)
@@ -1038,10 +1145,10 @@ class UserView(views.MethodView):
 app.add_url_rule('/index', None, UserView.as_view('uuu'))
 </code></pre>
 
-<h6 id="5_1">5. 自定义正则</h6>
-<ul>
-<li>python默认支持的转换器</li>
-</ul>
+<hr>
+
+<h5 id="5_1">5. 自定义正则</h5>
+<p>( 1 ) python 默认支持的转换器</p>
 <pre><code class="py">#: the default converter mapping for the map.
 DEFAULT_CONVERTERS = {
     &quot;default&quot;: UnicodeConverter,
@@ -1054,9 +1161,7 @@ DEFAULT_CONVERTERS = {
 }
 </code></pre>
 
-<ul>
-<li>自定义正则的三个步骤</li>
-</ul>
+<p>( 2 ) 自定义正则的三个步骤</p>
 <p>① 定制类</p>
 <pre><code class="py">class RegexConverter(BaseConveter):
     def __init__(self,map,regex):
@@ -1077,7 +1182,7 @@ DEFAULT_CONVERTERS = {
 <pre><code class="py">app.url_map.converters['reg'] = RegexConverter  # reg是自己定义
 </code></pre>
 
-<p>③ 使用自定义正则（to_python方法是匹配的时候使用，to_url方法是反向生成url的时候使用）</p>
+<p>③ 使用自定义正则（ <kbd>to_python</kbd> 方法是匹配的时候使用，<kbd>to_url</kbd> 方法是反向生成 url 的时候使用 ）</p>
 <pre><code class="py">from flask import Flask, url_for
 
 app = Flask(__name__)
@@ -1122,16 +1227,15 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<h4 id="flask_7">FLask蓝图</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_3">1. 蓝图（一）</h6>
-<p>实际项目中，需要进行项目目录结构的划分，蓝图就是用来帮助开发者进行目录结构的划分，下面是目录结构划分的几个步骤。
-① 新建项目，在项目下新建一个和项目名同名的目录
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815094530310.png" />
-②  在与项目名同名的目录中新建<kbd><strong> init </strong>.py</kbd>，用来实例化Flask对象
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815095502946.png" /></p>
+<h4 id="flask_6">FLask蓝图</h4>
+<hr>
+
+<h5 id="1_3">1. 蓝图 ( 一 )</h5>
+<p>实际项目中，需要进行项目目录结构的划分，蓝图就是用来帮助开发者进行目录结构的划分，下面是目录结构划分的几个步骤。</p>
+<p>( 1 ) 新建项目，在项目下新建一个和项目名同名的目录</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815094530310.png" /></p>
+<p>( 2 ) 在与项目名同名的目录中新建 <strong><code>__ init __.py</code></strong>，用来实例化 Flask 对象</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815095502946.png" /></p>
 <pre><code class="py">from flask import Flask
 
 def create_app():
@@ -1139,9 +1243,9 @@ def create_app():
     return app
 </code></pre>
 
-<p>③ 在项目目录下新建<kbd>manage.py</kbd>(也可以是其它的名字)，
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815095847799.png" />
-将create_app函数导入manage.py，在manage.py中：</p>
+<p>( 3 ) 在项目目录下新建 <strong><code>manage.py</code></strong> （ 也可以是其它的名字 ），</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815095847799.png" /></p>
+<p>将 <kbd>create_app</kbd> 函数导入 manage.py，在 manage.py 中：</p>
 <pre><code class="py">from test_blueprint import create_app
 
 app = create_app()
@@ -1149,10 +1253,10 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<p>④ 在test_blueprint(非项目目录)下新建views目录，用来放视图函数，在视图函数中可以根据视图的不同进行分类。
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815101405871.png" />
-⑤  创建视图函数与app对象的关系，首先在视图函数中，创建Blueprint对象。</p>
-<p><kbd>admin.py</kbd></p>
+<p>( 4 ) 在 test_blueprint（ 非项目目录 ）下新建 views 目录，用来放视图函数，在视图函数中可以根据视图的不同进行分类。</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815101405871.png" /></p>
+<p>( 5 ) 创建视图函数与 app 对象的关系，首先在视图函数中，创建 Blueprint 对象。</p>
+<p><strong><code>admin.py</code></strong>：</p>
 <pre><code class="py">from flask import Blueprint
 admin_bp = Blueprint('admin_bp', __name__)  # 创建Blueprint(蓝图)对象，第一个参数name不能同名
 
@@ -1165,7 +1269,7 @@ def logout():
     return 'logout'
 </code></pre>
 
-<p><kbd>home.py</kbd></p>
+<p><strong><code>home.py</code></strong>：</p>
 <pre><code class="py">from flask import Blueprint
 home_bp = Blueprint('home_bp', __name__)  # 第一个参数是name，第一个参数name不能同名
 
@@ -1178,7 +1282,7 @@ def list():
     return 'list'
 </code></pre>
 
-<p>需要修改<kbd><strong> init </strong>.py</kbd>，注册蓝图，</p>
+<p>需要修改 <strong><code>__ init __.py</code></strong>，注册蓝图，</p>
 <pre><code class="python">from flask import Flask
 from .views.admin import admin_bp
 from .views.home import home_bp
@@ -1191,34 +1295,35 @@ def create_app():
     return app
 </code></pre>
 
-<p>注意：如果两个或多个视图函数中有同名的路由，如home.py和admin.py都有<kbd>/login</kbd>路由，谁先注册先执行谁的视图函数。</p>
-<p>⑥ 创建模板。在__ init __.py所在的目录中新建<kbd>templates</kbd>目录(Flask实例化的文件所在的目录中)，如果有静态文件，放静态文件的目录<kbd>static</kbd>与templates目录处于同一级。
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815105313126.png" />
-在templates目录中建模板文件<kbd>login.html</kbd>，可以修改<kbd>admin.py</kbd>，</p>
+<p>注意：如果两个或多个视图函数中有同名的路由，如 home.py 和 admin.py 都有 <strong><code>/login</code></strong> 路由，谁先注册先执行谁的视图函数。</p>
+<p>( 6 ) 创建模板。在 <strong><code>__ init __.py</code></strong> 所在的目录中新建 templates 目录（ Flask 实例化的文件所在的目录中 ），如果有静态文件，放静态文件的目录 static 与 templates 目录处于同一级。</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190815105313126.png" /></p>
+<p>在 templates 目录中建模板文件 <strong><code>login.html</code></strong>，同时修改 <strong><code>admin.py</code></strong>：</p>
 <pre><code class="py">@admin_bp.route('/login')
 def login():
     return render_template('login.html')
 </code></pre>
 
-<p>这时候就可以访问模板了。</p>
-<h6 id="2_5">2. 蓝图（二）</h6>
-<p>① 自定义静态文件和模板的路径</p>
-<pre><code class="py">admin_bp = Blueprint('admin_bp', __name__,template_folder='xxx')
+<p>这时候就可以访问模板了。
+<hr></p>
+<h5 id="2_5">2. 蓝图 ( 二 )</h5>
+<p>( 1 ) 自定义静态文件和模板的路径</p>
+<pre><code class="python">admin_bp = Blueprint('admin_bp', __name__,template_folder='xxx')
 @admin_bp.route('/login')
 def login():
     return render_template('login.html')
 </code></pre>
 
-<p>注意：蓝图<strong>优先</strong>去templates去找loging.html，找不到去xxx中找。当然静态文件也是可以指定的：</p>
-<pre><code class="py">admin_bp = Blueprint('admin_bp', __name__,template_folder='xxx',static_folder='xxxx')
+<p>注意：蓝图 <font>优先</font> 去 templates 去找 loging.html，找不到去 xxx 中找。当然静态文件也是可以指定的：</p>
+<pre><code class="python">admin_bp = Blueprint('admin_bp', __name__,template_folder='xxx',static_folder='xxxx')
 
 @admin_bp.route('/login')
 def login():
     return render_template('login.html')
 </code></pre>
 
-<p>②  为某一个蓝图地址加上前缀</p>
-<pre><code class="py">def create_app():
+<p>( 2 ) 为某一个蓝图地址加上前缀</p>
+<pre><code class="python">def create_app():
     app = Flask(__name__)
     # 注册蓝图
     app.register_blueprint(home_bp, url_prefix='/home')
@@ -1226,11 +1331,11 @@ def login():
     return app
 </code></pre>
 
-<p>按照原先访问方式：<kbd>http://127.0.0.1:5000/login</kbd> ,访问失败。</p>
-<p>现在需要：<kbd>http://127.0.0.1:5000/home/login</kbd></p>
-<p>③ 为所有蓝图加上<kbd>@before_request</kbd></p>
-<p><kbd><strong> init </strong>.py</kbd>：</p>
-<pre><code class="py">from flask import Flask
+<p>按照原先访问方式：<strong><code>http://127.0.0.1:5000/login</code></strong> ,访问失败。</p>
+<p>现在需要：<strong><code>http://127.0.0.1:5000/home/login</code></strong></p>
+<p>( 3 ) 为所有蓝图加上 <kbd>@before_request</kbd></p>
+<p><strong><code>__ init __.py</code></strong>：</p>
+<pre><code class="python">from flask import Flask
 from .views.admin import admin_bp
 from .views.home import home_bp
 
@@ -1247,9 +1352,9 @@ def create_app():
     return app
 </code></pre>
 
-<p>④ 为指定的蓝图加上<kbd>@before_request</kbd></p>
-<p><kbd>admin.py</kbd>：</p>
-<pre><code class="py">from flask import Blueprint, render_template
+<p>( 4 ) 为指定的蓝图加上 <kbd>@before_request</kbd></p>
+<p><strong><code>admin.py</code></strong>：</p>
+<pre><code class="python">from flask import Blueprint, render_template
 admin_bp = Blueprint('admin_bp', __name__, template_folder='xxx', static_folder='xxxx')
 
 @admin_bp.before_request
@@ -1266,19 +1371,21 @@ def logout():
 </code></pre>
 
 <blockquote>
-<p><strong><code>应用场景：可以在指定蓝图中加入登录验证。</code></strong></p>
+<p><font>应用场景：可以在指定蓝图中加入登录验证 。</font></p>
 </blockquote>
+<hr>
+
 <h4 id="flasksession">Flask中session的使用</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1-session">1. session的基本使用</h6>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190811121342441.png" />
-当请求刚进来时，flask 读取 cookie 中 session 对应的值，将该值解密并反序列化为字典，放入内存以便视图函数使用。 </p>
-<p><kbd>视图函数</kbd>： </p>
+<hr>
+
+<h5 id="1-session">1. session的基本使用</h5>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190811121342441.png" /></p>
+<p>当请求刚进来时，flask 读取 cookie 中 session 对应的值，将该值解密并反序列化为字典，放入内存以便视图函数使用。 </p>
+<p>视图函数： </p>
 <pre><code class="py">@app.route('/session')
 def sess():
     # from flask.sessions import SecureCookieSession
+    print(type(session))  # session继承了字典，字典有什么方法，它就有什么方法
     print(type(session))  # session继承了字典，字典有什么方法，它就有什么方法
     session['k1'] = 'v1'
     return 'session'
@@ -1287,9 +1394,10 @@ def sess():
     '''
 </code></pre>
 
-<p>当请求结束时，flask会读取内存中字典的值，进行序列化加密，写入到用户的cookie中。</p>
-<h6 id="2-session">2. 自定义Session配置</h6>
-<p><kbd>settings.py</kbd>：</p>
+<p>当请求结束时，flask 会读取内存中字典的值，进行序列化加密，写入到用户的 cookie 中。
+<hr></p>
+<h5 id="2-session">2. 自定义Session配置</h5>
+<p><strong><code>settings.py</code></strong>：</p>
 <pre><code class="py">class Config(object):
     # PERMANENT_SESSION_LIFETIME = datetime.timedelta(days=31)  # 生命周期，最多的保存时间
     # PERMANENT_SESSION_LIFETIME = datetime.timedelta(hours=1)
@@ -1302,14 +1410,14 @@ def sess():
     SESSION_REFRESH_EACH_REQUEST = True  # 在最后访问的基础上加上生命周期
 </code></pre>
 
-<h4 id="flaskwtforms">Flask之wtforms组件</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_4">1. 用户登录</h6>
+<hr>
+
+<h4 id="flaskwtforms">Flask中的wtforms组件</h4>
+<hr>
+
+<h5 id="1_4">1. 用户登录</h5>
 <p><strong><code>form.py</code></strong>：</p>
-<pre><code class="py"># coding:utf-8
-from wtforms import Form
+<pre><code class="python">from wtforms import Form
 from wtforms.fields import simple
 from wtforms import widgets, validators
 
@@ -1332,7 +1440,7 @@ class LoginForm(Form):
     )
 </code></pre>
 
-<p><kbd>app.py</kbd>：</p>
+<p><strong><code>app.py</code></strong>：</p>
 <pre><code class="py">from flask import Flask, render_template, request
 from forms import LoginForm
 
@@ -1366,7 +1474,7 @@ if __name__ == '__main__':
     app.run()
 </code></pre>
 
-<p><kbd>login.html</kbd>：</p>
+<p><strong><code>login.html</code></strong>：</p>
 <pre><code class="html">  &lt;form method=&quot;POST&quot; novalidate&gt;
                         &lt;div class=&quot;form-group&quot;&gt;
                             &lt;label&gt;用户名&lt;/label&gt;
@@ -1382,9 +1490,10 @@ if __name__ == '__main__':
                     &lt;/form&gt;
 </code></pre>
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190905181115785.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
-<h6 id="2_6">2. 用户注册</h6>
-<p><kbd>form.py</kbd>：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190905181115785.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
+<hr></p>
+<h5 id="2_6">2. 用户注册</h5>
+<p><strong><code>form.py</code></strong>：</p>
 <pre><code class="py">class RegisterForm(Form):
     name = simple.StringField(
         label='用户名',
@@ -1463,7 +1572,7 @@ if __name__ == '__main__':
     )
 </code></pre>
 
-<p><kbd>register.html</kbd>：</p>
+<p><strong><code>register.html</code></strong>：</p>
 <pre><code class="py">&lt;form method=&quot;post&quot; novalidate&gt;
     {% for field in form %}
     {{field.label}} {{field}}{{field.errors[0]}}
@@ -1472,7 +1581,7 @@ if __name__ == '__main__':
  &lt;/form&gt;
 </code></pre>
 
-<p><kbd>app.py</kbd>：</p>
+<p><strong><code>app.py</code></strong>：</p>
 <pre><code class="py">@app.route('/register',methods=['get','post'])
 def register():
     if request.method == 'GET':
@@ -1485,17 +1594,19 @@ def register():
     return render_template('register.html', form=form)
 </code></pre>
 
-<h6 id="3_1">3. 数据库实时更新</h6>
-<p>① 数据相关</p>
+<hr>
+
+<h5 id="3_1">3. 数据库实时更新</h5>
+<p>数据相关：</p>
 <pre><code class="sql">mysql&gt; create table city(id int primary key auto_increment,city_name varchar(20) not null );
 mysql&gt; insert city values(null,'beijin');
 mysql&gt; insert city values(null,'shanghai');
 mysql&gt; insert city values(null,'shenzhen'); 
 </code></pre>
 
-<p>② 效果图
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190906143006821.png" />
-③ 主要代码</p>
+<p>效果图：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190906143006821.png" /></p>
+<p>主要代码：</p>
 <pre><code class="py">class UserForm(Form):
     city = core.SelectField(
         label='城市',
@@ -1505,7 +1616,7 @@ mysql&gt; insert city values(null,'shenzhen');
 </code></pre>
 
 <p>选项中的数据只是在第一次请求的时候从数据库获取一次，当数据更新时，用户页面中的数据并没有实时更新。所以，代码是存在问题的。</p>
-<p>解决方案：对于UserForm类，每次实例化的时候都去从数据库中获取一次数据，可以这样写：</p>
+<p>解决方案：对于 UserForm 类，每次实例化的时候都去从数据库中获取一次数据，可以这样写：</p>
 <pre><code class="py">class UserForm(Form):
     city = core.SelectField(
         label='城市',
@@ -1519,7 +1630,7 @@ mysql&gt; insert city values(null,'shenzhen');
         self.city.choices = helper.fetch_all('select *from city', [], type=None)
 </code></pre>
 
-<p>实例化UserForm的时候传值：</p>
+<p>实例化 UserForm 的时候传值：</p>
 <pre><code class="py">@app.route('/user', methods=['get', 'post'])
 def user():
     if request.method == 'GET':
@@ -1527,11 +1638,17 @@ def user():
         return render_template('user.html',form=form)
 </code></pre>
 
-<h6 id="4-wtformsdjango">4. wtforms的作用与django示例</h6>
-<p>wtforms有两个作用：1. 自动生成html标签；2.对用户请求数据进行校验
-在django中想实现实时更新，也需要重写构造方法。</p>
-<p><kbd>views.py</kbd>：</p>
-<pre><code class="py">from django.shortcuts import render
+<hr>
+
+<h5 id="4-wtforms">4. wtforms的作用</h5>
+<p>wtforms 有两个作用：</p>
+<p>( 1 ) 自动生成 html 标签；</p>
+<p>( 2 ) 对用户请求数据进行校验
+<hr></p>
+<h5 id="5-django">5. django实现数据实时更新</h5>
+<p>在 django 中想实现实时更新，也需要重写构造方法。</p>
+<p><strong><code>views.py</code></strong>：</p>
+<pre><code class="python">from django.shortcuts import render
 from django.forms import Form
 from django.forms import fields
 from app01 import models
@@ -1558,12 +1675,17 @@ def index(request):
         return render(request, 'index.html', {'form': form})
 </code></pre>
 
-<h4 id="flaskflask-session">FLask之flask-session组件</h4>
-<p>flask-sesion组件可以帮助我们把默认的 session 放入到加密的 cookie 中。</p>
-<p>（1）安装 flask-session：<strong><code>pip install flask-session</code></strong></p>
-<p>（2）session 保存在 Redis 中</p>
-<pre><code class="py"># coding:utf-8
-from flask import Flask, request, session
+<hr>
+
+<h4 id="flask-session">flask-session组件</h4>
+<p>flask-session 组件可以帮助我们把默认的 session 放入到加密的 cookie 中。
+<hr></p>
+<h5 id="1-flask-session">1. 安装 flask-session</h5>
+<p>安装 flask-session：<strong><code>pip install flask-session</code></strong>
+<hr></p>
+<h5 id="2-session-redis">2. 将 session 保存在 Redis 中</h5>
+<p>session 保存在 Redis 中：</p>
+<pre><code class="python">from flask import Flask, request, session
 from flask.sessions import SecureCookieSessionInterface
 # from flask.ext.session import Session#以前导入session的方式，与下面是一样的
 from flask_session import Session
@@ -1596,10 +1718,11 @@ if __name__ == '__main__':
     # app.wsgi_app  # __call__方法会调用wsgi_app
 </code></pre>
 
-<p>（3）查看Redis中存入的session</p>
-<p><kbd>look_cookie.py</kbd>:</p>
-<pre><code class="py"># coding:utf-8
-import redis
+<hr>
+
+<h5 id="3-redissession">3. 查看Redis中存入的session</h5>
+<p><strong><code>look_cookie.py</code></strong>:</p>
+<pre><code class="python">import redis
 conn = redis.Redis(host='106.12.115.136',port=6379)
 print(conn.keys())
 '''
@@ -1607,13 +1730,18 @@ print(conn.keys())
 '''
 </code></pre>
 
-<p>（4） flask-session的原理</p>
-<p>session 数据保存在 Redis，在Redis中key是session，value是随机字符串，每一个随机字符串对应一个自己的值。每一个用户都会有一个随机字符串。系统将随机字符串返回给用户。</p>
-<p>（5）flask-session源码</p>
+<hr>
+
+<h5 id="4-flask-session">4. flask-session的原理</h5>
+<p>session 数据保存在 Redis，在 Redis 中 key 是 session，value 是随机字符串，每一个随机字符串对应一个自己的值。每一个用户都会有一个随机字符串。系统将随机字符串返回给用户。
+<hr></p>
+<h5 id="5flask-session">5.flask-session源码</h5>
 <pre><code class="py">from flask_session import RedisSessionInterface
 </code></pre>
 
-<p>（6）flask-session更多配置</p>
+<hr>
+
+<h5 id="6-flask-session">6. flask-session更多配置</h5>
 <pre><code class="py">SESSION_TYPE = 'redis'  # 设置session类型
 SESSION_REDIS = redis.Redis(host='127.0.0.1', port=6379, password='foobared') # 配置连接redis
 SESSION_PERMANENT = True
@@ -1624,17 +1752,20 @@ SESSION_KEY_PREFIX = 'session:') # 保存到session中的值的前缀
 PERMANENT_SESSION_LIFETIME = datetime.timedelta(minutes=30)  # 保存30min
 </code></pre>
 
-<h4 id="flasksqlalchemy">Flask之SQLAlchemy</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_5">1. 简介</h6>
-<p>SQLAlchemy 是 ORM（对象关系映射）框架，类名对应表名，类中的字段对应数据表的列，对象对应数据表的一行。<strong><code>SQLAlchemy 可以帮助我们使用类和对象快速实现数据库操作</code></strong>。我们在公司里要么是用原生sql，要么是用ORM框架。原生 SQL 中可以用 MySQLdb 和 pymysql 模块，MySQLdb 的用法和 pymysql 基本上是完全一样的。两者在使用上是有区别的，<strong><code>MySQLdb不支持python3，pymysql 支持 python2 和 python3</code></strong>。对于Python Web框架，如果有自己的使用自己的，如果没有ORM一般都用SQLAlchemy。</p>
-<h6 id="2-curd">2. CURD</h6>
-<p>① 创建一个数据表</p>
-<p><kbd>models.py</kbd>：</p>
-<pre><code class="py"># coding:utf-8
-from sqlalchemy.ext.declarative import declarative_base
+<hr>
+
+<h4 id="flasksqlalchemy">Flask中的SQLAlchemy</h4>
+<hr>
+
+<h5 id="1-sqlalchemy">1. SQLAlchemy简介</h5>
+<p>SQLAlchemy 是 ORM ( 对象关系映射 ) 框架，类名对应表名，类中的字段对应数据表的列，对象对应数据表的一行。<font>SQLAlchemy可以帮助我们使用类和对象快速实现数据库操作</font>。我们在公司里要么是用原生 sql，要么是用 ORM
+框架。原生 SQL 中可以用 MySQLdb 和 pymysql 模块，MySQLdb 的用法和 pymysql
+基本上是完全一样的。两者在使用上是有区别的，<font>MySQLdb不支持Python3，pymysql支持Python2和Python3</font>。对于 Python Web 框架，如果有自己的使用自己的，如果没有 ORM 一般都用 SQLAlchemy。</p>
+<hr>
+
+<h5 id="2-curd">2. CURD</h5>
+<p>( 1 ) 创建一张数据表</p>
+<pre><code class="python">from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Text, Date, DateTime
 from sqlalchemy import create_engine
 Base = declarative_base()
@@ -1651,11 +1782,11 @@ engine = create_engine(
     pool_timeout=30,  # 连接池中没有连接最多等待的时间，否则会报错，30s
     pool_recycle=-1,  # 多久之后对线程池中的线程中进行一次连接的回收（重置）-1表示不重置
 )
-# Base.metadata.drop_all(engine)#删除这个数据表
+# Base.metadata.drop_all(engine) # 删除这个数据表
 Base.metadata.create_all(engine)  # 创建这个数据表
 </code></pre>
 
-<p><kbd>users表</kbd>：</p>
+<p>创建的 Users 表：</p>
 <pre><code class="sql">+-------+-------------+------+-----+---------+----------------+
 | Field | Type        | Null | Key | Default | Extra          |
 +-------+-------------+------+-----+---------+----------------+
@@ -1664,9 +1795,9 @@ Base.metadata.create_all(engine)  # 创建这个数据表
 +-------+-------------+------+-----+---------+----------------+
 </code></pre>
 
-<p>注意：SQLAlchemy默认是不可以修改创建好的数据表的，需要用到第三方组件</p>
-<p>② 封装操作：防止models.py被导入的时候执行，把创建表和删除表封装在函数中</p>
-<pre><code class="py"># coding:utf-8
+<p>注意：SQLAlchemy 默认是不可以修改创建好的数据表的，需要用到第三方组件</p>
+<p>( 2 ) 封装操作：防止 <strong><code>models.py</code></strong> 被导入的时候执行，把创建表和删除表封装在函数中</p>
+<pre><code class="python"># coding:utf-8
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Text, Date, DateTime
 from sqlalchemy import create_engine
@@ -1703,8 +1834,8 @@ if __name__ == '__main__':
     # drop_all()
 </code></pre>
 
-<p>③ 添加数据</p>
-<pre><code class="py">from sqlalchemy import create_engine
+<p>( 3 ) 添加数据</p>
+<pre><code class="python">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
 
@@ -1744,8 +1875,8 @@ session.commit()
 session.close()
 </code></pre>
 
-<p>④ 查询数据</p>
-<pre><code class="py">from sqlalchemy import create_engine
+<p>( 4 ) 查询数据</p>
+<pre><code class="python">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
 
@@ -1793,8 +1924,8 @@ session.commit()
 session.close()
 </code></pre>
 
-<p>⑤ 删除数据</p>
-<pre><code class="py">from sqlalchemy import create_engine
+<p>( 5 ) 删除数据</p>
+<pre><code class="python">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
 
@@ -1815,7 +1946,7 @@ session.query(Users).filter(Users.id &gt; 3).delete()
 session.commit()
 </code></pre>
 
-<p>⑥ 修改数据</p>
+<p>( 6 ) 修改数据</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
@@ -1838,8 +1969,10 @@ session.query(Users).filter(Users.id == 1).update({Users.name: Users.name + 'hel
 session.commit()
 </code></pre>
 
-<h6 id="3_2">3. 常用操作</h6>
-<p>① 指定列</p>
+<hr>
+
+<h5 id="3_2">3. 常用操作</h5>
+<p>( 1 ) 指定列</p>
 <pre><code class="py">ret = session.query(Users.id, Users.name.label('cname')).all()
 for item in ret:
     print(item, type(item), item[0], item.id, item.cname)
@@ -1847,24 +1980,24 @@ for item in ret:
 query = session.query(Users.id, Users.name.label('cname'))  # query的值就是sql语句
 </code></pre>
 
-<p>② 1. 默认条件是and</p>
+<p>( 2 ) 默认条件是and</p>
 <pre><code class="py">session.query(Users).filter(Users.id == 1, Users.name == 'thanlon').all()
 </code></pre>
 
-<p>③ between</p>
+<p>( 3 ) between</p>
 <pre><code class="py">session.query(Users).filter(Users.id.between(1, 2), Users.name == 'thanlon').all()
 </code></pre>
 
-<p>④ in</p>
+<p>( 4 ) in</p>
 <pre><code class="py"> session.query(Users).filter(Users.id.in_([1, 2, 3])).all()
 session.query(Users).filter(~Users.id.in_([1, 2, 3])).all()
 </code></pre>
 
-<p>⑤ 子查询</p>
+<p>( 5 ) 子查询</p>
 <pre><code class="py">session.query(Users).filter(Users.id.in_(session.query(Users.id).filter(Users.name == 'thanlon'))).all()
 </code></pre>
 
-<p>⑥ and和or</p>
+<p>( 6 ) and和or</p>
 <pre><code class="py">from sqlalchemy import and_, or_
 
 session.query(Users).filter(and_(Users.id &gt; 1, Users.name == 'thanlon')).all()  # 没有and_也是一样的表示and
@@ -1874,25 +2007,25 @@ session.query(Users).filter(
 ).all()
 </code></pre>
 
-<p>⑦ filter_by</p>
+<p>( 7 ) filter_by</p>
 <pre><code class="py">session.query(Users).filter_by(name='thanlon').all()  # 条件，内部也是使用filter
 </code></pre>
 
-<p>⑧ 通配符</p>
+<p>( 8 ) 通配符</p>
 <pre><code class="py">session.query(Users).filter(Users.name.like('t_')).all()  # t后面有一个字符
 session.query(Users).filter(~Users.name.like('t%')).all()  # 以t开头
 </code></pre>
 
-<p>⑨ 切片/分页</p>
+<p>( 9 ) 切片/分页</p>
 <pre><code class="py">session.query(Users)[1, 3]
 </code></pre>
 
-<p>排序：</p>
+<p>( 10 ) 排序：</p>
 <pre><code class="py">session.query(Users).order_by(Users.name.desc()).all()  # 按照姓名从大到小
 session.query(Users).order_by(Users.name.desc(), Users.id.asc()).all()  # 先按照name从大到小排列，如果同名按照id升序排列
 </code></pre>
 
-<p>分组：</p>
+<p>( 11 ) 分组：</p>
 <pre><code class="py">from sqlalchemy.sql import func
 
 '''
@@ -1930,7 +2063,7 @@ for item in ret:
 # 注意：如果使用group，根据聚合的结果进行二次筛选时，只能用having
 </code></pre>
 
-<p>组合：将两个表上下拼接(union和union all)，而join是左右拼接</p>
+<p>( 12 ) 组合：将两个表上下拼接(union和union all)，而join是左右拼接</p>
 <pre><code class="py">'''
 union：不会去重
 '''
@@ -1949,8 +2082,10 @@ for item in ret:
     print(item.name)
 </code></pre>
 
-<h6 id="4_1">4. 外键操作</h6>
-<p>① 创建两个表，注意Users表中是加了外键的</p>
+<hr>
+
+<h5 id="4_1">4. 外键操作</h5>
+<p>( 1 ) 创建两个表，注意 Users 表中是加了外键的</p>
 <pre><code class="py">class Depart(Base):
     __tablename__ = 'depart'
     id = Column(Integer, primary_key=True)
@@ -1970,7 +2105,7 @@ mysql&gt; insert users values(null,'thanlon',1);
 mysql&gt; insert users values(null,'yuqin',2);
 </code></pre>
 
-<p>② 外键操作：
+<p>( 2 ) 外键操作：
 我们在这里可以查询所有用户的信息和所属部门名称，具体操作如下：</p>
 <pre><code class="py"># ret = session.query(Users, Depart).join(Depart).all()  #depart_id = Column(Integer, ForeignKey('depart.id')),默认根据depart.id等效于下面的
 ret = session.query(Users, Depart).join(Depart, Users.depart_id == Depart.id).all()  # on的条件是:depart_id == Depart.id
@@ -1986,12 +2121,12 @@ for row in ret:
     print(row.id, row.name, row.as_title)
 </code></pre>
 
-<p>可以使用多个join，但只有左连接没有右连接的概念，右连接是没有意义的。此外，下面query变量打印出来是一个sql语句，query变量的类型是：<kbd><class 'sqlalchemy.orm.query.Query'></kbd>。</p>
+<p>可以使用多个 join，但只有左连接没有右连接的概念，右连接是没有意义的。此外，下面 query 变量打印出来是一个 sql 语句，query 变量的类型是：<strong><code>&lt;class 'sqlalchemy.orm.query.Query'&gt;</code></strong>。</p>
 <pre><code class="py">query = session.query(Users.id, Users.name, Depart.title).join(Depart, Users.depart_id == Depart.id,
                                                                isouter=True)  # 没有right join是没有意义的
 </code></pre>
 
-<p>我们把在对应users的Users类中添加一个dp字段，注意这个字段不会在表中存在，只有Column实例化的对象才会对应数据表中的列。<strong><code>加入relationship可以帮助我们(跨表)做关联查询和创建关联数据。</code></strong></p>
+<p>我们把在对应 users 的 Users 类中添加一个 dp 字段，注意这个字段不会在表中存在，只有 Column 实例化的对象才会对应数据表中的列。<font>加入 relationship 可以帮助我们（ 跨表 ）做关联查询和创建关联数据。</font></p>
 <pre><code class="py">from sqlalchemy.orm import relationship
 class Users(Base):
     __tablename__ = 'users'
@@ -2001,22 +2136,22 @@ class Users(Base):
     dp = relationship('Depart',backref = 'pers')
 </code></pre>
 
-<p>比如上面的“查询所有用户的信息和所属部门名称”可以这样操作：</p>
+<p>比如上面的 “查询所有用户的信息和所属部门名称” 可以这样操作：</p>
 <pre><code class="py">ret = session.query(Users).all()
 print(ret)  # [&lt;models.Users object at 0x7f5b935bb7f0&gt;, &lt;models.Users object at 0x7f5b935bb860&gt;……]
 for row in ret:
     print(row.id, row.name, row.depart_id, row.dp.title)
 </code></pre>
 
-<p>还可以反向跨表，比如查询销售部为“develop”的所有人员，我们可以这样操作：</p>
+<p>还可以反向跨表，比如查询销售部为 “develop” 的所有人员，我们可以这样操作：</p>
 <pre><code class="py">obj = session.query(Depart).filter(Depart.title == 'develop').first()
 print(obj.pers)  # [&lt;models.Users object at 0x7fef08122160&gt;]
 for row in obj.pers:
     print(row.id, row.name, obj.title)
 </code></pre>
 
-<p>上面两个例子是使用表示relationship可以做关联查询，下面的例子则会介绍一次性创建关联数据。
-比如有这样的需求“创建一个名称是‘finance’的部门并在该部门中添加员工：thanlon”,一般情况下我们是这样操作的：</p>
+<p>上面两个例子是使用表示 relationship 可以做关联查询，下面的例子则会介绍一次性创建关联数据。</p>
+<p>比如有这样的需求 “创建一个名称是 ‘finance’ 的部门并在该部门中添加员工：thanlon”，一般情况下我们是这样操作的：</p>
 <pre><code class="py">dp = Depart(title='finance')
 session.add(dp)
 session.commit()
@@ -2026,14 +2161,14 @@ session.add(u)
 session.commit()
 </code></pre>
 
-<p>上面是一种方式，有了relationship，我们可以这样创建：</p>
+<p>上面是一种方式，有了 relationship，我们可以这样创建：</p>
 <pre><code class="py">u = Users(name='thanlon', dp=Depart(title='finance'))
 session.add(u)
 session.commit()
 </code></pre>
 
-<p>可以看到简单多了吧!
-问题来了，如果创建一个部门再在这个部门创建多个员工，如果按照上面的例子，会又创建若干个finance部门。当然，如果按照上上个例子一个个添加员工也是可以的。但是，我们还有简便的方式，你可以这样做：</p>
+<p>可以看到简单多了吧!</p>
+<p>问题来了，如果创建一个部门再在这个部门创建多个员工，如果按照上面的例子，会又创建若干个 finance 部门。当然，如果按照上上个例子一个个添加员工也是可以的。但是，我们还有简便的方式，你可以这样做：</p>
 <pre><code class="py"># 创建一个部门，添加多个员工
 dp = Depart(title='finance')
 dp.pers = [
@@ -2045,10 +2180,12 @@ session.add(dp)
 session.commit()
 </code></pre>
 
-<h6 id="5_2">5. 多对多操作</h6>
-<p>① 多对多表的创建</p>
-<p>创建学生表、课程表和中间表(部分代码省略)</p>
-<pre><code class="py">from sqlalchemy import Column, Integer, String, Text, Date, DateTime, ForeignKey, UniqueConstraint, Index
+<hr>
+
+<h5 id="5_2">5. 多对多操作</h5>
+<p>( 1 ) 多对多表的创建</p>
+<p>创建学生表、课程表和中间表（部分代码省略）</p>
+<pre><code class="python">from sqlalchemy import Column, Integer, String, Text, Date, DateTime, ForeignKey, UniqueConstraint, Index
 
 class Student(Base):
     __tablename__ = 'student'
@@ -2067,12 +2204,12 @@ class Student2Course(Base):
     course_id = Column(Integer, ForeignKey('course.id'))
     __table_args__ = (
         UniqueConstraint('student_id', 'course_id', name='uc_student_course'),  # 联合唯一索引
-        # Index('i_student_course', 'student_id', 'course_id')#联合索引
+        # Index('i_student_course', 'student_id', 'course_id') # 联合索引
     )
 </code></pre>
 
-<p>② 添加数据</p>
-<p>添加Student表和Course表数据：</p>
+<p>( 2 ) 添加数据</p>
+<p>添加 Student 表和 Course 表数据：</p>
 <pre><code class="py">session.add_all([
     Student(name='thanlon'),
     Student(name='Aurora'),
@@ -2103,7 +2240,7 @@ session.commit()
 session.commit()
 </code></pre>
 
-<p>③ 多对多操作</p>
+<p>( 3 ) 多对多操作</p>
 <p>操作1：查询学生姓名和对应的选课课程名（三张表关联查询）</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -2145,8 +2282,8 @@ print(ret)
 ……
 </code></pre>
 
-<p>上面两个例子是一般多对关联查询操作，下面使用relationship，首先需要修改建Student表语句：</p>
-<p><kbd>model.py</kbd>：</p>
+<p>上面两个例子是一般多对关联查询操作，下面使用 relationship，首先需要修改建 Student 表语句：</p>
+<p><strong><code>model.py</code></strong>：</p>
 <pre><code class="py">class Student(Base):
     __tablename__ = 'student'
     id = Column(Integer, primary_key=True)
@@ -2154,7 +2291,7 @@ print(ret)
     course_list = relationship('Course', secondary='student2course', backref='student_list')  # 根据与Course做关联
 </code></pre>
 
-<p>使用relationship来查询来执行操作2：学生“thanlon”选的所有课，可以这样：</p>
+<p>使用 relationship 来查询来执行操作2：学生 “thanlon” 选的所有课，可以这样：</p>
 <pre><code class="py">obj = session.query(Student).filter(Student.name == 'thanlon').first()
 for item in obj.course_list:
     print(item.title)
@@ -2164,7 +2301,7 @@ for item in obj.course_list:
     '''
 </code></pre>
 
-<p>除了使用relationship正向查找，还可以反向查找，比如：查找选择“Computer”的所有人，</p>
+<p>除了使用 relationship 正向查找，还可以反向查找，比如：查找选择 “Computer” 的所有人，</p>
 <pre><code class="py">obj = session.query(Course).filter(Course.title == 'computer').first()
 # print(obj)#&lt;models.Course object at 0x7fe264215668&gt;
 for item in obj.student_list:
@@ -2175,16 +2312,17 @@ for item in obj.student_list:
     '''
 </code></pre>
 
-<p>操作3：插入数据示例，需求“创建一个课程，创建两个学生，两个学生选新创建的课程”
-这里使用relationship，</p>
+<p>操作3：插入数据示例，需求“创建一个课程，创建两个学生，两个学生选新创建的课程”。这里使用relationship，</p>
 <pre><code class="py">obj = Course(title='math')
 obj.student_list = [Student(name='Maria'), Student(name='Michael')]
 session.add(obj)#在course表增加数据，在student表增加两条数据，在中间关系表中增加两条
 session.commit()
 </code></pre>
 
-<h6 id="6_1">6. 两种连接数据库的方式</h6>
-<p>① 自己实例化session对象</p>
+<hr>
+
+<h5 id="6_1">6. 两种连接数据库的方式</h5>
+<p>( 1 ) 自己实例化session对象</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
@@ -2211,7 +2349,7 @@ if __name__ == '__main__':
     t.start()
 </code></pre>
 
-<p>如果用同一个连接，多线程请求数据时，这个连接很可能忙不过来，数据很有可能出现混乱。所以，实例化session对象(创建一个连接)的代码是不可以放在task函数外面(全局)。此外，<kbd>session.close()</kbd>会把仅有的一个连接释放，其它线程是不可以用到的，因为这种情况下连接只创建了一次。</p>
+<p>如果用同一个连接，多线程请求数据时，这个连接很可能忙不过来，数据很有可能出现混乱。所以，实例化 session 对象（创建一个连接）的代码是不可以放在 task 函数外面（全局）。此外，<kbd>session.close()</kbd> 会把仅有的一个连接释放，其它线程是不可以用到的，因为这种情况下连接只创建了一次。</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
@@ -2239,8 +2377,8 @@ if __name__ == '__main__':
     t.start()
 </code></pre>
 
-<p>② 通过Threading.Local实现的(推荐使用)
-基于Threading.Local也是为每个线程获取一个连接。</p>
+<p>( 2 ) 通过Threading.Local实现的（推荐使用）</p>
+<p>基于 Threading.Local 也是为每个线程获取一个连接。</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
@@ -2268,9 +2406,11 @@ if __name__ == '__main__':
     t.start()
 </code></pre>
 
-<h6 id="7-sql">7. 原生SQL</h6>
-<p>Django里面可以执行原生SQL，SQLAlchemy也可以执行原生SQL，如果SQL语句比较复杂，ORM解决不了，那么可以使用原生SQL。SQLAlchemy 执行原生 SQL的 方式有好多种，在这里介绍其中两种。</p>
-<p><strong><code>方式1</code></strong>：</p>
+<hr>
+
+<h5 id="7-sql">7. 原生SQL</h5>
+<p>Django 里面可以执行原生 SQL，SQLAlchemy 也可以执行原生 SQL，如果 SQL 语句比较复杂，ORM 解决不了，那么可以使用原生 SQL。SQLAlchemy 执行原生 SQL 的方式有好多种，在这里介绍其中两种。</p>
+<p>方式1：</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
@@ -2305,7 +2445,7 @@ if __name__ == '__main__':
     t.start()
 </code></pre>
 
-<p><strong><code>方式2</code></strong>：</p>
+<p>方式2：</p>
 <pre><code class="py">from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Users
@@ -2342,19 +2482,25 @@ if __name__ == '__main__':
     t.start()
 </code></pre>
 
+<hr>
+
 <h4 id="pipreqs">pipreqs组件</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1-pipreqs">1. pipreqs的安装</h6>
-<p>pipreqs 组件可以帮助我们找到项目中使用到的所有依赖库及其对应的版本信息并自动保存为 <strong><code>requirements.txt</code></strong> 文件，与我们一般使用的 <strong><code>pip freeze &gt; xxx.txt</code></strong> 命令具有相同的功能。<strong><code>requirements.txt</code></strong> 文件可以被 PyCharm 识别，会提示我们安装依赖库。应用之前需要安装：</p>
-<pre><code class="py">$ pip install pipreqs -i https://mirrors.aliyun.com/pypi/simple
+<hr>
+
+<h5 id="1-pipreqs">1. pipreqs的安装</h5>
+<p>pipreqs 组件可以帮助我们找到项目中使用到的所有依赖库及其对应的版本信息并自动保存为
+<strong><code>requirements.txt</code></strong> 文件，与我们一般使用的：</p>
+<pre><code class="python">$ pip freeze &gt; xxx.txt
 </code></pre>
 
-<blockquote>
-<p><strong><code>pipreqs是第三方组件(库)，Flask和Django中都可以使用！</code></strong></p>
-</blockquote>
-<h6 id="2-pipreqs">2. pipreqs的应用</h6>
+<p>命令具有相同的功能。<strong><code>requirements.txt</code></strong> 文件可以被 PyCharm 识别，会提示我们安装依赖库。应用之前需要安装：</p>
+<pre><code class="python">$ pip install pipreqs -i https://mirrors.aliyun.com/pypi/simple
+</code></pre>
+
+<p><font>pipreqs 是第三方组件，Flask 和 Django 中都可以使用！</font></p>
+<hr>
+
+<h5 id="2-pipreqs">2. pipreqs的应用</h5>
 <p>在项目目录下执行 <strong><code>pipreqs ./</code></strong>，就会在当前目录生成 <strong><code>requirements.txt</code></strong> 文件：</p>
 <pre><code class="py">$ pipreqs ./
 INFO: Successfully saved requirements file in ./requirements.txt
@@ -2365,15 +2511,18 @@ INFO: Successfully saved requirements file in ./requirements.txt
 </code></pre>
 
 <p>生成的 <strong><code>requirements.txt</code></strong> 可以通过 <strong><code>pip install -r requirements.txt</code></strong> 命令来安装依赖库。</p>
+<hr>
+
 <h4 id="flask-script">Flask-Script组件</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1-flask-script">1. 安装Flask-Script</h6>
+<hr>
+
+<h5 id="1-flask-script">1. 安装Flask-Script</h5>
 <pre><code class="py">$ pip install flask-script -i https://mirrors.aliyun.com/pypi/simple
 </code></pre>
 
-<h6 id="2_7">2. 命令的方式启动项目</h6>
+<hr>
+
+<h5 id="2_7">2. 命令的方式启动项目</h5>
 <p>Flask-Script 使用命令的方式启动 Flask 项目：</p>
 <p><strong><code>manage.py:</code></strong></p>
 <pre><code class="py">from app import create_app
@@ -2392,8 +2541,10 @@ $ python manage.py runserver -h 127.0.0.1
 $ python manage.py runserver -h 127.0.0.1 -p 5051
 </code></pre>
 
-<h6 id="3_3">3. 定制命令</h6>
-<p>（1）通过 <strong><code>位置传参</code></strong> 定制命令：</p>
+<hr>
+
+<h5 id="3_3">3. 定制命令</h5>
+<p>( 1 ) 通过 <font>位置传参</font> 定制命令：</p>
 <pre><code class="py">from app import create_app
 from flask_script import Manager
 
@@ -2418,9 +2569,9 @@ if __name__ == '__main__':
 </code></pre>
 
 <blockquote>
-<p><strong><code>可以把创建表的离线脚本写到函数中，运行的时候创建表。</code></strong></p>
+<p><font>可以把创建表的离线脚本写到函数中，运行的时候创建表。</font></p>
 </blockquote>
-<p>（2）通过 <strong><code>关键字传参</code></strong> 定制下面的命令：</p>
+<p>( 2 ) 通过 <font>关键字传参</font> 定制下面的命令：</p>
 <pre><code class="py">from app import create_app
 from flask_script import Manager
 
@@ -2449,13 +2600,16 @@ if __name__ == '__main__':
 erics https://www.erics1996.com
 </code></pre>
 
-<h6 id="4-flask-script">4. Flask-Script应用</h6>
-<p>离线脚本做一些操作时可以通过自定制命令来执行，比如执行导入用户名密码、敏感字符到 excel 的离线脚本等操作。</p>
-<h4 id="flask-migrate">Flask-Migrate数据库迁移组件</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<p>Flask-Migrate 可以做 <strong><code>数据库迁移</code></strong>，与Django中数据迁移功能相同。Flask-Migrate 依赖于 flask_script 来执行命令：</p>
+<hr>
+
+<h5 id="4-flask-script">4. Flask-Script应用</h5>
+<p>离线脚本做一些操作时可以通过自定制命令来执行，比如执行导入用户名密码、敏感字符到 excel 的离线脚本等操作。
+<hr></p>
+<h4 id="flask-migrate">Flask-Migrate组件</h4>
+<hr>
+
+<h5 id="1-flask-migrate">1. Flask-Migrate组件的使用</h5>
+<p>Flask-Migrate 可以做 <font>数据库迁移</font>，与 Django 中数据迁移功能相同。Flask-Migrate 依赖于 flask_script 来执行命令：</p>
 <p><strong><code>manage.py:</code></strong></p>
 <pre><code class="py">from app import create_app
 from flask_script import Manager
@@ -2484,17 +2638,20 @@ $ python manage.py db upgrade
 </code></pre>
 
 <blockquote>
-<p><strong><code>执行迁移操作之前需要保证 models.py 中有写表对应的类，也要确保把导入 model.py，即 import app.models 或 from app.models import *</code></strong></p>
+<p><font>执行迁移操作之前需要保证 models.py 中有写表对应的类，也要确保把导入 model.py，即 import app.models 或 from app.models import *</font></p>
 </blockquote>
+<hr>
+
 <h4 id="flask-sqlalchemy">Flask-SQLALchemy组件</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1-flask-sqlalchemy">1. 安装Flask-SQLALchemy</h6>
+<hr>
+
+<h5 id="1-flask-sqlalchemy">1. Flask-SQLALchemy的安装</h5>
 <pre><code class="py">$ pip install flask-sqlalchemy -i https://mirrors.aliyun.com/pypi/simple
 </code></pre>
 
-<h6 id="2-flask-sqlalchemy">2. 使用Flask-SQLALchemy</h6>
+<hr>
+
+<h5 id="2-flask-sqlalchemy">2. Flask-SQLALchemy的使用</h5>
 <p><strong><code>__init__.py:</code></strong></p>
 <pre><code class="py">from flask import Flask
 from flask_session import Session
@@ -2526,9 +2683,9 @@ def create_app():
 </code></pre>
 
 <blockquote>
-<p><strong><code>注意实例化SQLAlchemy必须在导入蓝图之前，因为蓝图中需要用到db，db必须在导入蓝图之前创建。还有，必须导入models.py才能生成表结构!</code></strong></p>
-<p><strong><code>settings.py:</code></strong></p>
+<p><font>注意实例化 SQLAlchemy 必须在导入蓝图之前，因为蓝图中需要用到 db，db 必须在导入蓝图之前创建。还有，必须导入 models.py 才能生成表结构!</font></p>
 </blockquote>
+<p><strong><code>settings.py:</code></strong></p>
 <pre><code class="py">import redis
 
 class BaseConfig(object):
@@ -2620,24 +2777,31 @@ def index():
     return 'index'
 </code></pre>
 
-<h6 id="3_4">3. 源码相关图示</h6>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714055240749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714055354520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/202007140604298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714060509650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714060616799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714060622541.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714155629805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714155735868.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714155727684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" />
-<hr></p>
-<h4 id="flask_8">Flask简单登录案例</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_6">1. 案例目录结构</h6>
+<hr>
+
+<h5 id="3_4">3. 源码相关图示</h5>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714055240749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714055354520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/202007140604298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714060509650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714060616799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714060622541.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714155629805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714155735868.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200714155727684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h5 id="2_8">2. 查询命令</h5>
+<hr>
+
+<h4 id="flask_7">Flask简单登录案例</h4>
+<hr>
+
+<h5 id="1_5">1. 案例目录结构</h5>
 <p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190617090517640.jpg" /></p>
-<h6 id="2_8">2. 案例主要代码</h6>
+<hr>
+
+<h5 id="2_9">2. 案例主要代码</h5>
 <p><strong><code>app.py：</code></strong></p>
 <pre><code class="python">from flask import Flask, render_template, request, redirect, session
 
@@ -2743,13 +2907,12 @@ if __name__ == '__main__':
 
 <hr>
 
-<h4 id="flask_9">Flask模板渲染</h4>
-<blockquote>
-<p>@[toc]</p>
-</blockquote>
-<h6 id="1_7">1. 数据类型的渲染</h6>
+<h4 id="flask_8">Flask模板渲染</h4>
+<hr>
+
+<h5 id="1_6">1. 数据类型的渲染</h5>
 <p>显示列表：</p>
-<p><kbd>app.py</kbd></p>
+<p><strong><code>app.py：</code></strong></p>
 <pre><code class="py">@app.route('/tpl')
 def tpl():
     content = {
@@ -2758,7 +2921,7 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd></p>
+<p><strong><code>tpl.html：</code></strong></p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -2772,9 +2935,9 @@ def tpl():
 &lt;/html&gt;
 </code></pre>
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190810192024323.png" />
-显示元组：</p>
-<p><kbd>app.py</kbd></p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190810192024323.png" /></p>
+<p>显示元组：
+<strong><code>app.py</code></strong></p>
 <pre><code class="py">@app.route('/tpl')
 def tpl():
     content = {
@@ -2783,7 +2946,7 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd></p>
+<p><strong><code>tpl.html</code></strong></p>
 <pre><code class="py">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -2797,9 +2960,9 @@ def tpl():
 &lt;/html&gt;
 </code></pre>
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190810192024323.png" />
-显示字符串：</p>
-<p><kbd>app.py</kbd>：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190810192024323.png" /></p>
+<p>显示字符串：</p>
+<p><strong><code>app.py</code></strong>：</p>
 <pre><code class="python">@app.route('/tpl')
 def tpl():
     content = {
@@ -2808,7 +2971,7 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd>：</p>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -2822,9 +2985,9 @@ def tpl():
 &lt;/html&gt;
 </code></pre>
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190810192639638.png" />
-使用Markup函数：
-<kbd>app.py</kbd>：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190810192639638.png" /></p>
+<p>使用Markup函数：
+<strong><code>app.py</code></strong>：</p>
 <pre><code class="py">@app.route('/tpl')
 def tpl():
     content = {
@@ -2833,7 +2996,7 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd>：</p>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -2846,8 +3009,10 @@ def tpl():
 &lt;/html&gt;
 </code></pre>
 
-<h6 id="2_9">2. 传入函数</h6>
-<p><kbd>app.py</kbd>：</p>
+<hr>
+
+<h5 id="2_10">2. 传入函数</h5>
+<p><strong><code>app.py</code></strong>：</p>
 <pre><code class="py">def func(arg):
     return arg + 1
 @app.route('/tpl')
@@ -2858,7 +3023,7 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd>：</p>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -2871,9 +3036,11 @@ def tpl():
 &lt;/html&gt;
 </code></pre>
 
-<h6 id="3_5">3. 全局定义函数</h6>
-<p>传参的时候自己可以传，全局也可以传参，template_global() 装饰器就是用来传参的。</p>
-<p><kbd>app.py</kbd>：</p>
+<hr>
+
+<h5 id="3_5">3. 全局定义函数</h5>
+<p>传参的时候自己可以传，全局也可以传参，<kbd>template_global()</kbd> 装饰器就是用来传参的。</p>
+<p><strong><code>app.py</code></strong>：</p>
 <pre><code class="py">@app.template_global()
 def test(a, b):
     # {{ test(1,2) }}
@@ -2887,7 +3054,7 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd>：</p>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="py">……
 &lt;body&gt;
 {{ test(1,2) }}
@@ -2896,7 +3063,7 @@ def tpl():
 </code></pre>
 
 <p>template_filter() 装饰器也就是用来传参的，</p>
-<p><kbd>app.py</kbd>：</p>
+<p>app.py：</p>
 <pre><code class="py">@app.template_filter()
 def test(a, b, c):
     # {{ 1|test(2,3) }}
@@ -2910,17 +3077,18 @@ def tpl():
     return render_template('tpl.html', **content)
 </code></pre>
 
-<p><kbd>tpl.html</kbd>：</p>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="html">&lt;body&gt;
 {{ 1|test(2,3) }}
 {% if 1|test(2,3) %}
 &lt;/body&gt;
 </code></pre>
 
-<p><kbd>template_filter</kbd>与<kbd>template_global</kbd>区别是：template_filter可以放在 if 后面做条件。</p>
-<h6 id="4_2">4. 模板的继承</h6>
+<p><kbd>template_filter()</kbd>与<kbd>template_global()</kbd>的区别是：template_filter 可以放在 if 后面做条件。
+<hr></p>
+<h5 id="4_2">4. 模板的继承</h5>
 <p>tpl.html 继承 layout.html，</p>
-<p><kbd>tpl.html</kbd>：</p>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="py">{% extends 'layout.html' %}
 {% block content %}
     {% if 1|test(2,3) %}
@@ -2931,7 +3099,7 @@ def tpl():
 {% endblock %}
 </code></pre>
 
-<p><kbd>layout.html</kbd>：</p>
+<p><strong><code>layout.html</code></strong>：</p>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -2945,19 +3113,23 @@ def tpl():
 &lt;/html&gt;
 </code></pre>
 
-<h6 id="5_3">5. 模板的包含</h6>
-<p><kbd>tpl.html</kbd>：</p>
+<hr>
+
+<h5 id="5_3">5. 模板的包含</h5>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="html">{% include 'form.html' %}
 </code></pre>
 
-<p><kbd>form.html</kbd>：</p>
+<p><strong><code>form.html</code></strong>：</p>
 <pre><code class="html">&lt;form action=&quot;&quot;&gt;
     form表单
 &lt;/form&gt;
 </code></pre>
 
-<h6 id="6_2">6. 宏定义的使用</h6>
-<p><kbd>tpl.html</kbd>：</p>
+<hr>
+
+<h5 id="6_2">6. 宏定义的使用</h5>
+<p><strong><code>tpl.html</code></strong>：</p>
 <pre><code class="html">{#默认是不显示的#}
 {% macro input(name,type='text',value='') %}
     &lt;input type=&quot;{{ type }}&quot; name=&quot;{{ name }}&quot; value=&quot;{{ value }}&quot;&gt;
@@ -2966,31 +3138,364 @@ def tpl():
 {{ input('username') }}
 </code></pre>
 
-<h6 id="7">7. 模板安全</h6>
-<p>前端：<kbd>{{u|safe}}</kbd></p>
-<p>后端：<kbd>Markup("<input type="text"/ >")</kbd>
-<hr></p></div>
+<hr>
+
+<h5 id="7">7. 模板安全</h5>
+<p>前端：<strong><code>{{u|safe}}</code></strong></p>
+<p>后端：<strong><code>Markup("&lt;input type="text"&gt;")</code></strong>
+<hr></p>
+<h4 id="flask_9">Flask特殊的装饰器</h4>
+<hr>
+
+<h5 id="1-before_requestafter_request">1. before_request与after_request</h5>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190811155842208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<pre><code class="py">app = Flask(__name__)
+app.config.from_object('settings.DevelopmentConfig')  # 引入配置文件
+
+@app.before_request
+def test1():
+    print('before_request')
+
+@app.after_request
+def test2(response):
+    print('after_request')
+    return response
+
+@app.route('/index')
+def index():
+    print('index')
+    return 'index'
+
+@app.route('/login')
+def login():
+    print('login')
+    return 'login'
+
+if __name__ == '__main__':
+    app.run()
+'''
+before_request
+index
+after_request
+'''
+</code></pre>
+
+<pre><code class="py">@app.before_request
+def test1():
+    print('before_request_01')
+
+@app.before_request
+def test2():
+    print('before_request_02')
+
+@app.after_request
+def test3(response):
+    print('after_request_01')
+    return response
+
+@app.after_request
+def test4(response):
+    print('after_request_02')
+    return response
+
+@app.route('/index')
+def index():
+    print('index')
+    return 'index'
+
+@app.route('/login')
+def login():
+    print('login')
+    return 'login'
+
+if __name__ == '__main__':
+    app.run()
+'''
+before_request_01
+before_request_02
+index
+after_request_02
+after_request_01
+'''
+</code></pre>
+
+<p>如果 test1 函数有返回值，不执行 test2。</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190811161927617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<pre><code class="py">@app.before_request
+def test1():
+    print('before_request_01')
+    return ''
+
+@app.before_request
+def test2():
+    print('before_request_02')
+
+@app.after_request
+def test3(response):
+    print('after_request_01')
+    return response
+
+@app.after_request
+def test4(response):
+    print('after_request_02')
+    return response
+
+@app.route('/index')
+def index():
+    print('index')
+    return 'index'
+
+@app.route('/login')
+def login():
+    print('login')
+    return 'login'
+
+if __name__ == '__main__':
+    app.run()
+'''
+before_request_01
+after_request_02
+after_request_01
+'''
+</code></pre>
+
+<p>flask 和 &lt;=django1.9 会执行所有的 response 返回，但是 django1.10 及之后的版本会这样执行：
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20190811162139839.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h5 id="2-before_first_request">2. before_first_request</h5>
+<p>第一次请求的时候才执行，</p>
+<pre><code class="py">@app.before_first_request
+def test():
+    print('test')
+
+@app.route('/index')
+def index():
+    return 'index'
+</code></pre>
+
+<hr>
+
+<h5 id="3-template_global-template_filter">3. template_global 与 template_filter</h5>
+<p>模板中有介绍，在这里不赘述。</p>
+<hr>
+
+<h5 id="4-errorhandler">4. errorhandler</h5>
+<pre><code class="python">@app.errorhandler(404)
+def page_not_found(arg):
+    return 'This page does not exit'
+
+@app.route('/index')
+def index():
+    return 'index'
+
+if __name__ == '__main__':
+    app.run()
+</code></pre>
+
+<hr>
+
+<h4 id="flask_10">Flask扩展</h4>
+<hr>
+
+<h5 id="1-formview">1. 为什么将把Form和View分开</h5>
+<p>把 form 和 view 分开可以实现解耦合，即降低耦合</p>
+<hr>
+
+<h5 id="2_11">2. 控制文件上传的大小</h5>
+<pre><code class="python">app.config('MAX_CONTENT_LENGTH') = 1024 * 1024 * 7 # 控制文件上传的大小为7MB 
+</code></pre>
+
+<hr>
+
+<h5 id="3-flask_1">3. Flask源码入口</h5>
+<pre><code class="python">from werkzeug.wrappers import Response
+from werkzeug.serving import run_simple
+
+
+class Flask:
+    def __call__(self, environ, start_response):
+        response = Response('Erics')
+        return response(environ, start_response)
+
+    def run(self):
+        run_simple('127.0.0.1', 8000, self)
+
+
+app = Flask()
+if __name__ == '__main__':
+    app.run()
+</code></pre>
+
+<hr>
+
+<h5 id="4-requestsession">4. 上下文管理之请求上下文request/session</h5>
+<hr>
+
+<h5 id="5appappg">5.上下文管理之App上下文app/g</h5>
+<hr>
+
+<h5 id="6-flaskwsgi">6. Flask中wsgi协议是如何体现的</h5>
+<p>体现在请求相关数据和响应相关数据上：environ、start_response</p>
+<pre><code class="python">from wsgiref.simple_server import make_server
+
+def run_server(environ, start_response):
+    start_response('200 OK', [('Content-Type', 'text/html')])
+    return [bytes('&lt;h1&gt;Hello Erics!&lt;/h1&gt;', encoding='utf-8'), ]
+
+if __name__ == '__main__':
+    httpd = make_server('127.0.0.1', 8000, run_server)
+    httpd.serve_forever()
+</code></pre>
+
+<hr>
+
+<h5 id="7_1">7. 获取当前日期</h5>
+<pre><code class="python">import datetime
+ctime = datetime.date.today()
+</code></pre>
+
+<hr>
+
+<h5 id="8">8. 文件/文件夹压缩和解压缩</h5>
+<p><hr>
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="" href="javascript:;" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/weibo.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+         <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=5838160dbeb2a49f264d5e2d13d6336248d74a60cf56ecad" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;bottom: 0;" id="support_us" hidden="hidden">
+        <div id="alipei_and_wechat">
+            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            <img class="img-responsive" width="180px" height="" src="../img/public/33659FBDE4AF3F7A005E17D9BA173D04.jpg" alt="..."><br>
+            <img class="img-responsive" width="180px" height="" src="../img/public/B37F6EA6DF3F4C1CA0A65C0E80AE131E.jpg" alt="...">
+        </div>
+</div>
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+</div></p></div>
         </div>
 
         <footer class="col-md-12">
 <!--    <hr>-->
-    
-    <p>Copyright © 2020-2022 bysj39.com All Rights Reserved.</p>
-    <p><a href="https://beian.miit.gov.cn" target="_blank">豫ICP备19037971号-1</a><a target="_blank">
-                <img src="http://47.102.145.225:5000/static/home/images/beian.png" style="padding-bottom:6px">
-                <span style="color: black">豫公网安备 41152802000091号</span>
-            </a></p>
-    <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+<!---->
+<!--以前的-->
+<!--<p>Copyright © 2020-2022 <a href="https://pythoneers.cn/">pythoneers.cn</a> All Rights Reserved.</p>-->
+<!--<p>-->
+<!--    <a href="https://beian.miit.gov.cn" target="_blank" style="color:#555;">豫ICP备19037971号-2</a><a target="_blank"></a>-->
+<!--    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279280889'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279280889%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>-->
+<!--</p>-->
+<!--<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>-->
+<!--以前的/-->
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <br>
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">云服务器</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">伽马运维栈</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|
+            <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;PYTHONEERS 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
 
         </footer>
+
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js" defer></script>
         <script src="../js/main.js" defer></script>
-        <script src="../js/busuanzi.pure.mini.js" defer></script>
         <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">
