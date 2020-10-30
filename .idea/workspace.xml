@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba119b61-0841-4a10-883c-df04e32e5952" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer-vision/opencv.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer-vision/opencv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-analysis/matplotlib.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-analysis/matplotlib.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-analysis/numpy.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-analysis/numpy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-analysis/pandas.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-analysis/pandas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep-learning/tensorflow.html" beforeDir="false" afterPath="$PROJECT_DIR$/deep-learning/tensorflow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/pyqt5.html" beforeDir="false" afterPath="$PROJECT_DIR$/gui/pyqt5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/300x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/build.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/build.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-learning/quantitative-trading.html" beforeDir="false" afterPath="$PROJECT_DIR$/machine-learning/quantitative-trading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/celery.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/celery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/django.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/django.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/drf.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/drf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/flask.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/flask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/interviews-django.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/interviews-django.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/interviews-flask.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/interviews-flask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/interviews-mysql.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/interviews-mysql.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/interviews-redis.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/interviews-redis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/mysql.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/mysql.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/project-django.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/project-django.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-web/project-flask.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-web/project-flask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/algorithm.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/algorithm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/design-pattern.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/design-pattern.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/interviews-network.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/interviews-network.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/interviews-python.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/interviews-python.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/leetcode-algorithm.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/leetcode-algorithm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/leetcode-db.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/leetcode-db.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/leetcode-multithreading.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/leetcode-multithreading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/module.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/module.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/nowcoder-sword-offer.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/nowcoder-sword-offer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/python-advance.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/python-advance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/python-basis.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/python-basis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/python-senior.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/python-senior.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythoneers20201018-2.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap-baidu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap-baidu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.xml.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-crawler/scrapy.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-crawler/scrapy.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jaajcLy5iLtL5VmIaD3tV3nxKa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba119b61-0841-4a10-883c-df04e32e5952" name="Default Changelist" comment="" />
+      <created>1604044793136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604044793136</updated>
+      <workItem from="1604044794212" duration="3286000" />
+      <workItem from="1604055324422" duration="1441000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
