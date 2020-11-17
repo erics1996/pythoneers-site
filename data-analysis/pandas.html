@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Erics">
+        <link rel="canonical" href="https://pythoneers.cn/data-analysis/pandas.html">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+
+<title>Python开发栈 - Python全栈开发学习网</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../css/nav.css" rel="stylesheet">
+        <link href="../css/public.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Python开发栈</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python/python-basis.html">Python基础</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
+</li>
+                                    
+<li >
+    <a href="../python/built-in-module.html">Python内置模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/external-module.html">Python第三方模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/algorithm.html">Python数据结构与算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/design-pattern.html">Python设计模式</a>
+</li>
+                                    
+<li >
+    <a href="../python/office-automation.html">Python办公自动化</a>
+</li>
+                                    
+<li >
+    <a href="../python/interviews-python.html">Python核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python/interviews-network.html">Python网络相关知识</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程刷题</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Web <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python-web/flask.html">Flask基础</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-flask.html">Flask核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/project-flask.html">Flask实战篇</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/django.html">Django基础</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-django.html">Django核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/project-django.html">Django实战篇</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/drf.html">DRF基础</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/celery.html">Celery异步框架</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python GUI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../gui/pyqt5.html">PyQt5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">网络爬虫 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../web-crawler/scrapy.html">Scrapy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">数据分析 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="numpy.html">NumPy</a>
+</li>
+                                    
+<li class="active">
+    <a href="pandas.html">Pandas</a>
+</li>
+                                    
+<li >
+    <a href="matplotlib.html">Matplotlib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">计算机视觉 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../computer-vision/opencv.html">OpenCV</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">机器学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../machine-learning/quantitative-trading.html">机器学习与量化交易</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="numpy.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="matplotlib.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pandas">Pandas初识</a></li>
+            <li><a href="#1-pandas">1. Pandas简介</a></li>
+            <li><a href="#2-pandas">2. Pandas优势</a></li>
+        <li class="main "><a href="#pandas_1">Pandas数据结构</a></li>
+            <li><a href="#1-series">1. Series结构</a></li>
+            <li><a href="#2-dataframe">2. DataFrame结构</a></li>
+            <li><a href="#3-multiindex">3. MultiIndex结构</a></li>
+            <li><a href="#4-panel">4. Panel结构</a></li>
+        <li class="main "><a href="#_1">基本数据操作</a></li>
+        <li class="main "><a href="#dataframe">DataFrame运算</a></li>
+        <li class="main "><a href="#pandas_2">Pandas绘图</a></li>
+            <li><a href="#1">1. 绘制折线图</a></li>
+            <li><a href="#2">2. 绘制柱状图</a></li>
+            <li><a href="#3">3. 绘制直方图</a></li>
+            <li><a href="#4">4. 绘制折线图</a></li>
+            <li><a href="#5">5. 绘制柱状图</a></li>
+            <li><a href="#6">6. 绘制直方图</a></li>
+        <li class="main "><a href="#_2">文件读取与存储</a></li>
+            <li><a href="#1-csv">1. CSV文件的读取与存储</a></li>
+            <li><a href="#2-hdf5">2. HDF5文件的读取与存储</a></li>
+            <li><a href="#3-json">3. JSON文件的读取与存储</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><img alt="" src="../img/pandas.jpeg" /></p>
+<h4 id="pandas">Pandas初识</h4>
+<hr>
+
+<h5 id="1-pandas">1. Pandas简介</h5>
+<p>Pandas 由 WesMcKinney 开发，是一种专门用于数据挖掘的库。其以 NumPy 库为基础，借力 NumPy 模块在计算方面性能高的优势来增强性能。也基于 matplotlib 库，能够简便绘图，并且有着独特的数据结构。
+<hr></p>
+<h5 id="2-pandas">2. Pandas优势</h5>
+<p>NumPy 已近可以帮助我们解决问题，能够结合 Matplotlib 解决部分数据的展示等问题，那为什么要使用 Pandas，使用它的优势主要有以下几个部分：</p>
+<p>( 1 ) 增强图表的可读性</p>
+<p>( 2 ) 便捷的数据处理能力</p>
+<p>( 3 ) 读取文件特别方便</p>
+<p>( 4 ) 封装了 Matplotlib 的画图和 NumPy 的计算
+<hr></p>
+<h4 id="pandas_1">Pandas数据结构</h4>
+<p>Pandas 一共有三种数据结构，分别是 Series、DataFrame 和M ultiIndex。<font>三者分别是一维数据结构、二维数据结构和三维数据结构</font>。</p>
+<hr>
+
+<h5 id="1-series">1. Series结构</h5>
+<p>Series 是一个类似于一维数组结构，它能够保存任何数据类型的数据，如整数、字符串、浮点数等，<font color='red'><strong>主要由一组数据和与之相关联的数组两部分组成</strong></font>。</p>
+<p>( 1 ) Series 的创建，通过已有数据创建</p>
+<pre><code class="py">import pandas as pd
+# data：传入的数据，可以是ndarray、list等
+# index：索引，必须是唯一且与数据的长度相等，如果没有传入索引参数，则默认会自动创建一个从0～N的整数索引
+# dtype：数据类型
+pd.Series(data=None, index=None, dtype=None)
+</code></pre>
+
+<p>( 2 ) 指定内容默认索引创建</p>
+<pre><code class="py">import pandas as pd
+import numpy as np
+pd.Series(data=np.arange(10))
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226220243343.png" /></p>
+<p>( 3 ) 指定索引创建</p>
+<pre><code class="py">import pandas as pd
+pd.Series(data=[6, 7, 8, 9, 10], index=[0, 1, 2, 3, 4])
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226220206520.png" /></p>
+<p>( 4 ) 通过字典数据创建</p>
+<pre><code class="py">import pandas as pd
+pd.Series(data={'name': 'thanlon', 'age': 24, 'address': '中国上海'})
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226220147808.png" /></p>
+<p>( 5 ) Series 的两个属性</p>
+<p>为更方便地操作 Series 对象中的索引和数据，<font>Series 中提供两个属性，分别是 index 和 values</font>。</p>
+<p>① index</p>
+<pre><code class="py">import pandas as pd
+staff = pd.Series(data={'name': 'thanlon', 'age': 24, 'address': '中国上海'})
+print('职员的姓名：',staff[0])
+print('职员的年龄：',staff['age'])
+print(staff.index)
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226220123755.png" /></p>
+<p>② values</p>
+<pre><code class="py">import pandas as pd
+staff = pd.Series(data={'name': 'thanlon', 'age': 24, 'address': '中国上海'})
+print(staff.values) # &lt;class 'numpy.ndarray'&gt;
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226220033836.png" /></p>
+<hr>
+
+<h5 id="2-dataframe">2. DataFrame结构</h5>
+<p>DataFrame 是一个类似于二维数组或表格的对象，既有行索引和列索引。</p>
+<p>( 1 ) DataFrame 的创建</p>
+<pre><code class="py">import pandas as pd
+# index：行标签，如果没有传入索引参数，则默认会自动创建一个从0～N的整数索引
+# columns：列标签，如果没有传入索引参数，则默认会自动创建一个从0～N的整数索引
+pd.DataFrame(data=None, index=None, columns=None)
+</code></pre>
+
+<p><code>例一：</code></p>
+<pre><code class="py">import pandas as pd
+import numpy as np
+pd.DataFrame(data=np.random.randn(2, 3))
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226220012790.png" /></p>
+<p><code>例二：</code></p>
+<pre><code class="py"># 分别使用numpy和pandas生成学生的成绩表，生成10个同学的6个科目的成绩
+import numpy as np
+score = np.random.randint(0, 100, (10, 6))
+print(score)
+score_df = pd.DataFrame(score)
+score_df
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226215940943.png" /></p>
+<p>( 2 ) 增加行列索引</p>
+<pre><code class="py">import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+print(score)
+score_df = pd.DataFrame(score)
+print(score_df)
+# 构建行索引序列
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+# 构建列索引序列
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+# 添加行索引
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226215857988.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>( 3 ) DataFrame 的属性</p>
+<p>① shape：查看几行几列</p>
+<pre><code class="py">'''
+查看几行几列
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+print(data.shape)
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226221157145.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>② index：获取行索引列表</p>
+<pre><code class="py">'''
+获取行索引列表
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+print(data.index)
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226221304861.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>③ columns：获取列索引列表</p>
+<pre><code class="py">'''
+获取列索引列表
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+print(data.columns)
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226221350659.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>④ values：获取数组的值</p>
+<pre><code class="py">'''
+获取数组的值
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+print(data.values)
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226223102602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>⑤ T：转置</p>
+<pre><code class="py">import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+data.T
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226225156343.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>⑥ head(n)：查看前n行，<font color='red'><strong>如果不传入n，默认是5行。如果数据没有5行，则默认查看所有行。</strong></font></p>
+<pre><code class="py">import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+data.head(4)
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226225418173.png" /></p>
+<p>⑦ tail(n)：查看后n行，<font color='red'><strong>如果不传入n，默认是5行。如果数据没有5行，则默认查看所有行。</strong></font></p>
+<pre><code class="py">import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+data.tail(2)
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226225603674.png" /></p>
+<p>( 4 ) DataFrame索引的设置</p>
+<p>① 修改行列索引值</p>
+<pre><code class="py">'''
+必须整体全部修改，不能使用索引方式改局部，如data.index[0] = '学生_1'
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+stu1 = ['学生_'+str(i+1) for i in range(score_df.shape[0])]
+data.index = stu1
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200226235552359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>② 重设索引</p>
+<pre><code class="py">'''
+使用reset_index(drop=False)，可以用来设置新的下标索引，drop：默认是False，不删除原来的索引，如果为True，删除原来的索引值
+不删除原来的索引
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+data = data.reset_index()
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227000425781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<pre><code class="py">'''
+使用reset_index(drop=False)，可以用来设置新的下标索引，drop：默认是False，不删除原来的索引，如果为True，删除原来的索引值
+删除原来的索引
+'''
+import numpy as np
+import pandas as pd
+score = np.random.randint(60, 100, (9, 6))
+score_df = pd.DataFrame(score)
+subjects = ['语文', '数学', '英语', '历史', '政治', '数学']
+stu = ['学生'+str(i+1) for i in range(score_df.shape[0])]
+data = pd.DataFrame(data=score,  index=stu, columns=subjects)
+data = data.reset_index(drop=True)
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227000436682.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<ul>
+<li>以某列值设置为新的索引</li>
+</ul>
+<pre><code class="py">'''
+设置新的索引：set_index(keys, drop=True)
+keys：列索引名称或列索引名称的列表
+drop：boolean类型，默认是True，当做新的索引，删除原来的列
+以月份设置新的索引
+'''
+import pandas as pd
+df = pd.DataFrame({
+    'month': [1, 2, 3, 4],
+    'year': [2017,2018, 2019, 2020],
+    'sale': [66, 77, 88, 99]
+})
+df = df.set_index('month') # 设置单个索引
+df
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227092651430.png" /></p>
+<pre><code class="py">'''
+设置新的索引：set_index(keys, drop=True)
+keys：列索引名称或列索引名称的列表
+drop：boolean类型，默认是True，当做新的索引，删除原来的列
+以年份和月份设置新的索引
+'''
+import pandas as pd
+df = pd.DataFrame({
+    'month': [1, 2, 3, 4],
+    'year': [2017, 2018, 2019, 2020],
+    'sale': [66, 77, 88, 99]
+})
+df = df.set_index(['year', 'month']) # 设置多个索引，要使用列表
+df
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227092707450.png" /></p>
+<blockquote>
+<p><strong>DataFrame通过修改可以变成MultiIndex结构。</strong></p>
+</blockquote>
+<h5 id="3-multiindex">3. MultiIndex结构</h5>
+<p>MultiIndex 是三维的数据结构，即多级索引，也称为层次化的索引。<font>层次化索引是 pandas 的重要功能，可以在 Series、DataFrame 对象上拥有 2 个及其以上的索引</font>。除了通过修改 DataFrame 数据结构变成 MulitiIndex 结构，还可以直接创建。</p>
+<p>( 1 ) MultiIndex的创建</p>
+<pre><code class="py">import pandas as pd
+arrays = [['thanlon', 'kiku', 'kili'], [22, 23, 24]]
+pd.MultiIndex.from_arrays(arrays=arrays, names=('name', 'age'))
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227104914950.png" /></p>
+<p>( 2 ) MultiIndex的特性</p>
+<pre><code class="py">'''
+index
+'''
+import pandas as pd
+df = pd.DataFrame({
+    'month': [1, 2, 3, 4],
+    'year': [2017, 2018, 2019, 2020],
+    'sale': [66, 77, 88, 99]
+})
+df = df.set_index(['year', 'month'])
+df.index
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227105622126.png" /></p>
+<pre><code class="py">'''
+index.names
+'''
+import pandas as pd
+df = pd.DataFrame({
+    'month': [1, 2, 3, 4],
+    'year': [2017, 2018, 2019, 2020],
+    'sale': [66, 77, 88, 99]
+})
+df = df.set_index(['year', 'month'])
+df.index.names
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227105702906.png" /></p>
+<pre><code class="py">import pandas as pd
+df = pd.DataFrame({
+    'month': [1, 2, 3, 4],
+    'year': [2017, 2018, 2019, 2020],
+    'sale': [66, 77, 88, 99]
+})
+df = df.set_index(['year', 'month'])
+df.index.levels
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227105730475.png" /></p>
+<pre><code class="py">import pandas as pd
+df = pd.DataFrame({
+    'month': [1, 2, 3, 4],
+    'year': [2017, 2018, 2019, 2020],
+    'sale': [66, 77, 88, 99]
+})
+df = df.set_index(['year', 'month'])
+df.index.codes
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227105805806.png" /></p>
+<h5 id="4-panel">4. Panel结构</h5>
+<p>Panel已被废弃，这里只作了解。Panel 是 MultiIndex 的前身。</p>
+<p>( 1 ) Panel 的创建</p>
+<pre><code class="py">'''
+pandas.Panel(data-None, items=None, major_axis=None, minor_axis=None)：存储3维数组的Panel结构
+data：ndarray或者DataFrame，表示整体的数据
+items：索引或类似数组的对象，axis=0
+major_axis：索引或类似数组的对象，axis=1
+minor_axis：索引或类似数组的对象，axis=2
+'''
+import pandas as pd
+import numpy as np
+# 24个数，第一个维度是4，第二个维度是3，第三个维度是2，三维
+data = np.arange(24).reshape(4, 3, 2)
+items = list('ABCD')  # ['A', 'B', 'C', 'D']
+major_axis = pd.date_range('20200227', periods=3) # DatetimeIndex(['2020-02-27', '2020-02-28', '2020-02-29'], dtype='datetime64[ns]', freq='D')
+minor_axis = ['first', 'second']
+pd.Panel(data=data, items=items, major_axis=major_axis, minor_axis=minor_axis)
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200227130454778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<p>( 2 ) Panel 数据的查看</p>
+<pre><code class="py"> import pandas as pd
+import numpy as np
+# 24个数，第一个维度是4，第二个维度是3，第三个维度是2，三维
+data = np.arange(24).reshape(4, 3, 2)
+items = list('ABCD')  # ['A', 'B', 'C', 'D']
+major_axis = pd.date_range('20200227', periods=3) # DatetimeIndex(['2020-02-27', '2020-02-28', '2020-02-29'], dtype='datetime64[ns]', freq='D')
+minor_axis = ['first', 'second']
+p = pd.Panel(data=data, items=items,
+             major_axis=major_axis, minor_axis=minor_axis)
+p[:, :, 'first']  # :表示取所有
+p['A', :, :]
+</code></pre>
+
+<hr>
+
+<h4 id="_1">基本数据操作</h4>
+<hr>
+
+<h4 id="dataframe">DataFrame运算</h4>
+<hr>
+
+<h4 id="pandas_2">Pandas绘图</h4>
+<hr>
+
+<h5 id="1">1. 绘制折线图</h5>
+<pre><code class="py">import pandas as pd
+import numpy as np
+import random
+data = []
+for i in np.arange(0, 100, 10):
+    data.append(random.randint(10, 20))
+s = pd.Series(data=data)
+print(s)
+s.plot(kind='line')  # s.plot.line()，s.plot()函数的参数kind默认是'line'
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228205458917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h5 id="2">2. 绘制柱状图</h5>
+<pre><code class="py">import pandas as pd
+import numpy as np
+import random
+data = []
+for i in np.arange(0, 100, 10):
+    data.append(random.randint(10, 20))
+s = pd.Series(data=data)
+print(s)
+s.plot(kind='bar')
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2020022821033337.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<pre><code class="py">import pandas as pd
+import numpy as np
+import random
+data = []
+for i in np.arange(0, 100, 10):
+    data.append(random.randint(10, 20))
+s = pd.Series(data=data)
+print(s)
+s.plot(kind='barh')
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228210426563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h5 id="3">3. 绘制直方图</h5>
+<pre><code class="py">import pandas as pd
+import numpy as np
+import random
+data = []
+for i in np.arange(0, 100, 10):
+    data.append(random.randint(10, 20))
+data = np.random.normal(1.75, 1, 10000) 
+s = pd.Series(data=data)
+print(s)
+s.plot(kind='hist')
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228213939462.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h5 id="4">4. 绘制折线图</h5>
+<pre><code class="py">import pandas as pd
+import numpy as np
+data = np.random.randn(10, 2)  # 从标准动态分布中返回一个或多个样本值
+print(data)
+df = pd.DataFrame(data=data)
+print(df)
+df.plot(kind='line')  # df.plot()函数的参数kind默认是'line'
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228201352644.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<h5 id="5">5. 绘制柱状图</h5>
+<pre><code class="py">import pandas as pd
+import numpy as np
+data = np.random.randn(10, 3)  # 从标准动态分布中返回一个或多个样本值
+print(data)
+df = pd.DataFrame(data=data)
+print(df)
+df.plot(kind='bar')  # df.plot.line()，df.plot()函数的参数kind默认是'line'
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228212151840.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<pre><code class="py">import pandas as pd
+import numpy as np
+data = np.random.randn(10, 3)  # 从标准动态分布中返回一个或多个样本值
+df = pd.DataFrame(data=data)
+df.plot(kind='barh')  # df.plot()函数的参数kind默认是'line'
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228212400359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<h5 id="6">6. 绘制直方图</h5>
+<pre><code class="py">import pandas as pd
+import numpy as np
+data = np.random.randn(10, 3)  # 从标准动态分布中返回一个或多个样本值
+print(data)
+df = pd.DataFrame(data=data)
+print(df)
+df.plot(kind='hist')  # df.plot()函数的参数kind默认是'line'
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200228215053951.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_16,color_FFFFFF,t_70" /></p>
+<hr>
+
+<h4 id="_2">文件读取与存储</h4>
+<hr>
+
+<h5 id="1-csv">1. CSV文件的读取与存储</h5>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200229102432375.png" /></p>
+<p>( 1 ) CSV文件的读取：</p>
+<pre><code class="py">'''
+读取数据，并且指定只获取age和addr指标
+'''
+import pandas as pd
+pd.read_csv(filepath_or_buffer='test.csv')
+# filepath_or_buffer：文件路径；usecols：指定读取的列名；sep：默认是以逗号分割
+pd.read_csv(filepath_or_buffer='test.csv', usecols=['name', 'age'], sep=',')
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200229102523441.png" /></p>
+<p>( 2 ) CSV文件的存储：</p>
+<pre><code class="py">'''
+存储数据
+'''
+import pandas as pd
+data = pd.read_csv(filepath_or_buffer='test.csv', usecols=['name', 'age'], sep=',')
+# to_csv的参数，columns：选择需要的列索引；header：是否写进列索引值，默认是True；index：是否写进索引，默认是True。mode：重写(w)与追加(a)
+data.to_csv(path_or_buf='tmp.csv', columns=['name'], header=True, index=None, mode='w')
+data = pd.read_csv(filepath_or_buffer='tmp.csv')
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200229104113394.png" /></p>
+<pre><code class="py">'''
+存储数据，不保存索引
+'''
+import pandas as pd
+data = pd.read_csv(filepath_or_buffer='test.csv', usecols=['name', 'age'], sep=',') # 
+data.to_csv(path_or_buf='tmp.csv',columns=['name'],index=False)
+data = pd.read_csv(filepath_or_buffer='tmp.csv')
+data
+</code></pre>
+
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200229104147504.png" /></p>
+<hr>
+
+<h5 id="2-hdf5">2. HDF5文件的读取与存储</h5>
+<p>( 1 ) 创建 HDF5 文件</p>
+<p>首先安装 h5py 模块：</p>
+<pre><code class="python">$ sudo pip3 install h5py -i https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre>
+
+<pre><code class="py">import h5py
+f = h5py.File('hd.h5', 'w')
+lst1 = ['thanlon', 'kiku', 'kili']
+column_01 = []
+for i in lst1:
+    column_01.append(i.encode())
+f['name'] = column_01
+f['age'] = [11,22,23]
+print(f.keys())
+print(f['name'][:])
+print(f['age'][:])
+f.close()
+</code></pre>
+
+<p>( 2 ) HDF5 格式文件的读取：</p>
+<pre><code class="py"># 安装tables模块，sudo pip3 install tables -i https://pypi.tuna.tsinghua.edu.cn/simple
+import pandas as pd
+data = pd.read_hdf('hd.h5')
+data.head()
+</code></pre>
+
+<p>( 3 ) HDF5格式文件的存储</p>
+<pre><code class="py">import pandas as pd
+data = pd.read_hdf('hd.h5')
+data.to_hdf('hd.h5', key='data')  # 注意这里必须有要有key
+pd.read_hdf('hd.h5', key='data')
+</code></pre>
+
+<blockquote>
+<p><strong>HDF5 在存储的时候，使用的方式blosc。这种方式是速度读取快，使用压缩提高磁盘利用率节省空间，也是 pandas 默认支持的。HDF5 还是跨平台的，可以轻松迁移到 adoop 上。</strong></p>
+</blockquote>
+<hr>
+
+<h5 id="3-json">3. JSON文件的读取与存储</h5>
+<p><hr>
+( 1 ) JSON格式文件的读取：</p>
+<pre><code class="py"># 
+</code></pre>
+
+<p>( 2 ) JSON格式文件的存储：</p>
+<pre><code class="py"># 
+</code></pre>
+
+<!--回到顶部 start-->
+
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="" href="javascript:;" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/weibo.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
+
+<!--回到顶部 start-->
+
+<!--左侧广告 start-->
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+
+<!--左侧广告 stop-->
+
+<!--右侧广告 start-->
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+
+<!--右侧广告 stop--></div>
+        </div>
+
+        <footer class="col-md-12">
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://tongji.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度统计</a>&nbsp;|
+            <a href="https://ziyuan.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度搜索</a>&nbsp;|
+            <a href="https://www.umeng.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">友盟</a>&nbsp;|
+            <a href="https://www.tmall.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">天猫</a>&nbsp;|
+            <a href="https://www.alimama.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">阿里妈妈</a>&nbsp;|
+            <a href="https://blog.csdn.net/Thanlon" style="color:#c1c1c1;font-weight: bold" target="_blank">CSDN</a>&nbsp;|
+            <a href="https://segmentfault.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">SegmentFault</a>&nbsp;|
+            <!--        <a href="https://bysj39.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|-->
+            <a href="https://d5video.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">D5影视网</a>&nbsp;|
+            <a href="https://ywyz.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">运维云栈</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <!--        <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">β在线学习网</a>&nbsp;-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;-->
+            <br>
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;Python开发栈 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
+
+        </footer>
+
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../js/main.js" defer></script>
+        <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<!--<script data-ad-client="ca-pub-6937898095875663" async-->
+<!--        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

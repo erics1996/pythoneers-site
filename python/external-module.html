@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Erics">
+        <link rel="canonical" href="https://pythoneers.cn/python/external-module.html">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+
+<title>Python开发栈 - Python全栈开发学习网</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../css/nav.css" rel="stylesheet">
+        <link href="../css/public.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Python开发栈</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="python-basis.html">Python基础</a>
+</li>
+                                    
+<li >
+    <a href="python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="python-senior.html">Python高级</a>
+</li>
+                                    
+<li >
+    <a href="built-in-module.html">Python内置模块</a>
+</li>
+                                    
+<li class="active">
+    <a href="external-module.html">Python第三方模块</a>
+</li>
+                                    
+<li >
+    <a href="algorithm.html">Python数据结构与算法</a>
+</li>
+                                    
+<li >
+    <a href="design-pattern.html">Python设计模式</a>
+</li>
+                                    
+<li >
+    <a href="office-automation.html">Python办公自动化</a>
+</li>
+                                    
+<li >
+    <a href="interviews-python.html">Python核心知识</a>
+</li>
+                                    
+<li >
+    <a href="interviews-network.html">Python网络相关知识</a>
+</li>
+                                    
+<li >
+    <a href="nowcoder-sword-offer.html">剑指Offer刷题</a>
+</li>
+                                    
+<li >
+    <a href="leetcode-algorithm.html">Leetcode算法刷题</a>
+</li>
+                                    
+<li >
+    <a href="leetcode-db.html">Leetcode数据库刷题</a>
+</li>
+                                    
+<li >
+    <a href="leetcode-multithreading.html">Leetcode多线程刷题</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Web <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python-web/flask.html">Flask基础</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-flask.html">Flask核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/project-flask.html">Flask实战篇</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/django.html">Django基础</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/interviews-django.html">Django核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/project-django.html">Django实战篇</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/drf.html">DRF基础</a>
+</li>
+                                    
+<li >
+    <a href="../python-web/celery.html">Celery异步框架</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python GUI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../gui/pyqt5.html">PyQt5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">网络爬虫 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../web-crawler/scrapy.html">Scrapy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">数据分析 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../data-analysis/numpy.html">NumPy</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/pandas.html">Pandas</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/matplotlib.html">Matplotlib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">计算机视觉 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../computer-vision/opencv.html">OpenCV</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">机器学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../machine-learning/quantitative-trading.html">机器学习与量化交易</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="built-in-module.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="algorithm.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">第三方模块</a></li>
+            <li><a href="#1-jieba">1. jieba</a></li>
+            <li><a href="#2-pyinstaller">2. pyInstaller</a></li>
+            <li><a href="#3-virtualenv">3. virtualenv</a></li>
+            <li><a href="#4-wordcloud">4. wordcloud</a></li>
+            <li><a href="#5-multiprocessing">5. multiprocessing</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><img alt="第三方模块" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=97021528,3921704330&amp;fm=26&amp;gp=0.jpg" /></p>
+<h4 id="_1">第三方模块</h4>
+<p>一般我们使用 <kbd>$ pip install module_name</kbd> 命令来安装第三方库。
+<hr></p>
+<h5 id="1-jieba">1. jieba</h5>
+<p>jieba是Python中一个重要的第三方 <font>分词</font> 函数库，能够将中文文本分割成中文词语的序列。jieba原理是将中文文本与分词词库对比，通过图结构和动态规划算法找出最大概率的词组。</p>
+<p><kbd>jieba.lcut(str)</kbd>：精确模式，将句子精确地分开，适合文本分析</p>
+<pre><code class="python">import jieba
+str = '宁浩出任第22届上海国际电影节亚洲新人奖评委会主席'
+ls =jieba.lcut(str)
+print(ls)
+&quot;&quot;&quot;
+['宁浩', '出任', '第', '22', '届', '上海', '国际', '电影节', '亚洲', '新人奖', '评委会', '主席']
+&quot;&quot;&quot;
+</code></pre>
+
+<p><kbd>jieba.lcut_for_search(str)</kbd>：搜索引擎模式，在精确查找的基础上对长词再次切分，提高召回率，适合搜索引擎分词</p>
+<pre><code class="python">import jieba
+str = '宁浩出任第22届上海国际电影节亚洲新人奖评委会主席'
+ls =jieba.lcut_for_search(str)
+print(ls)
+&quot;&quot;&quot;
+['宁浩', '出任', '第', '22', '届', '上海', '国际', '电影', '电影节', '亚洲', '新人', '新人奖', '评委', '委会', '评委会', '主席']
+&quot;&quot;&quot;
+</code></pre>
+
+<p><kbd>jieba.lcut(str,cut_all=True)</kbd>：全模式，把句子可以成词的语句都扫描出来，速度快但不能解决歧义</p>
+<pre><code class="python">import jieba
+str = '宁浩出任第22届上海国际电影节亚洲新人奖评委会主席'
+ls =jieba.lcut(str,cut_all=True)
+print(ls)
+&quot;&quot;&quot;
+['宁', '浩', '出任', '第', '22', '届', '上海', '海国', '国际', '电影', '电影节', '亚洲', '新人', '新人奖', '奖评', '评委', '评委会', '委会', '会主', '主席']
+&quot;&quot;&quot;
+</code></pre>
+
+<hr>
+
+<h5 id="2-pyinstaller">2. pyInstaller</h5>
+<p>pyInstaller可以在Windows、Linux、Mac 0S等操作系统下将.py的Python源文件打包成直接可运行的可执行文件。执行<kbd>pyinstaller -F test.py</kbd> 命令打包，执行完成后，源文件目录生成 dist 和 build
+目录，build目录是PyInstaller存储临时文件的目录，可以完全删除。最终打包程序在dist内部与源文件同名的目录中。pyinstaller命令相关参数：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-F或--onefile</td>
+<td>在dist文件夹中只生成独立的打包文件</td>
+</tr>
+<tr>
+<td>-h或--help</td>
+<td>帮助信息</td>
+</tr>
+<tr>
+<td>--clean</td>
+<td>清理打包过程中的临时文件</td>
+</tr>
+<tr>
+<td>-i &lt;图标文件路径名.io&gt;</td>
+<td>指定打包程序使用的图标</td>
+</tr>
+<tr>
+<td>-D或--onedir</td>
+<td>默认值，生成dist目录</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>通过对Python源文件打包，使Python程序在可以没有安装Python环境中运行，可作为独立文件方便传递和管理。此外，公司通常是不开放自己源代码的，将源文件打包成看不到源代码的可执行文件，安全性得到增强。
+<hr></p>
+<h5 id="3-virtualenv">3. virtualenv</h5>
+<p>virtualenv可用来帮助我们创建Python虚拟环境，能够保证Python环境的干净，</p>
+<p><kbd>$ pip install virtualenv</kbd>：安装virtualenv<br><br></p>
+<p><kbd>$ virtualenv env --no-site-packages</kbd>：创建一个名字为env名字的虚拟环境（不包括安装的其它第三方模块）<br><br></p>
+<p><kbd>$ source env/bin/activate</kbd>：激活虚拟环境<br><br></p>
+<p><kbd>$ deactivate</kbd>：退出虚拟环境<br><br></p>
+<p><kbd>$ rm -r env</kbd>：删除虚拟环境（删除这个env这个文件夹就可以）
+<br><br>
+PyCharm中创建virtualenv环境：
+<img alt="" src="../img/virtualenv.png" />
+<hr></p>
+<h5 id="4-wordcloud">4. wordcloud</h5>
+<p>wordcloud库是专门用来生成词云的Python第三方模块。词云：以词语为单位，根据文本出现的概率设计不同的size，形成关键词词文或关键词渲染。</p>
+<p><kbd>generate()</kbd>：由字符串的内容生成词云</p>
+<p><kbd>to_file()</kbd>：将词云图保存为图片</p>
+<p>例1：</p>
+<pre><code class="py">from wordcloud import WordCloud
+text = 'I like python, I am learning python.' # 标点符号不参与
+wd = WordCloud().generate(text)
+wd.to_file('test.png') # 其它图片格式也是可以的 
+</code></pre>
+
+<p>例2：</p>
+<pre><code class="py">import jieba
+from wordcloud import WordCloud
+text = '程序设计语言是计算机'
+words = jieba.lcut(text)
+print(words) # ['程序设计', '语言', '是', '计算机']
+new_text = ' '.join(words)
+print(new_text)
+wc = WordCloud(font_path = None).generate(new_text)
+wc.to_file('test.png')
+</code></pre>
+
+<p><kbd>WordCloud()类更多的属性和解释</kbd>：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>font_path</td>
+<td>默认为None，指定字体文件的完整路径</td>
+</tr>
+<tr>
+<td>width</td>
+<td>生成图片的宽度，默认是400px</td>
+</tr>
+<tr>
+<td>height</td>
+<td>生成图片的高度，默认是200px</td>
+</tr>
+<tr>
+<td>mask</td>
+<td>词文形状，默认是None，默认是方型图</td>
+</tr>
+<tr>
+<td>min_font_size</td>
+<td>词云最小的字体字号，默认是4号</td>
+</tr>
+<tr>
+<td>max_font_size</td>
+<td>词云最小的字体字号，默认是None，根据高度自动调节</td>
+</tr>
+<tr>
+<td>font_step</td>
+<td>字体间隔，模式是1</td>
+</tr>
+<tr>
+<td>max_words</td>
+<td>词云中最大词数，默认是200</td>
+</tr>
+<tr>
+<td>stop_words</td>
+<td>被排除词列表，排除词不在词云中显示</td>
+</tr>
+<tr>
+<td>background_color</td>
+<td>图片背景颜色，默认是黑色</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<h5 id="5-multiprocessing">5. multiprocessing</h5>
+<p>multiprocessing是一个跨平台的多进程模块，提供一个Process类来代表一个进程对象，下面是一个多进程示例：</p>
+<pre><code class="python">from multiprocessing import Process
+import time
+
+def f(n):
+    time.sleep(1)
+    print(n * n)
+
+def main():
+    for i in range(10):
+        p = Process(target=f, args=[i, ])
+        p.start()
+
+# p.join()使用p.join()可阻塞进程，前面一个进程执行完，后面的进程才可以执行
+if __name__ == '__main__':
+    main()
+</code></pre>
+
+<p>程序使用单进程写则需要执行10s以上的时间，而使用多进程启用10个进程并行执行，只需要用1秒多的时间。Queue是多进程安全队列，可以使用Queue实现多进程之间的数据传递，下面是一个Queue相关的例子：</p>
+<pre><code class="python">from multiprocessing import Queue, Process
+import time
+
+def write(q):
+    lst = ['A', 'B', 'C', 'D']
+    for i in lst:
+        q.put(i)
+        print('Put %s to queue' % i)
+        time.sleep(0.5)
+def read(q):
+    while True:
+        v = q.get(True)
+        print('get %s from queue' % v)
+def main():
+    q = Queue()
+    pw = Process(target=write, args=(q,))
+    pr = Process(target=read, args=(q,))
+    pw.start()
+    pr.start()
+    pr.join()
+    pr.terminate()
+if __name__ == '__main__':
+    main()
+&quot;&quot;&quot;
+Put A to queue
+get A from queue
+Put B to queue
+get B from queue
+Put C to queue
+get C from queue
+Put D to queue
+get D from queue
+&quot;&quot;&quot;
+</code></pre>
+
+<hr>
+
+<!--回到顶部 start-->
+
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="" href="javascript:;" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/weibo.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
+
+<!--回到顶部 stop-->
+
+<!--左侧广告 start-->
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+
+<!--左侧广告 stop-->
+
+<!--右侧广告 start-->
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+
+<!--右侧广告 stop--></div>
+        </div>
+
+        <footer class="col-md-12">
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://tongji.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度统计</a>&nbsp;|
+            <a href="https://ziyuan.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度搜索</a>&nbsp;|
+            <a href="https://www.umeng.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">友盟</a>&nbsp;|
+            <a href="https://www.tmall.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">天猫</a>&nbsp;|
+            <a href="https://www.alimama.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">阿里妈妈</a>&nbsp;|
+            <a href="https://blog.csdn.net/Thanlon" style="color:#c1c1c1;font-weight: bold" target="_blank">CSDN</a>&nbsp;|
+            <a href="https://segmentfault.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">SegmentFault</a>&nbsp;|
+            <!--        <a href="https://bysj39.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|-->
+            <a href="https://d5video.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">D5影视网</a>&nbsp;|
+            <a href="https://ywyz.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">运维云栈</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <!--        <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">β在线学习网</a>&nbsp;-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;-->
+            <br>
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;Python开发栈 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
+
+        </footer>
+
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../js/main.js" defer></script>
+        <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<!--<script data-ad-client="ca-pub-6937898095875663" async-->
+<!--        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

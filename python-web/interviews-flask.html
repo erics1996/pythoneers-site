@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Erics">
+        <link rel="canonical" href="https://pythoneers.cn/python-web/interviews-flask.html">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+
+<title>Python开发栈 - Python全栈开发学习网</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../css/nav.css" rel="stylesheet">
+        <link href="../css/public.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Python开发栈</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python/python-basis.html">Python基础</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
+</li>
+                                    
+<li >
+    <a href="../python/built-in-module.html">Python内置模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/external-module.html">Python第三方模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/algorithm.html">Python数据结构与算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/design-pattern.html">Python设计模式</a>
+</li>
+                                    
+<li >
+    <a href="../python/office-automation.html">Python办公自动化</a>
+</li>
+                                    
+<li >
+    <a href="../python/interviews-python.html">Python核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python/interviews-network.html">Python网络相关知识</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程刷题</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Web <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="flask.html">Flask基础</a>
+</li>
+                                    
+<li class="active">
+    <a href="interviews-flask.html">Flask核心知识</a>
+</li>
+                                    
+<li >
+    <a href="project-flask.html">Flask实战篇</a>
+</li>
+                                    
+<li >
+    <a href="django.html">Django基础</a>
+</li>
+                                    
+<li >
+    <a href="interviews-django.html">Django核心知识</a>
+</li>
+                                    
+<li >
+    <a href="project-django.html">Django实战篇</a>
+</li>
+                                    
+<li >
+    <a href="drf.html">DRF基础</a>
+</li>
+                                    
+<li >
+    <a href="celery.html">Celery异步框架</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python GUI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../gui/pyqt5.html">PyQt5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">网络爬虫 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../web-crawler/scrapy.html">Scrapy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">数据分析 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../data-analysis/numpy.html">NumPy</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/pandas.html">Pandas</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/matplotlib.html">Matplotlib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">计算机视觉 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../computer-vision/opencv.html">OpenCV</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">机器学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../machine-learning/quantitative-trading.html">机器学习与量化交易</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="flask.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="project-flask.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#flask">Flask核心知识</a></li>
+            <li><a href="#1-flask">1. Flask框架的优势</a></li>
+            <li><a href="#2-flask">2. Flask框架依赖组件</a></li>
+            <li><a href="#3-flask">3. Flask蓝图的作用</a></li>
+            <li><a href="#4-flask">4. 列举使用过的Flask第三方组件</a></li>
+            <li><a href="#5-flask">5. 简述 Flask 上下文管理流程</a></li>
+            <li><a href="#6-flask-g">6. Flask中的 g 的作用</a></li>
+            <li><a href="#7-flask">7. Flask 上下文管理主要涉及到了哪些相关的类，这些类的主要作用</a></li>
+            <li><a href="#8-flask-local-stack">8. 为什么 Flask 要把 Local 对象中的值 stack 维护成一个列表</a></li>
+            <li><a href="#9-flask-app">9. Flask 中多 app 应用是怎么完成</a></li>
+            <li><a href="#10-flask-websocket">10. 在 Flask 中实现 WebSocket 需要什么组件</a></li>
+            <li><a href="#11-wtforms">11. wtforms 组件的作用</a></li>
+            <li><a href="#12-flask-session">12. Flask 框架默认 session 的处理机制</a></li>
+            <li><a href="#13-flask-local-threadinglocal">13. 解释 Flask 框架中的 Local 对象和 threading.local 对象的区别</a></li>
+            <li><a href="#14-flask-blinker">14. Flask 中 blinker 是什么</a></li>
+            <li><a href="#15-sqlalchemy-session-scoped_session">15. SQLAlchemy 中的 session 和 scoped_session 的区别</a></li>
+            <li><a href="#16-sqlalchemy-sql">16. SQLAlchemy 如何执行原生 SQL</a></li>
+            <li><a href="#17-dbutils">17. DBUtils 模块的作用</a></li>
+            <li><a href="#18-sqlachemy">18. SQLAchemy 中如何为表设置引擎和字符编码</a></li>
+            <li><a href="#19-sqlachemy">19. SQLAchemy 中如何设置联合唯一索引</a></li>
+            <li><a href="#20-flask-django">20. Flask 请求相关的数据和 Django 的区别</a></li>
+            <li><a href="#21-flask-django">21. Flask 和 Django 最大的区别</a></li>
+            <li><a href="#22-flask-local">22. Flask 如果开了两个进程，有几个 local 对象</a></li>
+            <li><a href="#23-session">23. 画出 session 流程图</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><img alt="" src="../img/python-interview.jpg" />
+<hr></p>
+<h4 id="flask">Flask核心知识</h4>
+<hr>
+
+<h5 id="1-flask">1. Flask框架的优势</h5>
+<p>Flask 是一个短小精悍、可扩展性强的 web 框架。</p>
+<hr>
+
+<h5 id="2-flask">2. Flask框架依赖组件</h5>
+<p>Flask 依赖于 werkzurg 组件，实现 wsgi 使用的就是 werkzurg。</p>
+<hr>
+
+<h5 id="3-flask">3. Flask蓝图的作用</h5>
+<p>实际项目中，需要进行项目目录结构的划分，蓝图就是用来帮助开发者进行目录结构的划分。</p>
+<hr>
+
+<h5 id="4-flask">4. 列举使用过的Flask第三方组件</h5>
+<p>jinjia2、wtforms、werkzurg、DBUtils、SQLAlchemy等……</p>
+<hr>
+
+<h5 id="5-flask">5. 简述 Flask 上下文管理流程</h5>
+<p>( 1 ) 请求到来时，将 session 和 request 封装到 ctx 对象中</p>
+<p>( 2 ) 对 session 做补充</p>
+<p>( 3 ) 将包含了 request 和 session 的 ctx 对象放到一个容器中 ( 每个请求都会根据线程/协程加一个唯一标识 )</p>
+<p>( 4 ) 视图函数使用的时候需要根据当前线程或协程的唯一标识获取 ctx 对象，再到 ctx 对象中获取取 request 和 session ( 视图函数使用的时候，需要根据当前线程获取数据 )</p>
+<p>( 5 ) 请求结束时，根据当前线程/协程的唯一标记，将这个容器上的数据移除</p>
+<hr>
+
+<h5 id="6-flask-g">6. Flask中的 g 的作用</h5>
+<hr>
+
+<h5 id="7-flask">7. Flask 上下文管理主要涉及到了哪些相关的类，这些类的主要作用</h5>
+<p>( 1 ) LocalStack 它帮助我们在 local 中把一个列表维护成一个栈，方便我们对列表中的数据进行添加和维护，有了 LocalStack 操作更加便捷</p>
+<p>( 2 ) Local 帮助我们为每个线程/协程开辟空间</p>
+<hr>
+
+<h5 id="8-flask-local-stack">8. 为什么 Flask 要把 Local 对象中的值 stack 维护成一个列表</h5>
+<hr>
+
+<h5 id="9-flask-app">9. Flask 中多 app 应用是怎么完成</h5>
+<p>使用 Flask 类创建不同的 app 对象，然后借助 DispatcherMiddleware 类来实现。</p>
+<hr>
+
+<h5 id="10-flask-websocket">10. 在 Flask 中实现 WebSocket 需要什么组件</h5>
+<hr>
+
+<h5 id="11-wtforms">11. wtforms 组件的作用</h5>
+<p>wtforms 组件有两个作用，</p>
+<p>( 1 ) 自动生成 html 标签</p>
+<p>( 2 ) 对用户请求的数据进行校验</p>
+<hr>
+
+<h5 id="12-flask-session">12. Flask 框架默认 session 的处理机制</h5>
+<p>请求进来时，Flask 读取 cookie 中 session 对应的值，<font>将该值解密并反序列化为字典，放入内存以便视图函数使用</font>。 请求结束时，Flask 会读取内存中字典的值，进行序列化加密，写入到用户的 cookie 中。</p>
+<hr>
+
+<h5 id="13-flask-local-threadinglocal">13. 解释 Flask 框架中的 Local 对象和 threading.local 对象的区别</h5>
+<p>Local对象是根据 threading.local 做的。</p>
+<hr>
+
+<h5 id="14-flask-blinker">14. Flask 中 blinker 是什么</h5>
+<hr>
+
+<h5 id="15-sqlalchemy-session-scoped_session">15. SQLAlchemy 中的 session 和 scoped_session 的区别</h5>
+<p>scoped_session 是基于 Threading.Local 实现的，而 session 不是。</p>
+<hr>
+
+<h5 id="16-sqlalchemy-sql">16. SQLAlchemy 如何执行原生 SQL</h5>
+<p>SQLAlchemy 可以执行原生 sql 的方式：</p>
+<p>( 1 ) 通过 session 对象执行 execute 方法</p>
+<p>( 2 ) 通过 cursor ( 游标 ) 对象执行execute方法</p>
+<p>第一种：</p>
+<pre><code class="python">session = scoped_session(SessionFactory)
+session.execute('insert users(name) values(:value)', params={'value': 'thanlon'})
+</code></pre>
+
+<p>第二种：</p>
+<pre><code class="python">conn = engine.raw_connection()
+cursor = conn.cursor()
+cursor.execute('select *from users')
+</code></pre>
+
+<hr>
+
+<h5 id="17-dbutils">17. DBUtils 模块的作用</h5>
+<p>DBUtils 模块的作用是实现数据库连接池，是为了解决 <font>“多线程情况下请求比较多时性能降低”</font> 的问题。</p>
+<hr>
+
+<h5 id="18-sqlachemy">18. SQLAchemy 中如何为表设置引擎和字符编码</h5>
+<hr>
+
+<h5 id="19-sqlachemy">19. SQLAchemy 中如何设置联合唯一索引</h5>
+<p>首先在中间表 ( 关联表 ) 的类中加入 _ _ table_args _ _ 字段，然后实例化 UniqueConstraint 类并放入一个元组中，最后把这个元组赋值给 _ _ table_args _ _。</p>
+<pre><code class="python">from sqlalchemy import Column, Integer, String, Text, Date, DateTime, ForeignKey, UniqueConstraint, Index
+
+class Student(Base):
+    __tablename__ = 'student'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(32), index=True, nullable=False)
+
+class Course(Base):
+    __tablename__ = 'course'
+    id = Column(Integer, primary_key=True)
+    title = Column(String(32), index=True, nullable=False)
+
+class Student2Course(Base):
+    __tablename__ = 'student2course'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    student_id = Column(Integer, ForeignKey('student.id'))
+    course_id = Column(Integer, ForeignKey('course.id'))
+    __table_args__ = (
+        UniqueConstraint('student_id', 'course_id', name='uc_student_course'),  # 联合唯一索引
+        # Index('i_student_course', 'student_id', 'course_id') # 联合索引
+    )
+</code></pre>
+
+<hr>
+
+<h5 id="20-flask-django">20. Flask 请求相关的数据和 Django 的区别</h5>
+<p>Flask 是直接调用 request 对象来请求相关的数据，而 Django 是通过参数传递实现的。</p>
+<hr>
+
+<h5 id="21-flask-django">21. Flask 和 Django 最大的区别</h5>
+<p>( 1 ) 对于 request 对象，flask 是导入进来的，而 Django 是参数传递的</p>
+<p>( 2 ) 对于session，flask 也导入进来的，而 Django 是依附 request 对象传递过来的。</p>
+<hr>
+
+<h5 id="22-flask-local">22. Flask 如果开了两个进程，有几个 local 对象</h5>
+<hr>
+
+<h5 id="23-session">23. 画出 session 流程图</h5>
+<hr>
+
+<!--回到顶部 start-->
+
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="" href="javascript:;" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/weibo.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
+
+<!--回到顶部 stop-->
+
+<!--左侧广告 start-->
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+
+<!--左侧广告 stop-->
+
+<!--右侧广告 start-->
+
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+
+<!--右侧广告 stop--></div>
+        </div>
+
+        <footer class="col-md-12">
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://tongji.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度统计</a>&nbsp;|
+            <a href="https://ziyuan.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度搜索</a>&nbsp;|
+            <a href="https://www.umeng.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">友盟</a>&nbsp;|
+            <a href="https://www.tmall.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">天猫</a>&nbsp;|
+            <a href="https://www.alimama.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">阿里妈妈</a>&nbsp;|
+            <a href="https://blog.csdn.net/Thanlon" style="color:#c1c1c1;font-weight: bold" target="_blank">CSDN</a>&nbsp;|
+            <a href="https://segmentfault.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">SegmentFault</a>&nbsp;|
+            <!--        <a href="https://bysj39.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|-->
+            <a href="https://d5video.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">D5影视网</a>&nbsp;|
+            <a href="https://ywyz.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">运维云栈</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <!--        <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">β在线学习网</a>&nbsp;-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;-->
+            <br>
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;Python开发栈 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
+
+        </footer>
+
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../js/main.js" defer></script>
+        <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<!--<script data-ad-client="ca-pub-6937898095875663" async-->
+<!--        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

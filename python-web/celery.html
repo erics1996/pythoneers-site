@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Erics">
+        <link rel="canonical" href="https://pythoneers.cn/python-web/celery.html">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+<meta name="keywords"
+      content="python入门,python学习,python文档,python教程,python,django,flask,python web,python爬虫,python人工智能,python数据分析,python深度学习,python量化交易"/>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<meta name="sogou_site_verification" content="atcH4bxi4f"/>
+
+<title>Python开发栈 - Python全栈开发学习网</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../css/nav.css" rel="stylesheet">
+        <link href="../css/public.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Python开发栈</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../python/python-basis.html">Python基础</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-advance.html">Python进阶</a>
+</li>
+                                    
+<li >
+    <a href="../python/python-senior.html">Python高级</a>
+</li>
+                                    
+<li >
+    <a href="../python/built-in-module.html">Python内置模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/external-module.html">Python第三方模块</a>
+</li>
+                                    
+<li >
+    <a href="../python/algorithm.html">Python数据结构与算法</a>
+</li>
+                                    
+<li >
+    <a href="../python/design-pattern.html">Python设计模式</a>
+</li>
+                                    
+<li >
+    <a href="../python/office-automation.html">Python办公自动化</a>
+</li>
+                                    
+<li >
+    <a href="../python/interviews-python.html">Python核心知识</a>
+</li>
+                                    
+<li >
+    <a href="../python/interviews-network.html">Python网络相关知识</a>
+</li>
+                                    
+<li >
+    <a href="../python/nowcoder-sword-offer.html">剑指Offer刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-algorithm.html">Leetcode算法刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-db.html">Leetcode数据库刷题</a>
+</li>
+                                    
+<li >
+    <a href="../python/leetcode-multithreading.html">Leetcode多线程刷题</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python Web <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="flask.html">Flask基础</a>
+</li>
+                                    
+<li >
+    <a href="interviews-flask.html">Flask核心知识</a>
+</li>
+                                    
+<li >
+    <a href="project-flask.html">Flask实战篇</a>
+</li>
+                                    
+<li >
+    <a href="django.html">Django基础</a>
+</li>
+                                    
+<li >
+    <a href="interviews-django.html">Django核心知识</a>
+</li>
+                                    
+<li >
+    <a href="project-django.html">Django实战篇</a>
+</li>
+                                    
+<li >
+    <a href="drf.html">DRF基础</a>
+</li>
+                                    
+<li class="active">
+    <a href="celery.html">Celery异步框架</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python GUI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../gui/pyqt5.html">PyQt5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">网络爬虫 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../web-crawler/scrapy.html">Scrapy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">数据分析 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../data-analysis/numpy.html">NumPy</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/pandas.html">Pandas</a>
+</li>
+                                    
+<li >
+    <a href="../data-analysis/matplotlib.html">Matplotlib</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">计算机视觉 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../computer-vision/opencv.html">OpenCV</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">机器学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../machine-learning/quantitative-trading.html">机器学习与量化交易</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">深度学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deep-learning/tensorflow.html">TensorFlow</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="drf.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../gui/pyqt5.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#celery">Celery异步框架</a></li>
+            <li><a href="#1">1. 概述</a></li>
+            <li><a href="#2">2. 组成结构</a></li>
+            <li><a href="#3">3. 使用场景</a></li>
+            <li><a href="#4">4. 优点</a></li>
+            <li><a href="#5">5. 安装</a></li>
+            <li><a href="#6">6. 异步简单任务结构</a></li>
+            <li><a href="#7">7. 异步多任务结构</a></li>
+            <li><a href="#8">8. 定时简单任务结构</a></li>
+            <li><a href="#9">9. 定时多任务结构</a></li>
+            <li><a href="#4_1">4. 应用</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><img alt="" src="../img/celery.png" /></p>
+<h4 id="celery">Celery异步框架</h4>
+<hr>
+
+<h5 id="1">1. 概述</h5>
+<p>Celery 是一个简单灵活且可靠的，用于 <font>处理大量消息的分布式系统。</font>专注于 <font>实时处理的异步任务队列</font>，同时也 <font>支持任务调度。</font></p>
+<p>分布式系统：简单理解是指系统应用（例如网站），涉及到相关组件，如 web 服务器、web 应用、数据库、消息中间件等等。将系统应用的 <font>相关组件架构在不同的服务器上</font>，在 <font>不同的服务器上的不同组件之间通过消息通信的方式来实现协调工作的这种模式</font> 就是分布式系统。但是一定要做到，当用户访问分布式系统（多台服务器）的时候如访问一台服务器的用户感知是一样的。分布式系统可以 <font>实现负载均衡、避免单点故障。</font></p>
+<p>异步任务：异步对应同步，同步是阻塞。当发送一个请求遇到 IO 操作的时候，如果是同步请求，必须得等待着。当 IO 结束之后，主程序继续向下执行，<font>同步请求需要等待 IO 操作完成，浪费了资源</font>。异步请求发送之后遇到 IO 操作，不需要等待，不需要返回值，直接向下执行其他的业务操作。IO 操作什么时间完成，就把结果存到数据库中或者文件中，没有结果就算了。当主进程需要用到 IO 操作异步请求的结果时到数据库中取出来。<font>异步请求极大程度地利用资源，把 IO 操作的时间节省下来。</font>
+<hr></p>
+<h5 id="2">2. 组成结构</h5>
+<p>Celery 由 “消息中间件” 和 “任务执行单元”，以及 “任务结果存储” 三部分组成！</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200725091415630.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5sb24=,size_15,color_FFFFFF,t_70" /></p>
+<p>( 1 ) 消息中间件：Celery 本身不提供消息服务，但是可以 <font>很方便地和第三方提供的消息中间件集成</font>，包括 RabbitMQ 和 Redis 等。<font>Redis 在一定程度上可以充当消息中间件，只不过没有 RabbitMQ 持久稳定，</font>官方推荐使用 RabbitMQ。</font>如果没有 Celery 可以使用并发技术，并发技术有线程、进程、协程、IO 多路复用！可以自己写，但是偏于复杂，偏底层操作！<font>使用 Celery 就可以实现，只需要知道 Celery 的接口调用方式。</font></p>
+<p>( 2 ) 任务执行单元：worker 是 Celery 提供的任务执行单元，<font>worker 并发地运行在分布式系统节点中</font></p>
+<p>( 3 ) 任务结果存储：用来存储 worker 执行的任务结果，Celery 支持不同的并发和序列化方式的存储任务结果，包括 AMQP，Redis 等。
+<hr></p>
+<h5 id="3">3. 使用场景</h5>
+<p>Celery 是一个 <font>强大的分布式任务队列的异步处理框架，它可以让任务的执行完全脱离主程序，甚至可以被分配到其他主机上运行。</font>我们通常使用它来实现异步任务（ async task ）和定时任务（ crontab )：</p>
+<p>( 1 ) 异步任务：将耗时操作任务提交给Celery去异步执行，<font>比如发送短信/邮件、消息推送、音视频处理等等</font></p>
+<p>( 2 ) 定时任务：定时执行某件事情，比如 <font>每天数据统计</font>
+<hr></p>
+<h5 id="4">4. 优点</h5>
+<p>( 1 ) 简单：Celery 使用和维护都非常简单，并且 <font>不需要配置文件。</font></p>
+<p>( 2 ) 高可用：Worker 和 Client 会在网络连接丢失或者失败时自动进行重试，并且 <font>有的 Brokers 也支持 “双主” 或者 “主从” 的方式实现高可用。</font></p>
+<p>( 3 ) 快速：<font>单个的Celery进程每分钟可以处理百万级的任务</font>，并且只需要 <font>毫秒级的往返延迟</font>（ 使用 RabbitMQ, librabbitmq, 和优化设置时 ）。<font>应用了我们几乎能够利用的所有并发技术。</font></p>
+<p>( 4 ) 灵活：Celery 几乎每个部分都可以扩展使用，<font>自定义池实现、序列化、压缩方案、日志记录、调度器、消费者、生产者、broker传输等等。</font>
+<hr></p>
+<h5 id="5">5. 安装</h5>
+<pre><code class="py">$ pip install -U celery -i https://mirrors.aliyun.com/pypi/simple
+</code></pre>
+
+<hr>
+
+<h5 id="6">6. 异步简单任务结构</h5>
+<p>消费者进程：<strong><code>celery_task.py</code></strong></p>
+<pre><code class="py">import celery
+import time
+
+&quot;&quot;&quot;
+消费者进程
+&quot;&quot;&quot;
+backend = 'redis://localhost:6379/1'  # 异步的结果
+broker = 'redis://localhost:6379/2'  # 消息中间件
+cel = celery.Celery('test', backend=backend, broker=broker)
+
+@cel.task
+def send_email(name):
+    print(f'向{name}发送邮件！')
+    time.sleep(5)
+    print(f'向{name}发送邮件！')
+    return 'ok'
+
+@cel.task
+def send_msg(name):
+    print(f'向{name}发送短信！')
+    time.sleep(5)
+    print(f'向{name}发送短信！')
+    return 'ok'
+</code></pre>
+
+<p>执行命令用于监听队列：</p>
+<pre><code class="py">$ celery worker -A celery_task -l info
+</code></pre>
+
+<blockquote>
+<p><font>这条命令会使用 Celery 连接消息中间件（Redis ），创建一个队列并监听这个队列，启动多个 Worker 监听任务。</font></p>
+</blockquote>
+<pre><code class="py">-------------- celery@thanlon v4.4.6 (cliffs)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-42-generic-x86_64-with-glibc2.29 2020-07-29 11:44:44
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .&gt; app:         test:0x7fd3d1ac72b0
+- ** ---------- .&gt; transport:   redis://localhost:6379/2
+- ** ---------- .&gt; results:     redis://localhost:6379/1
+- *** --- * --- .&gt; concurrency: 8 (prefork)
+-- ******* ---- .&gt; task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+-------------- [queues]
+                .&gt; celery           exchange=celery(direct) key=celery
+[tasks]
+  . celery_task.send_email
+  . celery_task.send_msg
+
+[2020-07-29 11:44:44,735: INFO/MainProcess] Connected to redis://localhost:6379/2
+[2020-07-29 11:44:44,743: INFO/MainProcess] mingle: searching for neighbors
+[2020-07-29 11:44:45,764: INFO/MainProcess] mingle: all alone
+[2020-07-29 11:44:45,803: INFO/MainProcess] celery@thanlon ready.
+</code></pre>
+
+<p>生产者进程：<strong><code>produce_task.py</code></strong></p>
+<pre><code class="py">from celery_task import send_email, send_msg  # 导入异步任务函数
+
+# 调用delay方法，就会帮助生产者去连接消息中间中创建好的队列，有什么数据直接插入这个队列
+ret1 = send_email.delay('erics')  # 结果不会被返回，ret1不会是返回的结果ok
+print(ret1.id)  # 会把返回的值ok放在数据库中，每一步异步请求都会返回唯一的id值，在任何时刻都可以到数据库中拿这个结果
+ret2 = send_msg.delay('erics')
+print(ret2.id)
+&quot;&quot;&quot;
+aaa30e8a-e9c6-4195-ba36-b5455fd48f42
+e063cbde-5b30-4f17-a755-751c5e796a83
+&quot;&quot;&quot;
+</code></pre>
+
+<pre><code class="py">[2020-07-29 12:09:05,649: WARNING/ForkPoolWorker-1] 向erics发送短信！
+[2020-07-29 12:09:05,649: WARNING/ForkPoolWorker-8] 向erics发送邮件！
+[2020-07-29 12:09:10,653: WARNING/ForkPoolWorker-1] 向erics发送短信！
+[2020-07-29 12:09:10,654: WARNING/ForkPoolWorker-8] 向erics发送邮件！
+</code></pre>
+
+<p>获取结果：<strong><code>get_result.py</code></strong></p>
+<pre><code class="py">from celery_task import cel
+from celery.result import AsyncResult
+
+async_result = AsyncResult(id='f0ef6bfe-063c-4d01-be92-bb66de9f60bd', app=cel)
+if async_result.successful():
+    ret = async_result.get()
+    print(ret)  # ok
+    # ret.forget()  # 将结果删除
+
+elif async_result.failed():
+    print('任务执行失败！')
+elif async_result.status == 'PENDING':
+    print('任务等待被执行中！')
+elif async_result.status == 'RETRY':
+    print('任务异常后正在重试！')
+elif async_result.status == 'STARTED':
+    print('任务已经开始被执行！')
+&quot;&quot;&quot;
+ok
+&quot;&quot;&quot;
+</code></pre>
+
+<hr>
+
+<h5 id="7">7. 异步多任务结构</h5>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200729202551593.png" /></p>
+<p>消费者进程：<strong><code>celery.py</code></strong></p>
+<pre><code class="py">from celery import Celery
+
+cel = Celery('celery_demo', backend='redis://localhost:6379/1', broker='redis://localhost:6379/2',
+             include=['celery_tasks.task01', 'celery_tasks.task02', ])
+# 时区
+cel.conf.timezone = 'Asia/Shanghai'
+# 是否适用UTC
+cel.conf.enable_utc = False
+</code></pre>
+
+<p><strong><code>task01.py</code></strong></p>
+<pre><code class="py">from celery_tasks.celery import cel
+import time
+
+@cel.task
+def send_email(name):
+    print(f'完成向{name}发送邮件的任务！')
+    time.sleep(5)
+    return '完成发送邮件！'
+</code></pre>
+
+<p><strong><code>task02.py</code></strong></p>
+<pre><code class="py">from celery_tasks.celery import cel
+import time
+
+@cel.task
+def send_msg(name):
+    print(f'完成向{name}发送短信的任务！')
+    time.sleep(5)
+    return '完成发送短信！'
+</code></pre>
+
+<p>执行 Celery 命令监听消息队列：</p>
+<pre><code class="py">$ celery worker -A celery_tasks -l info -P eventlet
+</code></pre>
+
+<p>生产者进程：<strong><code>produce_task.py</code></strong></p>
+<pre><code class="py">from celery_tasks.task01 import send_email
+from celery_tasks.task02 import send_msg
+
+ret1 = send_email.delay('erics')
+print(ret1.id)
+ret2 = send_msg.delay('erics')
+print(ret2.id)
+</code></pre>
+
+<p>获取结果：<strong><code>check_result.py</code></strong></p>
+<pre><code class="py">from celery_tasks.celery import cel
+from celery.result import AsyncResult
+
+async_result = AsyncResult(id='ddeeb879-068d-4174-97da-e8c5681a3912', app=cel)
+if async_result.successful():
+    ret = async_result.get()
+    print(ret)  # ok
+    # ret.forget()  # 将结果删除。执行完成，结果不会删除
+    # async_result.revoke(terminate=True)  # 无论现在是什么时候，都要终止
+    # async_result.revoke(terminate=False)  # 如果任务还没有开始执行，那么就可以终止
+
+elif async_result.failed():
+    print('任务执行失败！')
+elif async_result.status == 'PENDING':
+    print('任务等待被执行中！')
+elif async_result.status == 'RETRY':
+    print('任务异常后正在重试！')
+elif async_result.status == 'STARTED':
+    print('任务已经开始被执行！')
+</code></pre>
+
+<hr>
+
+<h5 id="8">8. 定时简单任务结构</h5>
+<p>执行定时任务只需要修改生产者部分，定时调度任务就可以，</p>
+<p>方式1：</p>
+<pre><code class="py">from celery_task import send_email  # 导入异步任务函数
+from datetime import datetime
+
+# 方式1
+v1 = datetime(2020, 7, 29, 20, 51, 00)
+print(v1)
+# 先把日期对象转换成时间戳，然后使用utcfromtimestamp把时间戳转换成国标的时间
+v2 = datetime.utcfromtimestamp(v1.timestamp())  # v2是国标日期对象，差8个小时
+print(v2)
+result = send_email.apply_async(args=['erics', ], eta=v2)  # apply_async可以接纳更多参数， 如果没有eta与delay方法相同
+print(result)
+</code></pre>
+
+<p>方式2：</p>
+<pre><code class="py">from celery_task import send_email  # 导入异步任务函数
+from datetime import datetime, timedelta
+
+ctime = datetime.now()
+print(ctime)
+# 默认使用utc时间
+utc_ctime = datetime.utcfromtimestamp(ctime.timestamp())
+time_delay = timedelta(seconds=10)
+task_time = utc_ctime + time_delay
+result = send_email.apply_async(args=['erics', ], eta=task_time)
+print(result.id)
+</code></pre>
+
+<hr>
+
+<h5 id="9">9. 定时多任务结构</h5>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200729215111831.png" /></p>
+<p><strong><code>celery.py:</code></strong></p>
+<pre><code class="py">from celery import Celery
+from datetime import timedelta
+
+cel = Celery('celery_demo', backend='redis://localhost:6379/1', broker='redis://localhost:6379/2',
+             include=['celery_tasks.task01', 'celery_tasks.task02', ])
+# 时区
+cel.conf.timezone = 'Asia/Shanghai'
+# 是否适用UTC
+cel.conf.enable_utc = False
+# beat_schedule是定时任务相关的调度器，每一个键值对就是一个定时任务,celery beat命令会读这部分信息
+cel.conf.beat_schedule = {
+    # 名字随意命名（增加一个每10s执行的任务）
+    'add-every-10-seconds': {
+        # 执行tasks1下的test_celery函数
+        'task': 'celery_tasks.task01.send_email',
+        'schedule': 2.0,  # 每隔2秒执行一次
+        # 'schedule': crontab(minute=&quot;*/1&quot;),# 每一分钟
+        # 'schedule': timedelta(seconds=10),  # 与'schedule': 6同，但是更丰富
+        'args': ('Erics',)  # 传递参数
+    },
+    # 'add-every-12-seconds': {
+    #     'task': 'celery_tasks.task01.send_email',
+    #     每年4月11号，8点42分执行
+    #     'schedule': crontab(minute=42, hour=8, day_of_month=11, month_of_year=4),
+    #     'args': ('张三',)
+    # },
+}
+</code></pre>
+
+<blockquote>
+<p><font>使用 Redis 存放在 Redis 链表中（ list ）。</font></p>
+</blockquote>
+<p>执行 Celery 命令监听消息队列：</p>
+<pre><code class="py">$ celery -A celery_tasks worker -l info -c 10
+</code></pre>
+
+<blockquote>
+<p><font>如果任务比较多，没有设置并发数，Celery会开多个进程执行任务。</font></p>
+</blockquote>
+<p>定时任务的多任务结构，向消息队列中添加任务不需要使用生产者，只需要使用命令就可以了：</p>
+<pre><code class="py">$ celery beat -A celery_tasks
+</code></pre>
+
+<blockquote>
+<p><font>每隔 n 秒中插入一次任务，那么监听的时候每隔n秒中执行一次任务。保持平衡的状态，队列中也不会存在遗留的任务。如果停止监听执行任务，但是不影响 celery beat 命令想消息队列插入任务。</font></p>
+</blockquote>
+<hr>
+
+<h5 id="4_1">4. 应用</h5>
+<p>Django中使用Celery：</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200730000443653.png" /></p>
+<p><strong><code>config.py:</code></strong></p>
+<pre><code class="py">broker_url = 'redis://127.0.0.1:6379/1'
+result_backend = 'redis://127.0.0.1:6379/2'
+</code></pre>
+
+<p><strong><code>main.py:</code></strong></p>
+<pre><code class="py"># 主程序
+import os
+from celery import Celery
+
+# 创建celery实例对象
+app = Celery(&quot;sms&quot;)
+
+# 把celery和django进行组合，识别和加载django的配置文件
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'celeryPros.settings.dev')
+
+# 通过app对象加载配置
+app.config_from_object(&quot;mycelery.config&quot;)
+
+# 加载任务
+# 参数必须是一个列表，里面的每一个任务都是任务的路径名称
+# app.autodiscover_tasks([&quot;任务1&quot;,&quot;任务2&quot;])
+app.autodiscover_tasks([&quot;mycelery.sms&quot;, ]) # 不需要带task.py，默认是这个文件
+
+# 启动Celery的命令
+# 强烈建议切换目录到mycelery根目录下启动
+# celery -A mycelery.main worker --loglevel=info
+</code></pre>
+
+<p><strong><code>task.py:</code></strong></p>
+<pre><code class="py"># celery的任务必须写在tasks.py的文件中，别的文件名称不识别!!!
+from mycelery.main import app
+import time
+
+import logging
+
+log = logging.getLogger(&quot;django&quot;)
+
+
+@app.task  # name表示设置任务的名称，如果不填写，则默认使用函数名做为任务名
+def send_sms(mobile):
+    &quot;&quot;&quot;发送短信&quot;&quot;&quot;
+    print(&quot;向手机号%s发送短信成功!&quot; % mobile)
+    time.sleep(5)
+
+    return &quot;send_sms OK&quot;
+
+
+@app.task  # name表示设置任务的名称，如果不填写，则默认使用函数名做为任务名
+def send_sms2(mobile):
+    print(&quot;向手机号%s发送短信成功!&quot; % mobile)
+    time.sleep(5)
+
+    return &quot;send_sms2 OK&quot;
+</code></pre>
+
+<p><strong><code>views.py:</code></strong></p>
+<pre><code class="py">from django.shortcuts import render, HttpResponse
+from mycelery.sms.tasks import send_sms, send_sms2
+from datetime import timedelta, datetime
+
+
+def test(request):
+    ############### 异步任务 #################
+
+    # 1. 声明一个和celery一模一样的任务函数，但是我们可以导包来解决
+    # send_sms.delay(&quot;110&quot;)
+    # send_sms2.delay(&quot;119&quot;)
+    # send_sms.delay() 如果调用的任务函数没有参数，则不需要填写任何内容
+
+    ############### 定时任务 #################
+
+    ctime = datetime.now()
+    # 默认用utc时间
+    utc_ctime = datetime.utcfromtimestamp(ctime.timestamp())
+    time_delay = timedelta(seconds=10)
+    task_time = utc_ctime + time_delay
+    result = send_sms.apply_async([&quot;911&quot;, ], eta=task_time)
+    print(result.id)
+
+    return HttpResponse('ok')
+</code></pre>
+
+<p>由于是异步调度，所以不影响视图显示，立刻能够显示。如果是同步需要 10s 后才能显示。</p>
+<p>如果生产者和消费者在同一台服务器，只需要导入即可。如果生产者和消费者不在同一台服务器上，必须拷贝，一份是生产者调用、一份用于消费者监听。要保证生产者所在的服务器上要有消费者的一份代码，消费者所在的服务器上要有生产者的一份代码。
+<hr>
+<!--回到顶部 start-->
+<div style="width: 60px;height: auto;z-index: 99;bottom: 30%;position: fixed;right: 0px" id="plug-ins">
+    <div style="position: relative;float: right">
+        <a target="" href="javascript:;" id="weibo"
+           style="display: block;width: 40px;height: 40px;background-color: #c4351b;margin-top: 1px;">
+            <img width="22" height="20" src="../img/weibo.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3330447288&site=qq&menu=yes" id="qq" style="display: block;width: 40px;height: 40px;background-color:#0e91e8;margin-top: 1px">
+            <img width="20" height="20" src="../img/qq.png" 
+                 style="margin-top: 10px;margin-left: 10px" alt="点击这里给我发消息" title="点击这里给我发消息">
+        </a>
+        <a href="javascript:" id="wechat"
+           style="display: block;width: 40px;height: 40px;background-color:#01b901;margin-top:1px">
+            <img width="22" height="20" src="../img/wechat.png"
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+        <a href="javascript:" id="go_top"
+           style="display: none;width: 40px;height: 40px;background-color: #b5b5b5;margin-top: 1px">
+            <img width="22" height="20" src="../img/top.png" alt=""
+                 style="margin-top: 10px;margin-left: 9px">
+        </a>
+    </div>
+</div>
+<!--回到顶部 stop-->
+<!--左侧广告 start-->
+<div style="width: auto;height: auto;z-index: 99;position: fixed;left: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+<!--左侧广告 stop-->
+<!--右侧广告 start-->
+<div style="width: auto;height: auto;z-index: 99;position: fixed;right: 0;top: 70px;" id="google_ads">
+        <div>
+            <div style="width: 180px;height: auto"></div>
+            <!-- Vertical -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6937898095875663"
+                 data-ad-slot="2927491642"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+</div>
+<!--右侧广告 stop--></p></div>
+        </div>
+
+        <footer class="col-md-12">
+<div class="container-fluid" style="background:#2C2C2C;color: #c1c1c1;font-weight: bold;margin-bottom: 2px">
+    <div class="row">
+        <div class="col-md-12  text-center" style="padding: 40px">
+            <a href="https://tongji.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度统计</a>&nbsp;|
+            <a href="https://ziyuan.baidu.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">百度搜索</a>&nbsp;|
+            <a href="https://www.umeng.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">友盟</a>&nbsp;|
+            <a href="https://www.tmall.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">天猫</a>&nbsp;|
+            <a href="https://www.alimama.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">阿里妈妈</a>&nbsp;|
+            <a href="https://blog.csdn.net/Thanlon" style="color:#c1c1c1;font-weight: bold" target="_blank">CSDN</a>&nbsp;|
+            <a href="https://segmentfault.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">SegmentFault</a>&nbsp;|
+            <!--        <a href="https://bysj39.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">39毕设网</a>&nbsp;|-->
+            <a href="https://d5video.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">D5影视网</a>&nbsp;|
+            <a href="https://ywyz.pythoneers.cn/" style="color:#c1c1c1;font-weight: bold" target="_blank">运维云栈</a>&nbsp;|
+            <a href="https://www.mkdocs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">MkDocs</a>&nbsp;
+            <!--        <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">β在线学习网</a>&nbsp;-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">阿尔法搜索</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">贝塔学习网</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">德尔塔操作系统</a>&nbsp;|-->
+            <!--          <a href="javascript:" style="color:#c1c1c1;font-weight: bold" target="_blank">欧米伽影视</a>&nbsp;-->
+            <br>
+            <a href="https://docs.djangoproject.com/zh-hans/3.0/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Django</a>&nbsp;|
+            <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Flask</a>&nbsp;|
+            <a href="https://www.django-rest-framework.org/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">DRF</a>&nbsp;|
+            <a href="https://cn.vuejs.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">Vue</a>&nbsp;|
+            <a href="https://www.nginx.com/" style="color:#c1c1c1;font-weight: bold" target="_blank">Nginx</a>&nbsp;|
+            <a href="https://kubernetes.io/" style="color:#c1c1c1;font-weight: bold" target="_blank">Kubernetes</a>&nbsp;|
+            <a href="https://zabbix.org/wiki/Main_Page" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">Zabbix</a>&nbsp;|
+            <a href="https://tensorflow.google.cn/" style="color:#c1c1c1;font-weight: bold"
+               target="_blank">TensorFlow</a>&nbsp;|
+            <a href="https://docs.opencv.org/" style="color:#c1c1c1;font-weight: bold" target="_blank">OpenCV</a>&nbsp;
+            <br>
+            Copyright © 2020-2021&nbsp; pythoneers.cn. All Rights Reserved.&nbsp;Python开发栈 版权所有&nbsp;
+            <br>
+            <a target="_blank_" href="http://www.miit.gov.cn/" style="color:#c1c1c1;">豫ICP备19037971-2号</a>
+            <!--            <a target="_blank">-->
+            <!--                <img src="/static/home/images/beian.png" style="padding-bottom:6px">-->
+            <!--                <span style="color:#c1c1c1;">豫公网安备 41152802000091号</span>-->
+            <!--            </a>-->
+            <span id="cnzz_stat_icon_1279280889">
+            <a href="https://www.cnzz.com/stat/website.php?web_id=1279280889" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif">
+            </a>
+          </span>
+        </div>
+    </div>
+</div>
+
+        </footer>
+
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../js/main.js" defer></script>
+        <script src="../js/gotop.js" defer></script>
+        <script src="../js/baiducount.js" defer></script>
+<!--    <script async src="../js/somelib.js"></script>-->
+<!--<script data-ad-client="ca-pub-6937898095875663" async-->
+<!--        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<script data-ad-client="ca-pub-6937898095875663"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    //baidu自动收录
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    //360自动收录
+    (function () {
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
